@@ -1,13 +1,19 @@
 import React from 'react';
+import { PointerClassesProvider } from '@context/pointer-classes.context';
 import useMousePointer from '@hooks/useMousePointer';
+import MouseTracker from '@elements/mouse-tracker';
+import styles from './layout.module.scss';
 
 const Layout = ({ children }) => {
-  const MousePointer = useMousePointer();
+  const { setRef, mousePosition } = useMousePointer();
+
   return (
-    <div>
-      {children}
-      <MousePointer />
-    </div>
+    <PointerClassesProvider>
+      <main ref={setRef} className={styles.stl}>
+        {children}
+        <MouseTracker mousePosition={mousePosition} />
+      </main>
+    </PointerClassesProvider>
   );
 };
 

@@ -1,0 +1,23 @@
+$all_headings: h1, h2, h3, h4;
+
+.heading {
+  margin: 0;
+
+  @each $heading in $all_headings {
+    &--is-#{$heading} {
+      @if $heading == h1 {
+        font-size: 6em;
+        color: var(--main-text-color);
+      } @else if $heading == h2 {
+        font-size: 2em;
+        color: var(--main-text-color);
+      } @else if $heading == h3 {
+        font-size: 1.5em;
+        color: var(--main-text-color);
+      } @else if $heading == h4 {
+        font-size: 1.2em;
+        color: var(--main-text-color);
+      }
+    }
+  }
+}

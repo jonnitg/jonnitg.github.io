@@ -1,34 +1,57 @@
-import React, { useEffect, createRef } from 'react';
-import CSS from 'csstype';
+/**
+ * This hook is based on:
+ *  - https://github.com/jaredLunde/react-hook/tree/master/packages/mouse-position
+ * Not all logic, only the things that I needed
+ */
+import { useState, useEffect } from 'react';
 
-const style: CSS.Properties<string | number> = {
-  position: 'absolute',
-  width: '30px',
-  height: '30px',
-  backgroundColor: 'var(--main-theme-color)',
-  transform: 'translate(-50%, -50%)',
+export interface MousePosition {
+  x: number | null;
+  y: number | null;
+  isOver: boolean;
+}
+
+const initialState = {
+  x: null,
+  y: null,
+  isOver: false,
 };
 
 const useMousePointer = () => {
-  const mouseRef = createRef<HTMLDivElement>();
-
-  const handleOnMouseMove = (e: MouseEvent) => {
-    mouseRef.current.style.left = `${e.clientX}px`;
-    mouseRef.current.style.top = `${e.clientY}px`;
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousemove', handleOnMouseMove);
-    return () => {
-      document.removeEventListener('mousemove', handleOnMouseMove);
-    };
-  }, []);
-
-  const Component = () => (
-    <div id="mouse-pointer" ref={mouseRef} style={style} />
+  const [element, setElement] = useState<HTMLElement | null>(null);
+  const [mousePosition, setMousePosition] = useState<MousePosition>(
+    initialState
   );
 
-  return Component;
+  useEffect(() => {
+    if (element !== null) {
+      const onMove = (event: MouseEvent) => {
+        const { clientX: x, clientY: y } = event;
+        setMousePosition({ x, y, isOver: true });
+      };
+      const onLeave = (event: MouseEvent) => {
+        setMousePosition((prev) => ({ ...prev, isOver: false }));
+      };
+
+      const addEvent = element.addEventListener.bind(element);
+      addEvent('mouseenter', onMove);
+      addEvent('mousemove', onMove);
+      addEvent('mouseleave', onLeave);
+
+      return () => {
+        const removeEvent = element.addEventListener.bind(element);
+        removeEvent('mouseenter', onMove);
+        removeEvent('mousemove', onMove);
+        removeEvent('mouseleave', onLeave);
+      };
+    }
+    return () => {};
+  }, [element]);
+
+  return {
+    mousePosition,
+    setRef: setElement,
+  };
 };
 
 export default useMousePointer;

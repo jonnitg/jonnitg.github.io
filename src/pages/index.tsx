@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Layout from '@components/layout';
-import Card from '@elements/card';
+import MainSection from '@components/main-section';
 
 const Home = () => (
   <Layout>
-    <Card>this is a card</Card>
+    <MainSection />
   </Layout>
 );
 

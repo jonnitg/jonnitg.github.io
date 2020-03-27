@@ -1,0 +1,12 @@
+.stl {
+  $self: &;
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  &__heading {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+}

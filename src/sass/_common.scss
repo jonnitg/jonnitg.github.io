@@ -3,8 +3,11 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  background-color: var(--main-theme-color);
+  font-family: 'Anton', sans-serif;
 }
 
 :root {
-  --main-theme-color: blue;
+  --main-theme-color: #ffffff;
+  --main-text-color: #000000;
 }

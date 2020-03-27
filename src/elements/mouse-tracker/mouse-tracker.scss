@@ -1,0 +1,26 @@
+.pointer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-10px, -10px);
+
+  &__cursor {
+    top: -5px;
+    left: -5px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-theme-color);
+    transition-property: top, left, width, height;
+
+    &--is-on-title {
+      width: 30px;
+      height: 30px;
+      top: -15px;
+      left: -15px;
+    }
+  }
+}
