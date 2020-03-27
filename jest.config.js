@@ -18,5 +18,6 @@ module.exports = {
     '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',
     '^@components(.*)$': '<rootDir>/src/components$1',
     '^@elements(.*)$': '<rootDir>/src/elements$1',
+    '^@hooks(.*)$': '<rootDir>/src/hooks$1',
   },
 };

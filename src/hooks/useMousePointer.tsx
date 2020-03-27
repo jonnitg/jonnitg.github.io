@@ -9,7 +9,7 @@ const style: CSS.Properties<string | number> = {
   transform: 'translate(-50%, -50%)',
 };
 
-export default () => {
+const useMousePointer = () => {
   const mouseRef = createRef<HTMLDivElement>();
 
   const handleOnMouseMove = (e: MouseEvent) => {
@@ -30,3 +30,5 @@ export default () => {
 
   return Component;
 };
+
+export default useMousePointer;
