@@ -19,7 +19,8 @@
         "extensions": [".js", ".ts", ".jsx", "tsx"],
         "alias": {
           "@components": "./src/components",
-          "@elements": "./src/elements"
+          "@elements": "./src/elements",
+          "@hooks": "./src/hooks"
         }
       }
     ]
