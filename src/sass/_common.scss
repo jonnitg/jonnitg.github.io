@@ -1,3 +1,8 @@
+:root {
+  --main-theme-color: #ffffff;
+  --main-text-color: #000000;
+}
+
 html,
 body {
   width: 100vw;
@@ -18,9 +23,4 @@ a:active,
 a:visited {
   color: var(--main-text-color);
   text-decoration: none;
-}
-
-:root {
-  --main-theme-color: #ffffff;
-  --main-text-color: #000000;
 }

@@ -12,14 +12,12 @@
   align-items: center;
 
   &__container {
-    $container: &;
     position: relative;
     min-height: 220px;
     padding: 5px 0;
     text-align: center;
 
     &__animated-box {
-      $animated-box: &;
       position: absolute;
       width: 100%;
       height: 100%;

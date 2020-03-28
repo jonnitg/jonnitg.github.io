@@ -70,15 +70,21 @@ const ThemeSettings = () => {
 
   useEffect(() => {
     const { localStorage } = window;
-    const currentColor = localStorage.getItem('themeColor');
+    const currentThemeColor = localStorage.getItem('themeColor');
+    const currentTextColor = localStorage.getItem('themeColor');
 
-    if (currentColor) {
-      const found = colors.find(
-        (color) => color === currentColor.trim(),
-        currentColor
+    if (currentThemeColor) {
+      document.documentElement.style.setProperty(
+        '--main-theme-color',
+        currentThemeColor || '#ffffff'
       );
+    }
 
-      document.documentElement.style.setProperty('--main-theme-color', found);
+    if (currentTextColor) {
+      document.documentElement.style.setProperty(
+        '--main-theme-color',
+        currentTextColor || '#000000'
+      );
     }
   }, []);
 
