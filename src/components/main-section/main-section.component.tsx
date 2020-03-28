@@ -25,13 +25,13 @@ const MainSection = () => {
 
   return (
     <div className={styles.stl}>
-      <div ref={setRef} className={styles.stl__heading__container}>
+      <div ref={setRef} className={styles.stl__container}>
         <Heading className={classes} tag="h1">
           Jonatán Isaac{' '}
           <br className={styles['stl__heading--hide-br-mobile']} />
           Treviño Galindo
         </Heading>
-        <div className={styles['stl__heading__animated-box']} />
+        <div className={styles['stl__container__animated-box']} />
       </div>
       <SocialMedia />
     </div>
