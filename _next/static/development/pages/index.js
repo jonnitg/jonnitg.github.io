@@ -16659,23 +16659,23 @@ var Layout = function Layout(_ref) {
       lineNumber: 12,
       columnNumber: 5
     }
-  }, __jsx(_theme_settings__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx("main", {
+    ref: setRef,
+    className: _layout_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13,
       columnNumber: 7
     }
-  }), __jsx("main", {
-    ref: setRef,
-    className: _layout_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl,
+  }, __jsx(_theme_settings__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14,
-      columnNumber: 7
+      columnNumber: 9
     }
-  }, children, __jsx(_elements_mouse_tracker__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), children, __jsx(_elements_mouse_tracker__WEBPACK_IMPORTED_MODULE_3__["default"], {
     mousePosition: mousePosition,
     __self: _this,
     __source: {
