@@ -1,3 +1,5 @@
+@import '../../sass/base';
+
 $all_headings: h1, h2, h3, h4;
 
 .heading {
@@ -6,9 +8,14 @@ $all_headings: h1, h2, h3, h4;
   @each $heading in $all_headings {
     &--is-#{$heading} {
       @if $heading == h1 {
-        font-size: 6em;
+        font-size: 5em;
         line-height: 1.1;
         color: var(--main-text-color);
+
+        @include for-size(mobile-landscape-up) {
+          font-size: 6em;
+          line-height: 1.1;
+        }
       } @else if $heading == h2 {
         font-size: 2em;
         color: var(--main-text-color);

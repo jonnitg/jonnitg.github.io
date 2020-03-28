@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Heading from '@elements/heading';
 import useMousePointer from '@hooks/useMousePointer';
@@ -22,13 +22,17 @@ const MainSection = () => {
   }, [mousePosition.isOver]);
 
   const classes = clsx(styles.stl__heading);
+
   return (
     <div className={styles.stl}>
-      <Heading ref={setRef} className={classes} tag="h1">
-        Jonatán Isaac
-        <br />
-        Treviño Galindo
-      </Heading>
+      <div ref={setRef} className={styles.stl__heading__container}>
+        <Heading className={classes} tag="h1">
+          Jonatán Isaac{' '}
+          <br className={styles['stl__heading--hide-br-mobile']} />
+          Treviño Galindo
+        </Heading>
+        <div className={styles['stl__heading__animated-box']} />
+      </div>
       <SocialMedia />
     </div>
   );

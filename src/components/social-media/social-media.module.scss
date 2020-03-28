@@ -31,8 +31,10 @@
     }
 
     &:nth-child(2) {
+      border-left: none;
+      border-right: none;
       &::after {
-        width: 70px;
+        width: 65px;
       }
     }
   }
