@@ -1,12 +1,14 @@
 .stl {
   $self: &;
   display: grid;
+  grid-template-rows: auto 50px;
   width: 100%;
   height: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 
   &__heading {
-    align-self: center;
-    justify-self: center;
     text-align: center;
   }
 }

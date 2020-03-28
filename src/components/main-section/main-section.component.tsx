@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Heading from '@elements/heading';
 import useMousePointer from '@hooks/useMousePointer';
 import { PointerClassesContext } from '@context/pointer-classes.context';
+import SocialMedia from '@components/social-media';
 import styles from './main-section.module.scss';
 
 const MainSection = () => {
@@ -28,6 +29,7 @@ const MainSection = () => {
         <br />
         Treviño Galindo
       </Heading>
+      <SocialMedia />
     </div>
   );
 };

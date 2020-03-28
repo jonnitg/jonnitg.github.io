@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { TwitterPicker } from 'react-color';
+import { PointerClassesContext } from '@context/pointer-classes.context';
 import styles from './theme-settings.module.scss';
 
 const colors = [
@@ -26,6 +27,10 @@ const colors = [
 const ThemeSettings = () => {
   const [showThemePicker, setShowThemePicker] = useState(false);
   const [showTextPicker, setShowTextPicker] = useState(false);
+
+  const { classes: pointerClasses, setClasses } = useContext(
+    PointerClassesContext
+  );
 
   const handleChangeComplete = (color, type) => {
     if (type === 'theme') {
@@ -55,6 +60,14 @@ const ThemeSettings = () => {
     }
   };
 
+  const addPointerClass = () => {
+    setClasses({ ...pointerClasses, 'pointer__cursor--is-on-link': true });
+  };
+
+  const removePointerClass = () => {
+    setClasses({ ...pointerClasses, 'pointer__cursor--is-on-link': false });
+  };
+
   useEffect(() => {
     const { localStorage } = window;
     const currentColor = localStorage.getItem('themeColor');
@@ -74,6 +87,10 @@ const ThemeSettings = () => {
       <div>
         <button
           type="button"
+          onMouseOver={addPointerClass}
+          onFocus={addPointerClass}
+          onMouseOut={removePointerClass}
+          onBlur={removePointerClass}
           className={styles['theme-settings__button']}
           onClick={() => toggleOptions('theme')}
         >
@@ -92,6 +109,10 @@ const ThemeSettings = () => {
       <div>
         <button
           type="button"
+          onMouseOver={addPointerClass}
+          onFocus={addPointerClass}
+          onMouseOut={removePointerClass}
+          onBlur={removePointerClass}
           className={styles['theme-settings__button']}
           onClick={() => toggleOptions('text')}
         >
