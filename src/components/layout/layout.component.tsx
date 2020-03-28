@@ -10,8 +10,8 @@ const Layout = ({ children }) => {
 
   return (
     <PointerClassesProvider>
-      <ThemeSettings />
       <main ref={setRef} className={styles.stl}>
+        <ThemeSettings />
         {children}
         <MouseTracker mousePosition={mousePosition} />
       </main>
