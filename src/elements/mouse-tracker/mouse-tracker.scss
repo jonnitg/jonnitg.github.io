@@ -7,20 +7,51 @@
   transform: translate(-10px, -10px);
 
   &__cursor {
+    position: absolute;
     top: -5px;
     left: -5px;
-    position: absolute;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: var(--main-theme-color);
     transition-property: top, left, width, height;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 
     &--is-on-title {
       width: 30px;
       height: 30px;
       top: -15px;
       left: -15px;
+      animation: pulse 1.5s infinite;
+      transform: scale(1);
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        height: 30px;
+        width: 30px;
+        padding: 4px;
+        border: 4px solid var(--main-theme-color);
+        border-radius: 50%;
+        animation: pulse 1.5s infinite;
+        transform: scale(1);
+      }
     }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.95);
   }
 }
