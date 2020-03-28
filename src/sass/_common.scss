@@ -7,6 +7,12 @@ body {
   font-family: 'Anton', sans-serif;
 }
 
+button,
+input {
+  font-family: 'Arvo', serif;
+  color: var(--main-text-color);
+}
+
 :root {
   --main-theme-color: #ffffff;
   --main-text-color: #000000;
