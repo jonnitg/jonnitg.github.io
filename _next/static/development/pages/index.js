@@ -201,11 +201,34 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".main-section_stl__1HSzU {\n  display: grid;\n  width: 100%;\n  height: 100%;\n}\n.main-section_stl__heading__3DG8N {\n  align-self: center;\n  justify-self: center;\n  text-align: center;\n}", "",{"version":3,"sources":["main-section.module.scss"],"names":[],"mappings":"AAAA;EAEE,aAAA;EACA,WAAA;EACA,YAAA;AAAF;AAEE;EACE,kBAAA;EACA,oBAAA;EACA,kBAAA;AAAJ","file":"main-section.module.scss","sourcesContent":[".stl {\n  $self: &;\n  display: grid;\n  width: 100%;\n  height: 100%;\n\n  &__heading {\n    align-self: center;\n    justify-self: center;\n    text-align: center;\n  }\n}\n"]}]);
+exports.push([module.i, ".main-section_stl__1HSzU {\n  display: grid;\n  grid-template-rows: auto 50px;\n  width: 100%;\n  height: 100%;\n  align-content: center;\n  justify-content: center;\n  align-items: center;\n}\n.main-section_stl__heading__3DG8N {\n  text-align: center;\n}", "",{"version":3,"sources":["main-section.module.scss"],"names":[],"mappings":"AAAA;EAEE,aAAA;EACA,6BAAA;EACA,WAAA;EACA,YAAA;EACA,qBAAA;EACA,uBAAA;EACA,mBAAA;AAAF;AAEE;EACE,kBAAA;AAAJ","file":"main-section.module.scss","sourcesContent":[".stl {\n  $self: &;\n  display: grid;\n  grid-template-rows: auto 50px;\n  width: 100%;\n  height: 100%;\n  align-content: center;\n  justify-content: center;\n  align-items: center;\n\n  &__heading {\n    text-align: center;\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"stl": "main-section_stl__1HSzU",
 	"stl__heading": "main-section_stl__heading__3DG8N"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/social-media/social-media.module.scss":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/components/social-media/social-media.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Imports
+
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
+// Module
+exports.push([module.i, ".social-media_stl__3kiGL {\n  position: relative;\n  display: inline-grid;\n  width: 100%;\n  grid-auto-flow: column;\n  justify-items: stretch;\n  align-items: stretch;\n  height: 100%;\n}\n.social-media_stl__link__31ETY {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  line-height: 3;\n  border: 2px solid var(--main-text-color);\n}\n@media (min-width: 628px) {\n  .social-media_stl__link__31ETY::after {\n    content: \"\";\n    position: absolute;\n    top: 30px;\n    left: 70px;\n    width: 50px;\n    height: 2px;\n    border-bottom: 2px solid var(--main-text-color);\n  }\n}\n.social-media_stl__link__31ETY:nth-child(2)::after {\n  width: 70px;\n}\n.social-media_stl__absolute_link__2nR4M {\n  display: none;\n}\n@media (min-width: 628px) {\n  .social-media_stl__absolute_link__2nR4M {\n    position: absolute;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    font-size: 1.2em;\n    line-height: 2.8;\n    color: var(--main-theme-color);\n    background-color: var(--main-text-color);\n    border: 2px solid var(--main-text-color);\n    -webkit-animation: social-media_slideLeftIn__15Dca 0.2s ease-in-out;\n            animation: social-media_slideLeftIn__15Dca 0.2s ease-in-out;\n  }\n}\n.social-media_stl__absolute_link__2nR4M:visited {\n  color: var(--main-theme-color);\n}\n\n@-webkit-keyframes social-media_slideLeftIn__15Dca {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes social-media_slideLeftIn__15Dca {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}", "",{"version":3,"sources":["social-media.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,oBAAA;EACA,WAAA;EACA,sBAAA;EACA,sBAAA;EACA,oBAAA;EACA,YAAA;AAAF;AAEE;EACE,kBAAA;EACA,qBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;EACA,wCAAA;AAAJ;ACII;EDDE;IACE,WAAA;IACA,kBAAA;IACA,SAAA;IACA,UAAA;IACA,WAAA;IACA,WAAA;IACA,+CAAA;EAAN;AACF;AAIM;EACE,WAAA;AAFR;AAOE;EACE,aAAA;AALJ;ACbI;EDiBF;IAGI,kBAAA;IACA,qBAAA;IACA,WAAA;IACA,YAAA;IACA,kBAAA;IACA,gBAAA;IACA,gBAAA;IACA,8BAAA;IACA,wCAAA;IACA,wCAAA;IACA,mEAAA;YAAA,2DAAA;EAHJ;AACF;AAKI;EACE,8BAAA;AAHN;;AAQA;EACE;IACE,UAAA;EALF;EAOA;IACE,UAAA;EALF;AACF;;AADA;EACE;IACE,UAAA;EALF;EAOA;IACE,UAAA;EALF;AACF","file":"social-media.module.scss","sourcesContent":["@import '../../sass/base';\n\n.stl {\n  position: relative;\n  display: inline-grid;\n  width: 100%;\n  grid-auto-flow: column;\n  justify-items: stretch;\n  align-items: stretch;\n  height: 100%;\n\n  &__link {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    line-height: 3;\n    border: 2px solid var(--main-text-color);\n\n    @include for-size(between-mobile-tablet-up) {\n      &::after {\n        content: '';\n        position: absolute;\n        top: 30px;\n        left: 70px;\n        width: 50px;\n        height: 2px;\n        border-bottom: 2px solid var(--main-text-color);\n      }\n    }\n\n    &:nth-child(2) {\n      &::after {\n        width: 70px;\n      }\n    }\n  }\n\n  &__absolute_link {\n    display: none;\n    @include for-size(between-mobile-tablet-up) {\n      position: absolute;\n      display: inline-block;\n      width: 100%;\n      height: 100%;\n      text-align: center;\n      font-size: 1.2em;\n      line-height: 2.8;\n      color: var(--main-theme-color);\n      background-color: var(--main-text-color);\n      border: 2px solid var(--main-text-color);\n      animation: slideLeftIn 0.2s ease-in-out;\n    }\n\n    &:visited {\n      color: var(--main-theme-color);\n    }\n  }\n}\n\n@keyframes slideLeftIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
+// Exports
+exports.locals = {
+	"stl": "social-media_stl__3kiGL",
+	"stl__link": "social-media_stl__link__31ETY",
+	"stl__absolute_link": "social-media_stl__absolute_link__2nR4M",
+	"slideLeftIn": "social-media_slideLeftIn__15Dca"
 };
 
 /***/ }),
@@ -219,7 +242,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".theme-settings_theme-settings__3vgw0 {\n  position: fixed;\n  display: inline-flex;\n  top: 0;\n  left: 0;\n}\n.theme-settings_theme-settings__button__1cOn7 {\n  position: relative;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  margin-bottom: 1em;\n  background-color: transparent;\n  border: 0;\n  font-size: 0.8em;\n  cursor: pointer;\n  outline: none;\n}\n.theme-settings_theme-settings__picker__2QkOC {\n  position: absolute !important;\n}", "",{"version":3,"sources":["theme-settings.module.scss"],"names":[],"mappings":"AAAA;EACE,eAAA;EACA,oBAAA;EACA,MAAA;EACA,OAAA;AACF;AACE;EACE,kBAAA;EACA,wBAAA;KAAA,qBAAA;UAAA,gBAAA;EACA,kBAAA;EACA,6BAAA;EACA,SAAA;EACA,gBAAA;EACA,eAAA;EACA,aAAA;AACJ;AAEE;EACE,6BAAA;AAAJ","file":"theme-settings.module.scss","sourcesContent":[".theme-settings {\n  position: fixed;\n  display: inline-flex;\n  top: 0;\n  left: 0;\n\n  &__button {\n    position: relative;\n    appearance: none;\n    margin-bottom: 1em;\n    background-color: transparent;\n    border: 0;\n    font-size: 0.8em;\n    cursor: pointer;\n    outline: none;\n  }\n\n  &__picker {\n    position: absolute !important;\n  }\n}\n"]}]);
+exports.push([module.i, ".theme-settings_theme-settings__3vgw0 {\n  position: fixed;\n  display: inline-flex;\n  top: 0;\n  left: 0;\n}\n.theme-settings_theme-settings__button__1cOn7 {\n  position: relative;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  margin: 1em 0.5em;\n  background-color: transparent;\n  border: 0;\n  font-size: 0.8em;\n  cursor: pointer;\n  outline: none;\n}\n.theme-settings_theme-settings__picker__2QkOC {\n  position: absolute !important;\n}", "",{"version":3,"sources":["theme-settings.module.scss"],"names":[],"mappings":"AAAA;EACE,eAAA;EACA,oBAAA;EACA,MAAA;EACA,OAAA;AACF;AACE;EACE,kBAAA;EACA,wBAAA;KAAA,qBAAA;UAAA,gBAAA;EACA,iBAAA;EACA,6BAAA;EACA,SAAA;EACA,gBAAA;EACA,eAAA;EACA,aAAA;AACJ;AAEE;EACE,6BAAA;AAAJ","file":"theme-settings.module.scss","sourcesContent":[".theme-settings {\n  position: fixed;\n  display: inline-flex;\n  top: 0;\n  left: 0;\n\n  &__button {\n    position: relative;\n    appearance: none;\n    margin: 1em 0.5em;\n    background-color: transparent;\n    border: 0;\n    font-size: 0.8em;\n    cursor: pointer;\n    outline: none;\n  }\n\n  &__picker {\n    position: absolute !important;\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"theme-settings": "theme-settings_theme-settings__3vgw0",
@@ -16783,8 +16806,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../elements/heading */ "./src/elements/heading/index.tsx");
 /* harmony import */ var _hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../hooks/useMousePointer */ "./src/hooks/useMousePointer.tsx");
 /* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
-/* harmony import */ var _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./main-section.module.scss */ "./src/components/main-section/main-section.module.scss");
-/* harmony import */ var _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_main_section_module_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _social_media__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../social-media */ "./src/components/social-media/index.tsx");
+/* harmony import */ var _main_section_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./main-section.module.scss */ "./src/components/main-section/main-section.module.scss");
+/* harmony import */ var _main_section_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_main_section_module_scss__WEBPACK_IMPORTED_MODULE_7__);
 
 
 var _this = undefined,
@@ -16795,6 +16819,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 
 
 
@@ -16825,13 +16850,13 @@ var MainSection = function MainSection() {
       }));
     };
   }, [mousePosition.isOver]);
-  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(_main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__heading);
+  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(_main_section_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.stl__heading);
   return __jsx("div", {
-    className: _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl,
+    className: _main_section_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.stl,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 26,
       columnNumber: 5
     }
   }, __jsx(_elements_heading__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -16841,17 +16866,24 @@ var MainSection = function MainSection() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 27,
       columnNumber: 7
     }
   }, "Jonat\xE1n Isaac", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 29,
       columnNumber: 9
     }
-  }), "Trevi\xF1o Galindo"));
+  }), "Trevi\xF1o Galindo"), __jsx(_social_media__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 7
+    }
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MainSection);
@@ -16919,6 +16951,239 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/components/social-media/index.tsx":
+/*!***********************************************!*\
+  !*** ./src/components/social-media/index.tsx ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _social_media_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./social-media.component */ "./src/components/social-media/social-media.component.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _social_media_component__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/social-media/social-media.component.tsx":
+/*!****************************************************************!*\
+  !*** ./src/components/social-media/social-media.component.tsx ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
+/* harmony import */ var _hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../hooks/useMousePointer */ "./src/hooks/useMousePointer.tsx");
+/* harmony import */ var _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./social-media.module.scss */ "./src/components/social-media/social-media.module.scss");
+/* harmony import */ var _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_social_media_module_scss__WEBPACK_IMPORTED_MODULE_5__);
+
+
+var _this = undefined,
+    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/social-media/social-media.component.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+
+
+
+var SocialMedia = function SocialMedia(_ref) {
+  var _ref$className = _ref.className,
+      className = _ref$className === void 0 ? '' : _ref$className;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
+      showLink = _useState[0],
+      setShowLink = _useState[1];
+
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_3__["PointerClassesContext"]),
+      pointerClasses = _useContext.classes,
+      setClasses = _useContext.setClasses;
+
+  var _useMousePointer = Object(_hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_4__["default"])(),
+      mousePosition = _useMousePointer.mousePosition,
+      setRef = _useMousePointer.setRef;
+
+  var handleOnMouseOver = function handleOnMouseOver(type) {
+    if (type === 'twitter') {
+      setShowLink('https://twitter.com/jonnitg');
+    }
+
+    if (type === 'facebook') {
+      setShowLink('https://facebook.com/jonnitg');
+    }
+
+    if (type === 'github') {
+      setShowLink('https://github.com/jonnitg');
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (mousePosition.isOver) {
+      setClasses(_objectSpread({}, pointerClasses, {
+        'pointer__cursor--is-on-link': true
+      }));
+    } else {
+      setShowLink('');
+    }
+
+    return function () {
+      setClasses(_objectSpread({}, pointerClasses, {
+        'pointer__cursor--is-on-link': false
+      }));
+    };
+  }, [mousePosition.isOver]);
+  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(_social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl, className);
+  return __jsx("div", {
+    ref: setRef,
+    className: classes,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 5
+    }
+  }, __jsx("a", {
+    onMouseOver: function onMouseOver() {
+      return handleOnMouseOver('twitter');
+    },
+    onFocus: function onFocus() {
+      return handleOnMouseOver('twitter');
+    },
+    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl__link,
+    href: "https://twitter.com/jonnitg",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 7
+    }
+  }, "twitter"), __jsx("a", {
+    onMouseOver: function onMouseOver() {
+      return handleOnMouseOver('facebook');
+    },
+    onFocus: function onFocus() {
+      return handleOnMouseOver('facebook');
+    },
+    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl__link,
+    href: "https://www.facebook.com/jonnitg",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 7
+    }
+  }, "facebook"), __jsx("a", {
+    onMouseOver: function onMouseOver() {
+      return handleOnMouseOver('github');
+    },
+    onFocus: function onFocus() {
+      return handleOnMouseOver('github');
+    },
+    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl__link,
+    href: "https://github.com/jonnitg",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 7
+    }
+  }, "github"), showLink && __jsx("a", {
+    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl__absolute_link,
+    href: showLink,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 9
+    }
+  }, showLink));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SocialMedia);
+
+/***/ }),
+
+/***/ "./src/components/social-media/social-media.module.scss":
+/*!**************************************************************!*\
+  !*** ./src/components/social-media/social-media.module.scss ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./social-media.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/social-media/social-media.module.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./social-media.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/social-media/social-media.module.scss",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./social-media.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/social-media/social-media.module.scss");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
 /***/ "./src/components/theme-settings/index.tsx":
 /*!*************************************************!*\
   !*** ./src/components/theme-settings/index.tsx ***!
@@ -16944,29 +17209,43 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-color */ "./node_modules/react-color/lib/index.js");
-/* harmony import */ var react_color__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_color__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./theme-settings.module.scss */ "./src/components/theme-settings/theme-settings.module.scss");
-/* harmony import */ var _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-color */ "./node_modules/react-color/lib/index.js");
+/* harmony import */ var react_color__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_color__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
+/* harmony import */ var _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./theme-settings.module.scss */ "./src/components/theme-settings/theme-settings.module.scss");
+/* harmony import */ var _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+
+
 var _this = undefined,
     _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/theme-settings/theme-settings.component.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
 
 
 
 var colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#cddc39', '#ffeb3b', '#ffc107', '#ff9800', '#ff5722', '#795548', '#607d8b'];
 
 var ThemeSettings = function ThemeSettings() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
       showThemePicker = _useState[0],
       setShowThemePicker = _useState[1];
 
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
       showTextPicker = _useState2[0],
       setShowTextPicker = _useState2[1];
+
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_3__["PointerClassesContext"]),
+      pointerClasses = _useContext.classes,
+      setClasses = _useContext.setClasses;
 
   var handleChangeComplete = function handleChangeComplete(color, type) {
     if (type === 'theme') {
@@ -16992,7 +17271,19 @@ var ThemeSettings = function ThemeSettings() {
     }
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+  var addPointerClass = function addPointerClass() {
+    setClasses(_objectSpread({}, pointerClasses, {
+      'pointer__cursor--is-on-link': true
+    }));
+  };
+
+  var removePointerClass = function removePointerClass() {
+    setClasses(_objectSpread({}, pointerClasses, {
+      'pointer__cursor--is-on-link': false
+    }));
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     var _window = window,
         localStorage = _window.localStorage;
     var currentColor = localStorage.getItem('themeColor');
@@ -17005,34 +17296,38 @@ var ThemeSettings = function ThemeSettings() {
     }
   }, []);
   return __jsx("div", {
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a['theme-settings'],
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings'],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 86,
       columnNumber: 5
     }
   }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 87,
       columnNumber: 7
     }
   }, __jsx("button", {
     type: "button",
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a['theme-settings__button'],
+    onMouseOver: addPointerClass,
+    onFocus: addPointerClass,
+    onMouseOut: removePointerClass,
+    onBlur: removePointerClass,
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings__button'],
     onClick: function onClick() {
       return toggleOptions('theme');
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 88,
       columnNumber: 9
     }
-  }, "Theme Color"), showThemePicker && __jsx(react_color__WEBPACK_IMPORTED_MODULE_1__["TwitterPicker"], {
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a['theme-settings__picker'],
+  }, "Theme Color"), showThemePicker && __jsx(react_color__WEBPACK_IMPORTED_MODULE_2__["TwitterPicker"], {
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings__picker'],
     colors: colors,
     width: 315,
     onChangeComplete: function onChangeComplete(color) {
@@ -17041,30 +17336,34 @@ var ThemeSettings = function ThemeSettings() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 100,
       columnNumber: 11
     }
   })), __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 109,
       columnNumber: 7
     }
   }, __jsx("button", {
     type: "button",
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a['theme-settings__button'],
+    onMouseOver: addPointerClass,
+    onFocus: addPointerClass,
+    onMouseOut: removePointerClass,
+    onBlur: removePointerClass,
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings__button'],
     onClick: function onClick() {
       return toggleOptions('text');
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 110,
       columnNumber: 9
     }
-  }, "Text Color"), showTextPicker && __jsx(react_color__WEBPACK_IMPORTED_MODULE_1__["TwitterPicker"], {
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a['theme-settings__picker'],
+  }, "Text Color"), showTextPicker && __jsx(react_color__WEBPACK_IMPORTED_MODULE_2__["TwitterPicker"], {
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings__picker'],
     colors: colors,
     width: 315,
     onChangeComplete: function onChangeComplete(color) {
@@ -17073,7 +17372,7 @@ var ThemeSettings = function ThemeSettings() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102,
+      lineNumber: 123,
       columnNumber: 11
     }
   })));
@@ -17522,7 +17821,7 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Findex.tsx ***!
   \*******************************************************************************************************************************************************************/
@@ -17545,5 +17844,5 @@ module.exports = dll_b9380c54b6aeb86e51e7;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
