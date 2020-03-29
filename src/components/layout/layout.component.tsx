@@ -3,6 +3,7 @@ import { PointerClassesProvider } from '@context/pointer-classes.context';
 import useMousePointer from '@hooks/useMousePointer';
 import MouseTracker from '@elements/mouse-tracker';
 import ThemeSettings from '@components/theme-settings';
+import Navigation from '@components/navigation';
 import styles from './layout.module.scss';
 
 const Layout = ({ children }) => {
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
         <ThemeSettings />
         {children}
         <MouseTracker mousePosition={mousePosition} />
+        <Navigation />
       </main>
     </PointerClassesProvider>
   );

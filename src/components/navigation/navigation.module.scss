@@ -1,0 +1,56 @@
+.stl {
+  position: fixed;
+  display: inline-grid;
+  grid-auto-flow: column;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+
+  &__link {
+    $linkSelf: &;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    line-height: 2;
+    border-top: 2px solid var(--main-text-color);
+    border-left: 2px solid var(--main-text-color);
+    text-align: center;
+    color: var(--main-text-color);
+
+    &__animated-box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: var(--main-text-color);
+      mix-blend-mode: difference;
+      visibility: hidden;
+
+      #{$linkSelf}:hover > & {
+        visibility: visible;
+        animation: downToTopAnimation 0.4s;
+      }
+    }
+
+    &:hover {
+      color: var(--main-theme-color);
+    }
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+}
+
+@keyframes downToTopAnimation {
+  0% {
+    clip-path: inset(100% 0 0 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
