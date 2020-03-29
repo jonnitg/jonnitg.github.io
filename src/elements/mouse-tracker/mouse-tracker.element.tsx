@@ -24,10 +24,15 @@ const MouseTracker = ({
 
   const pointerClasses = clsx('pointer__cursor', classes);
 
+  const pointerContainerClasses = clsx('pointer', {
+    'pointer--no-blend': 'pointer__cursor--is-on-nav' in classes,
+  });
   return (
-    <div className="pointer" ref={mouseRef}>
-      <div className={pointerClasses} />
-    </div>
+    <>
+      <div className={pointerContainerClasses} ref={mouseRef}>
+        <div className={pointerClasses} />
+      </div>
+    </>
   );
 };
 
