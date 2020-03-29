@@ -1,25 +1,39 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './navigation.module.scss';
+
+const routes = [
+  {
+    title: 'Home',
+    href: '/',
+  },
+  {
+    title: 'About',
+    href: '/',
+  },
+  {
+    title: 'Skills',
+    href: '/',
+  },
+  {
+    title: 'Portfolio',
+    href: '/',
+  },
+  {
+    title: 'Contact',
+    href: '/',
+  },
+];
 
 const Navigation = () => {
   return (
     <nav className={styles.stl}>
-      <a className={styles.stl__link} href="/">
-        About
-        <span className={styles['stl__link__animated-box']} />
-      </a>
-      <a className={styles.stl__link} href="/">
-        Skills
-        <span className={styles['stl__link__animated-box']} />
-      </a>
-      <a className={styles.stl__link} href="/">
-        Portfolio
-        <span className={styles['stl__link__animated-box']} />
-      </a>
-      <a className={styles.stl__link} href="/">
-        Contact
-        <span className={styles['stl__link__animated-box']} />
-      </a>
+      {routes.map((route) => (
+        <a href={route.href} key={route.title} className={styles.stl__link}>
+          {route.title}
+          <span className={styles['stl__link__animated-box']} />
+        </a>
+      ))}
     </nav>
   );
 };
