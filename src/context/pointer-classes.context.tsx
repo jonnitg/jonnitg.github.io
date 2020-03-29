@@ -12,11 +12,11 @@ const reducer = (state = {}, action) => {
 
   switch (type) {
     case ADD_TITLE_CLASS:
-      return { ...state, 'pointer__cursor--is-on-title': true };
+      return { 'pointer__cursor--is-on-title': true };
     case ADD_NAV_CLASS:
-      return { ...state, 'pointer__cursor--is-on-nav': true, ...props };
+      return { 'pointer__cursor--is-on-nav': true, ...props };
     case ADD_LINK_CLASS:
-      return { ...state, 'pointer__cursor--is-on-link': true };
+      return { 'pointer__cursor--is-on-link': true };
     case RESET_CLASSES:
       return initState;
     default:

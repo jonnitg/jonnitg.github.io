@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Link from 'next/link';
 import {
   PointerClassesContext,
@@ -36,7 +36,7 @@ const Navigation = () => {
   const { mousePosition, setRef } = useMousePointer();
 
   const handleOnMouseOver = (type) => {
-    const customClass = `pointer__cursor--type-${type.toLowerCase()}`;
+    const customClass = `pointer__cursor--on-${type.toLowerCase()}-page`;
     dispatchClasses(
       addNavClassAction({
         [customClass]: true,
