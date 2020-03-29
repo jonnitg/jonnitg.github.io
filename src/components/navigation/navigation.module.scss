@@ -24,6 +24,14 @@
     text-align: center;
     cursor: pointer;
 
+    &--is-active {
+      &:visited {
+        color: var(--main-theme-color);
+      }
+      background-color: var(--main-text-color);
+      color: var(--main-theme-color);
+    }
+
     &__animated-box {
       position: absolute;
       width: 100%;

@@ -1,7 +1,11 @@
 import Head from 'next/head';
 import Layout from '@components/layout';
-import MainSection from '@components/main-section';
+import AboutSection from '@components/about-section';
 
-const Home = () => <Layout>about me</Layout>;
+const Home = () => (
+  <Layout>
+    <AboutSection />
+  </Layout>
+);
 
 export default Home;

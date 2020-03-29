@@ -1,4 +1,7 @@
-import React, { useContext, useEffect } from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useContext, useEffect, useState } from 'react';
+import clsx from 'clsx';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import {
   PointerClassesContext,
@@ -15,23 +18,24 @@ const routes = [
   },
   {
     title: 'About',
-    href: '/',
+    href: '/about',
   },
   {
     title: 'Skills',
-    href: '/',
+    href: '/skills',
   },
   {
     title: 'Portfolio',
-    href: '/',
+    href: '/portfolio',
   },
   {
     title: 'Contact',
-    href: '/',
+    href: '/contact',
   },
 ];
 
 const Navigation = () => {
+  const { pathname } = useRouter();
   const { dispatchClasses } = useContext(PointerClassesContext);
   const { mousePosition, setRef } = useMousePointer();
 
@@ -56,16 +60,19 @@ const Navigation = () => {
   return (
     <nav ref={setRef} className={styles.stl}>
       {routes.map((route) => (
-        <a
-          onMouseOver={() => handleOnMouseOver(route.title)}
-          onFocus={() => handleOnMouseOver(route.title)}
-          href={route.href}
-          key={route.title}
-          className={styles.stl__link}
-        >
-          {route.title}
-          <span className={styles['stl__link__animated-box']} />
-        </a>
+        <Link key={route.title} href={route.href}>
+          <a
+            onMouseOver={() => handleOnMouseOver(route.title)}
+            onFocus={() => handleOnMouseOver(route.title)}
+            className={clsx(
+              styles.stl__link,
+              pathname === route.href && styles['stl__link--is-active']
+            )}
+          >
+            {route.title}
+            <span className={styles['stl__link__animated-box']} />
+          </a>
+        </Link>
       ))}
     </nav>
   );
