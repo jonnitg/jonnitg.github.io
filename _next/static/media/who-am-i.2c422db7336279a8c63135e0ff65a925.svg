@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-9 -9 86 86" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Who am I?</title>
+    <path fill="#000000" d="M3.5,36 C3.5,27.8537999 6.80189997,20.4787999 12.14035,15.14035 C17.4787999,9.80189997 24.8537999,6.5 33,6.5 C41.1462001,6.5 48.5212001,9.80189997 53.85965,15.14035 C59.1981,20.4787999 62.5,27.8537999 62.5,36 C62.5,44.1462001 59.1981,51.5212001 53.85965,56.85965 C48.5212001,62.1981 41.1462001,65.5 33,65.5 C24.8537999,65.5 17.4787999,62.1981 12.14035,56.85965 C6.80189997,51.5212001 3.5,44.1462001 3.5,36 Z" id="curve" stroke=""></path>
+    <text id="Who-am-I?" font-family="Arvo" font-size="14" font-weight="normal" letter-spacing="-1" fill="#000000">
+        <textPath xlink:href="#curve">Who&#160;&#160;am&#160;&#160;I?</textPath>
+    </text>
+</svg>
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 80 80" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+
+    <path id="curve" fill="transparent" d="M10.5,40 C10.5,31.8537999 13.8019,24.4787999 19.14035,19.14035 C24.4787999,13.8019 31.8537999,10.5 40,10.5 C48.1462001,10.5 55.5212001,13.8019 60.85965,19.14035 C66.1981,24.4787999 69.5,31.8537999 69.5,40 C69.5,48.1462001 66.1981,55.5212001 60.85965,60.85965 C55.5212001,66.1981 48.1462001,69.5 40,69.5 C31.8537999,69.5 24.4787999,66.1981 19.14035,60.85965 C13.8019,55.5212001 10.5,48.1462001 10.5,40 Z"></path>
+    <text id="Who-am-I?" style="fill: var(--main-theme-color);" font-family="Arvo" font-size="12" font-weight="normal" letter-spacing="-1">
+        <textPath xlink:href="#curve">Who&#160;&#160;am&#160;&#160;I?</textPath>
+    </text>
+</svg>

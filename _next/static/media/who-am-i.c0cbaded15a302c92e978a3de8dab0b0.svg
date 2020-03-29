@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 150 50" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+
+    <path id="curve" fill="" d="M75,165 C33.5786438,165 0,131.421356 0,90 C0,48.5786438 33.5786438,15 75,15 C116.421356,15 150,48.5786438 150,90 C150,131.421356 116.421356,165 75,165 Z"></path>
+    <text id="Who-am-I?" width="100" font-family="Arvo" fill="#000000">
+        <textPath xlink:href="curve">Who am I?</textPath>
+    </text>
+
+</svg>

@@ -359,10 +359,20 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Imports
-
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../static/svgs/who-am-i.svg */ "./src/static/svgs/who-am-i.svg");
+var ___CSS_LOADER_URL_PURE_IMPORT_1___ = __webpack_require__(/*! ../static/svgs/wanna-go-home.svg */ "./src/static/svgs/wanna-go-home.svg");
+var ___CSS_LOADER_URL_PURE_IMPORT_2___ = __webpack_require__(/*! ../static/svgs/you-like-magic.svg */ "./src/static/svgs/you-like-magic.svg");
+var ___CSS_LOADER_URL_PURE_IMPORT_3___ = __webpack_require__(/*! ../static/svgs/like-my-stuff.svg */ "./src/static/svgs/like-my-stuff.svg");
+var ___CSS_LOADER_URL_PURE_IMPORT_4___ = __webpack_require__(/*! ../static/svgs/call-me-maybe.svg */ "./src/static/svgs/call-me-maybe.svg");
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
+var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
+var ___CSS_LOADER_URL_IMPORT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_1___);
+var ___CSS_LOADER_URL_IMPORT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_2___);
+var ___CSS_LOADER_URL_IMPORT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_3___);
+var ___CSS_LOADER_URL_IMPORT_4___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_4___);
 // Module
-exports.push([module.i, "html,\nbody {\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n  background-color: var(--main-theme-color);\n  font-family: \"Anton\", sans-serif;\n}\n\nbutton,\ninput {\n  font-family: \"Arvo\", serif;\n  color: var(--main-text-color);\n}\n\na,\na:active,\na:visited {\n  color: var(--main-text-color);\n  text-decoration: none;\n}\n\n:root {\n  --main-theme-color: #ffffff;\n  --main-text-color: #000000;\n}\n\n.pointer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n  mix-blend-mode: difference;\n  transform: translate(-10px, -10px);\n}\n.pointer__cursor {\n  position: absolute;\n  top: -5px;\n  left: -5px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background-color: var(--main-theme-color);\n  transition-property: top, left, width, height;\n  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;\n}\n.pointer__cursor--is-on-title {\n  width: 30px;\n  height: 30px;\n  top: -15px;\n  left: -15px;\n  -webkit-animation: pulse 1.5s infinite;\n          animation: pulse 1.5s infinite;\n  transform: scale(1);\n}\n.pointer__cursor--is-on-title::after {\n  content: \"\";\n  position: absolute;\n  top: -8px;\n  left: -8px;\n  height: 30px;\n  width: 30px;\n  padding: 4px;\n  border: 4px solid var(--main-theme-color);\n  border-radius: 50%;\n  -webkit-animation: pulse 1.5s infinite;\n          animation: pulse 1.5s infinite;\n  transform: scale(1);\n}\n.pointer__cursor--is-on-link {\n  width: 50px;\n  height: 50px;\n  top: -25px;\n  left: -25px;\n}\n.pointer__cursor--is-on-link::after {\n  content: \"click me\";\n  position: absolute;\n  width: 50px;\n  height: 50px;\n  top: 10px;\n  left: 0px;\n  text-align: center;\n  font-size: 0.5em;\n  line-height: 1;\n}\n\n@-webkit-keyframes pulse {\n  0% {\n    transform: scale(0.95);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n  100% {\n    transform: scale(0.95);\n  }\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.95);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n  100% {\n    transform: scale(0.95);\n  }\n}", "",{"version":3,"sources":["_common.scss","main.scss","../elements/mouse-tracker/mouse-tracker.scss"],"names":[],"mappings":"AAAA;;EAEE,YAAA;EACA,aAAA;EACA,SAAA;EACA,yCAAA;EACA,gCAAA;ACEF;;ADCA;;EAEE,0BAAA;EACA,6BAAA;ACEF;;ADCA;;;EAGE,6BAAA;EACA,qBAAA;ACEF;;ADCA;EACE,2BAAA;EACA,0BAAA;ACEF;;AC1BA;EACE,eAAA;EACA,MAAA;EACA,OAAA;EACA,oBAAA;EACA,0BAAA;EACA,kCAAA;AD6BF;AC3BE;EACE,kBAAA;EACA,SAAA;EACA,UAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,yCAAA;EACA,6CAAA;EACA,0DAAA;AD6BJ;AC3BI;EACE,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;EACA,sCAAA;UAAA,8BAAA;EACA,mBAAA;AD6BN;AC3BM;EACE,WAAA;EACA,kBAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,yCAAA;EACA,kBAAA;EACA,sCAAA;UAAA,8BAAA;EACA,mBAAA;AD6BR;ACzBI;EACE,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;AD2BN;ACzBM;EACE,mBAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,SAAA;EACA,SAAA;EACA,kBAAA;EACA,gBAAA;EACA,cAAA;AD2BR;;ACrBA;EACE;IACE,sBAAA;EDwBF;ECrBA;IACE,qBAAA;EDuBF;ECpBA;IACE,sBAAA;EDsBF;AACF;;ACjCA;EACE;IACE,sBAAA;EDwBF;ECrBA;IACE,qBAAA;EDuBF;ECpBA;IACE,sBAAA;EDsBF;AACF","file":"main.scss","sourcesContent":["html,\nbody {\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n  background-color: var(--main-theme-color);\n  font-family: 'Anton', sans-serif;\n}\n\nbutton,\ninput {\n  font-family: 'Arvo', serif;\n  color: var(--main-text-color);\n}\n\na,\na:active,\na:visited {\n  color: var(--main-text-color);\n  text-decoration: none;\n}\n\n:root {\n  --main-theme-color: #ffffff;\n  --main-text-color: #000000;\n}\n","@import url(\"https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap\");\nhtml,\nbody {\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n  background-color: var(--main-theme-color);\n  font-family: \"Anton\", sans-serif;\n}\n\nbutton,\ninput {\n  font-family: \"Arvo\", serif;\n  color: var(--main-text-color);\n}\n\na,\na:active,\na:visited {\n  color: var(--main-text-color);\n  text-decoration: none;\n}\n\n:root {\n  --main-theme-color: #ffffff;\n  --main-text-color: #000000;\n}\n\n.pointer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n  mix-blend-mode: difference;\n  transform: translate(-10px, -10px);\n}\n.pointer__cursor {\n  position: absolute;\n  top: -5px;\n  left: -5px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background-color: var(--main-theme-color);\n  transition-property: top, left, width, height;\n  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;\n}\n.pointer__cursor--is-on-title {\n  width: 30px;\n  height: 30px;\n  top: -15px;\n  left: -15px;\n  animation: pulse 1.5s infinite;\n  transform: scale(1);\n}\n.pointer__cursor--is-on-title::after {\n  content: \"\";\n  position: absolute;\n  top: -8px;\n  left: -8px;\n  height: 30px;\n  width: 30px;\n  padding: 4px;\n  border: 4px solid var(--main-theme-color);\n  border-radius: 50%;\n  animation: pulse 1.5s infinite;\n  transform: scale(1);\n}\n.pointer__cursor--is-on-link {\n  width: 50px;\n  height: 50px;\n  top: -25px;\n  left: -25px;\n}\n.pointer__cursor--is-on-link::after {\n  content: \"click me\";\n  position: absolute;\n  width: 50px;\n  height: 50px;\n  top: 10px;\n  left: 0px;\n  text-align: center;\n  font-size: 0.5em;\n  line-height: 1;\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.95);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n  100% {\n    transform: scale(0.95);\n  }\n}",".pointer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n  mix-blend-mode: difference;\n  transform: translate(-10px, -10px);\n\n  &__cursor {\n    position: absolute;\n    top: -5px;\n    left: -5px;\n    width: 10px;\n    height: 10px;\n    border-radius: 50%;\n    background-color: var(--main-theme-color);\n    transition-property: top, left, width, height;\n    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;\n\n    &--is-on-title {\n      width: 30px;\n      height: 30px;\n      top: -15px;\n      left: -15px;\n      animation: pulse 1.5s infinite;\n      transform: scale(1);\n\n      &::after {\n        content: '';\n        position: absolute;\n        top: -8px;\n        left: -8px;\n        height: 30px;\n        width: 30px;\n        padding: 4px;\n        border: 4px solid var(--main-theme-color);\n        border-radius: 50%;\n        animation: pulse 1.5s infinite;\n        transform: scale(1);\n      }\n    }\n\n    &--is-on-link {\n      width: 50px;\n      height: 50px;\n      top: -25px;\n      left: -25px;\n\n      &::after {\n        content: 'click me';\n        position: absolute;\n        width: 50px;\n        height: 50px;\n        top: 10px;\n        left: 0px;\n        text-align: center;\n        font-size: 0.5em;\n        line-height: 1;\n      }\n    }\n  }\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.95);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(0.95);\n  }\n}\n"]}]);
+exports.push([module.i, ":root {\n  --main-theme-color: #ffffff;\n  --main-text-color: #000000;\n}\n\nhtml,\nbody {\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n  background-color: var(--main-theme-color);\n  font-family: \"Anton\", sans-serif;\n}\n\nbutton,\ninput {\n  font-family: \"Arvo\", serif;\n  color: var(--main-text-color);\n}\n\na,\na:active,\na:visited {\n  color: var(--main-text-color);\n  text-decoration: none;\n}\n\n.pointer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n  mix-blend-mode: difference;\n  transform: translate(-10px, -10px);\n}\n.pointer--no-blend {\n  mix-blend-mode: normal;\n}\n.pointer__cursor {\n  position: absolute;\n  top: -5px;\n  left: -5px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background-color: var(--main-theme-color);\n  transition-property: top, left, width, height;\n  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;\n}\n.pointer__cursor--is-on-title {\n  width: 30px;\n  height: 30px;\n  top: -15px;\n  left: -15px;\n  -webkit-animation: pulse 1.5s infinite;\n          animation: pulse 1.5s infinite;\n  transform: scale(1);\n}\n.pointer__cursor--is-on-title::after {\n  content: \"\";\n  position: absolute;\n  top: -8px;\n  left: -8px;\n  height: 30px;\n  width: 30px;\n  padding: 4px;\n  border: 4px solid var(--main-theme-color);\n  border-radius: 50%;\n  -webkit-animation: pulse 1.5s infinite;\n          animation: pulse 1.5s infinite;\n  transform: scale(1);\n}\n.pointer__cursor--is-on-link {\n  width: 50px;\n  height: 50px;\n  top: -25px;\n  left: -25px;\n}\n.pointer__cursor--is-on-link::after {\n  content: \"click me\";\n  position: absolute;\n  width: 50px;\n  height: 50px;\n  top: 10px;\n  left: 0px;\n  text-align: center;\n  font-size: 0.5em;\n  line-height: 1;\n}\n.pointer__cursor--is-on-nav {\n  width: 50px;\n  height: 50px;\n  top: -25px;\n  left: -25px;\n  background-color: rgba(128, 128, 128, 0.5);\n}\n.pointer__cursor--on-about-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  -webkit-animation: spin 8s linear infinite;\n          animation: spin 8s linear infinite;\n}\n.pointer__cursor--on-home-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(" + ___CSS_LOADER_URL_IMPORT_1___ + ");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  -webkit-animation: spin 8s linear infinite;\n          animation: spin 8s linear infinite;\n}\n.pointer__cursor--on-skills-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(" + ___CSS_LOADER_URL_IMPORT_2___ + ");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  -webkit-animation: spin 8s linear infinite;\n          animation: spin 8s linear infinite;\n}\n.pointer__cursor--on-portfolio-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(" + ___CSS_LOADER_URL_IMPORT_3___ + ");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  -webkit-animation: spin 8s linear infinite;\n          animation: spin 8s linear infinite;\n}\n.pointer__cursor--on-contact-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(" + ___CSS_LOADER_URL_IMPORT_4___ + ");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  -webkit-animation: spin 8s linear infinite;\n          animation: spin 8s linear infinite;\n}\n\n@-webkit-keyframes pulse {\n  0% {\n    transform: scale(0.95);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n  100% {\n    transform: scale(0.95);\n  }\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.95);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n  100% {\n    transform: scale(0.95);\n  }\n}\n@-webkit-keyframes spin {\n  0% {\n    transform: rotateZ(0);\n  }\n  100% {\n    transform: rotateZ(360deg);\n  }\n}\n@keyframes spin {\n  0% {\n    transform: rotateZ(0);\n  }\n  100% {\n    transform: rotateZ(360deg);\n  }\n}", "",{"version":3,"sources":["_common.scss","main.scss","../elements/mouse-tracker/mouse-tracker.scss"],"names":[],"mappings":"AAAA;EACE,2BAAA;EACA,0BAAA;ACEF;;ADCA;;EAEE,YAAA;EACA,aAAA;EACA,SAAA;EACA,yCAAA;EACA,gCAAA;ACEF;;ADCA;;EAEE,0BAAA;EACA,6BAAA;ACEF;;ADCA;;;EAGE,6BAAA;EACA,qBAAA;ACEF;;AC1BA;EACE,eAAA;EACA,MAAA;EACA,OAAA;EACA,oBAAA;EACA,0BAAA;EACA,kCAAA;AD6BF;AC3BE;EACE,sBAAA;AD6BJ;AC1BE;EACE,kBAAA;EACA,SAAA;EACA,UAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,yCAAA;EACA,6CAAA;EACA,0DAAA;AD4BJ;AC1BI;EACE,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;EACA,sCAAA;UAAA,8BAAA;EACA,mBAAA;AD4BN;AC1BM;EACE,WAAA;EACA,kBAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,yCAAA;EACA,kBAAA;EACA,sCAAA;UAAA,8BAAA;EACA,mBAAA;AD4BR;ACxBI;EACE,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;AD0BN;ACxBM;EACE,mBAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,SAAA;EACA,SAAA;EACA,kBAAA;EACA,gBAAA;EACA,cAAA;AD0BR;ACtBI;EACE,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;EACA,0CAAA;ADwBN;ACpBM;EACE,WAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;EACA,8CAAA;EACA,4BAAA;EACA,kCAAA;EACA,wBAAA;EACA,0CAAA;UAAA,kCAAA;ADsBR;ACjBM;EACE,WAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;EACA,8CAAA;EACA,4BAAA;EACA,kCAAA;EACA,wBAAA;EACA,0CAAA;UAAA,kCAAA;ADmBR;ACdM;EACE,WAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;EACA,8CAAA;EACA,4BAAA;EACA,kCAAA;EACA,wBAAA;EACA,0CAAA;UAAA,kCAAA;ADgBR;ACXM;EACE,WAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;EACA,8CAAA;EACA,4BAAA;EACA,kCAAA;EACA,wBAAA;EACA,0CAAA;UAAA,kCAAA;ADaR;ACRM;EACE,WAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,WAAA;EACA,8CAAA;EACA,4BAAA;EACA,kCAAA;EACA,wBAAA;EACA,0CAAA;UAAA,kCAAA;ADUR;;ACJA;EACE;IACE,sBAAA;EDOF;ECJA;IACE,qBAAA;EDMF;ECHA;IACE,sBAAA;EDKF;AACF;;AChBA;EACE;IACE,sBAAA;EDOF;ECJA;IACE,qBAAA;EDMF;ECHA;IACE,sBAAA;EDKF;AACF;ACFA;EACE;IACE,qBAAA;EDIF;ECFA;IACE,0BAAA;EDIF;AACF;ACVA;EACE;IACE,qBAAA;EDIF;ECFA;IACE,0BAAA;EDIF;AACF","file":"main.scss","sourcesContent":[":root {\n  --main-theme-color: #ffffff;\n  --main-text-color: #000000;\n}\n\nhtml,\nbody {\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n  background-color: var(--main-theme-color);\n  font-family: 'Anton', sans-serif;\n}\n\nbutton,\ninput {\n  font-family: 'Arvo', serif;\n  color: var(--main-text-color);\n}\n\na,\na:active,\na:visited {\n  color: var(--main-text-color);\n  text-decoration: none;\n}\n","@import url(\"https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap\");\n:root {\n  --main-theme-color: #ffffff;\n  --main-text-color: #000000;\n}\n\nhtml,\nbody {\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n  background-color: var(--main-theme-color);\n  font-family: \"Anton\", sans-serif;\n}\n\nbutton,\ninput {\n  font-family: \"Arvo\", serif;\n  color: var(--main-text-color);\n}\n\na,\na:active,\na:visited {\n  color: var(--main-text-color);\n  text-decoration: none;\n}\n\n.pointer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n  mix-blend-mode: difference;\n  transform: translate(-10px, -10px);\n}\n.pointer--no-blend {\n  mix-blend-mode: normal;\n}\n.pointer__cursor {\n  position: absolute;\n  top: -5px;\n  left: -5px;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background-color: var(--main-theme-color);\n  transition-property: top, left, width, height;\n  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;\n}\n.pointer__cursor--is-on-title {\n  width: 30px;\n  height: 30px;\n  top: -15px;\n  left: -15px;\n  animation: pulse 1.5s infinite;\n  transform: scale(1);\n}\n.pointer__cursor--is-on-title::after {\n  content: \"\";\n  position: absolute;\n  top: -8px;\n  left: -8px;\n  height: 30px;\n  width: 30px;\n  padding: 4px;\n  border: 4px solid var(--main-theme-color);\n  border-radius: 50%;\n  animation: pulse 1.5s infinite;\n  transform: scale(1);\n}\n.pointer__cursor--is-on-link {\n  width: 50px;\n  height: 50px;\n  top: -25px;\n  left: -25px;\n}\n.pointer__cursor--is-on-link::after {\n  content: \"click me\";\n  position: absolute;\n  width: 50px;\n  height: 50px;\n  top: 10px;\n  left: 0px;\n  text-align: center;\n  font-size: 0.5em;\n  line-height: 1;\n}\n.pointer__cursor--is-on-nav {\n  width: 50px;\n  height: 50px;\n  top: -25px;\n  left: -25px;\n  background-color: rgba(128, 128, 128, 0.5);\n}\n.pointer__cursor--on-about-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(\"../../static/svgs/who-am-i.svg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  animation: spin 8s linear infinite;\n}\n.pointer__cursor--on-home-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(\"../../static/svgs/wanna-go-home.svg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  animation: spin 8s linear infinite;\n}\n.pointer__cursor--on-skills-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(\"../../static/svgs/you-like-magic.svg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  animation: spin 8s linear infinite;\n}\n.pointer__cursor--on-portfolio-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(\"../../static/svgs/like-my-stuff.svg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  animation: spin 8s linear infinite;\n}\n.pointer__cursor--on-contact-page::after {\n  content: \"\";\n  position: absolute;\n  width: 80px;\n  height: 80px;\n  top: -15px;\n  left: -15px;\n  background: url(\"../../static/svgs/call-me-maybe.svg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  animation: spin 8s linear infinite;\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.95);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n  100% {\n    transform: scale(0.95);\n  }\n}\n@keyframes spin {\n  0% {\n    transform: rotateZ(0);\n  }\n  100% {\n    transform: rotateZ(360deg);\n  }\n}",".pointer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n  mix-blend-mode: difference;\n  transform: translate(-10px, -10px);\n\n  &--no-blend {\n    mix-blend-mode: normal;\n  }\n\n  &__cursor {\n    position: absolute;\n    top: -5px;\n    left: -5px;\n    width: 10px;\n    height: 10px;\n    border-radius: 50%;\n    background-color: var(--main-theme-color);\n    transition-property: top, left, width, height;\n    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;\n\n    &--is-on-title {\n      width: 30px;\n      height: 30px;\n      top: -15px;\n      left: -15px;\n      animation: pulse 1.5s infinite;\n      transform: scale(1);\n\n      &::after {\n        content: '';\n        position: absolute;\n        top: -8px;\n        left: -8px;\n        height: 30px;\n        width: 30px;\n        padding: 4px;\n        border: 4px solid var(--main-theme-color);\n        border-radius: 50%;\n        animation: pulse 1.5s infinite;\n        transform: scale(1);\n      }\n    }\n\n    &--is-on-link {\n      width: 50px;\n      height: 50px;\n      top: -25px;\n      left: -25px;\n\n      &::after {\n        content: 'click me';\n        position: absolute;\n        width: 50px;\n        height: 50px;\n        top: 10px;\n        left: 0px;\n        text-align: center;\n        font-size: 0.5em;\n        line-height: 1;\n      }\n    }\n\n    &--is-on-nav {\n      width: 50px;\n      height: 50px;\n      top: -25px;\n      left: -25px;\n      background-color: rgba(128, 128, 128, 0.5);\n    }\n\n    &--on-about-page {\n      &::after {\n        content: '';\n        position: absolute;\n        width: 80px;\n        height: 80px;\n        top: -15px;\n        left: -15px;\n        background: url('../../static/svgs/who-am-i.svg');\n        background-repeat: no-repeat;\n        background-position: center center;\n        background-size: contain;\n        animation: spin 8s linear infinite;\n      }\n    }\n\n    &--on-home-page {\n      &::after {\n        content: '';\n        position: absolute;\n        width: 80px;\n        height: 80px;\n        top: -15px;\n        left: -15px;\n        background: url('../../static/svgs/wanna-go-home.svg');\n        background-repeat: no-repeat;\n        background-position: center center;\n        background-size: contain;\n        animation: spin 8s linear infinite;\n      }\n    }\n\n    &--on-skills-page {\n      &::after {\n        content: '';\n        position: absolute;\n        width: 80px;\n        height: 80px;\n        top: -15px;\n        left: -15px;\n        background: url('../../static/svgs/you-like-magic.svg');\n        background-repeat: no-repeat;\n        background-position: center center;\n        background-size: contain;\n        animation: spin 8s linear infinite;\n      }\n    }\n\n    &--on-portfolio-page {\n      &::after {\n        content: '';\n        position: absolute;\n        width: 80px;\n        height: 80px;\n        top: -15px;\n        left: -15px;\n        background: url('../../static/svgs/like-my-stuff.svg');\n        background-repeat: no-repeat;\n        background-position: center center;\n        background-size: contain;\n        animation: spin 8s linear infinite;\n      }\n    }\n\n    &--on-contact-page {\n      &::after {\n        content: '';\n        position: absolute;\n        width: 80px;\n        height: 80px;\n        top: -15px;\n        left: -15px;\n        background: url('../../static/svgs/call-me-maybe.svg');\n        background-repeat: no-repeat;\n        background-position: center center;\n        background-size: contain;\n        animation: spin 8s linear infinite;\n      }\n    }\n  }\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(0.95);\n  }\n\n  50% {\n    transform: scale(1.2);\n  }\n\n  100% {\n    transform: scale(0.95);\n  }\n}\n\n@keyframes spin {\n  0% {\n    transform: rotateZ(0);\n  }\n  100% {\n    transform: rotateZ(360deg);\n  }\n}\n"]}]);
 
 
 /***/ }),
@@ -465,6 +475,51 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -3503,6 +3558,61 @@ if (true) {
     update();
   });
 }
+
+/***/ }),
+
+/***/ "./src/static/svgs/call-me-maybe.svg":
+/*!*******************************************!*\
+  !*** ./src/static/svgs/call-me-maybe.svg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/call-me-maybe.9cf00fb097ccb3d8420e74964ba8dfb1.svg";
+
+/***/ }),
+
+/***/ "./src/static/svgs/like-my-stuff.svg":
+/*!*******************************************!*\
+  !*** ./src/static/svgs/like-my-stuff.svg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/like-my-stuff.c1c6e194abed8ac980592c8c3c2f6758.svg";
+
+/***/ }),
+
+/***/ "./src/static/svgs/wanna-go-home.svg":
+/*!*******************************************!*\
+  !*** ./src/static/svgs/wanna-go-home.svg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/wanna-go-home.7180bab06b56cf12d44e1e4450f5c236.svg";
+
+/***/ }),
+
+/***/ "./src/static/svgs/who-am-i.svg":
+/*!**************************************!*\
+  !*** ./src/static/svgs/who-am-i.svg ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/who-am-i.245c1935cb62cafb0388c748d1754694.svg";
+
+/***/ }),
+
+/***/ "./src/static/svgs/you-like-magic.svg":
+/*!********************************************!*\
+  !*** ./src/static/svgs/you-like-magic.svg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/you-like-magic.9e16543d2cabb29a446829671b658831.svg";
 
 /***/ }),
 

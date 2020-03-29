@@ -200,12 +200,38 @@ exports.locals = {
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Imports
+
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
 // Module
-exports.push([module.i, ".main-section_stl__1HSzU {\n  display: grid;\n  grid-template-rows: auto 50px;\n  width: 100%;\n  height: 100%;\n  align-content: center;\n  justify-content: center;\n  align-items: center;\n}\n.main-section_stl__heading__3DG8N {\n  text-align: center;\n}", "",{"version":3,"sources":["main-section.module.scss"],"names":[],"mappings":"AAAA;EAEE,aAAA;EACA,6BAAA;EACA,WAAA;EACA,YAAA;EACA,qBAAA;EACA,uBAAA;EACA,mBAAA;AAAF;AAEE;EACE,kBAAA;AAAJ","file":"main-section.module.scss","sourcesContent":[".stl {\n  $self: &;\n  display: grid;\n  grid-template-rows: auto 50px;\n  width: 100%;\n  height: 100%;\n  align-content: center;\n  justify-content: center;\n  align-items: center;\n\n  &__heading {\n    text-align: center;\n  }\n}\n"]}]);
+exports.push([module.i, ".main-section_stl__1HSzU {\n  display: grid;\n  grid-template-rows: auto 50px;\n  width: 100%;\n  height: 100%;\n  align-content: center;\n  justify-content: center;\n  align-items: center;\n}\n.main-section_stl__container__2iACj {\n  position: relative;\n  min-height: 220px;\n  padding: 5px 0;\n  text-align: center;\n}\n.main-section_stl__container__animated-box__3o6t7 {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: var(--main-theme-color);\n  visibility: visible;\n  mix-blend-mode: difference;\n  -webkit-animation: main-section_clipPathAnimation__3PNmE 10s infinite;\n          animation: main-section_clipPathAnimation__3PNmE 10s infinite;\n}\n.main-section_stl__heading--hide-br-mobile__2079l {\n  display: none;\n}\n@media (min-width: 480px) {\n  .main-section_stl__heading--hide-br-mobile__2079l {\n    display: block;\n  }\n}\n\n@-webkit-keyframes main-section_clipPathAnimation__3PNmE {\n  0% {\n    -webkit-clip-path: inset(100% 100% 0 0);\n            clip-path: inset(100% 100% 0 0);\n  }\n  25% {\n    -webkit-clip-path: inset(0);\n            clip-path: inset(0);\n  }\n  50% {\n    -webkit-clip-path: inset(0 0 100% 100%);\n            clip-path: inset(0 0 100% 100%);\n  }\n  75% {\n    -webkit-clip-path: inset(0);\n            clip-path: inset(0);\n  }\n  100% {\n    -webkit-clip-path: inset(100% 100% 0 0);\n            clip-path: inset(100% 100% 0 0);\n  }\n}\n\n@keyframes main-section_clipPathAnimation__3PNmE {\n  0% {\n    -webkit-clip-path: inset(100% 100% 0 0);\n            clip-path: inset(100% 100% 0 0);\n  }\n  25% {\n    -webkit-clip-path: inset(0);\n            clip-path: inset(0);\n  }\n  50% {\n    -webkit-clip-path: inset(0 0 100% 100%);\n            clip-path: inset(0 0 100% 100%);\n  }\n  75% {\n    -webkit-clip-path: inset(0);\n            clip-path: inset(0);\n  }\n  100% {\n    -webkit-clip-path: inset(100% 100% 0 0);\n            clip-path: inset(100% 100% 0 0);\n  }\n}", "",{"version":3,"sources":["main-section.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,6BAAA;EACA,WAAA;EACA,YAAA;EACA,qBAAA;EACA,uBAAA;EACA,mBAAA;AAAF;AAEE;EACE,kBAAA;EACA,iBAAA;EACA,cAAA;EACA,kBAAA;AAAJ;AAEI;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,MAAA;EACA,OAAA;EACA,yCAAA;EACA,mBAAA;EACA,0BAAA;EACA,qEAAA;UAAA,6DAAA;AAAN;AAII;EACE,aAAA;AAFN;ACXI;EDYA;IAII,cAAA;EADN;AACF;;AAMA;EACE;IACE,uCAAA;YAAA,+BAAA;EAHF;EAKA;IACE,2BAAA;YAAA,mBAAA;EAHF;EAMA;IACE,uCAAA;YAAA,+BAAA;EAJF;EAMA;IACE,2BAAA;YAAA,mBAAA;EAJF;EAMA;IACE,uCAAA;YAAA,+BAAA;EAJF;AACF;;AAZA;EACE;IACE,uCAAA;YAAA,+BAAA;EAHF;EAKA;IACE,2BAAA;YAAA,mBAAA;EAHF;EAMA;IACE,uCAAA;YAAA,+BAAA;EAJF;EAMA;IACE,2BAAA;YAAA,mBAAA;EAJF;EAMA;IACE,uCAAA;YAAA,+BAAA;EAJF;AACF","file":"main-section.module.scss","sourcesContent":["@import '../../sass/base';\n\n.stl {\n  display: grid;\n  grid-template-rows: auto 50px;\n  width: 100%;\n  height: 100%;\n  align-content: center;\n  justify-content: center;\n  align-items: center;\n\n  &__container {\n    position: relative;\n    min-height: 220px;\n    padding: 5px 0;\n    text-align: center;\n\n    &__animated-box {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      background-color: var(--main-theme-color);\n      visibility: visible;\n      mix-blend-mode: difference;\n      animation: clipPathAnimation 10s infinite;\n    }\n  }\n  &__heading {\n    &--hide-br-mobile {\n      display: none;\n\n      @include for-size(mobile-landscape-up) {\n        display: block;\n      }\n    }\n  }\n}\n\n@keyframes clipPathAnimation {\n  0% {\n    clip-path: inset(100% 100% 0 0);\n  }\n  25% {\n    clip-path: inset(0);\n  }\n\n  50% {\n    clip-path: inset(0 0 100% 100%);\n  }\n  75% {\n    clip-path: inset(0);\n  }\n  100% {\n    clip-path: inset(100% 100% 0 0);\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"stl": "main-section_stl__1HSzU",
-	"stl__heading": "main-section_stl__heading__3DG8N"
+	"stl__container": "main-section_stl__container__2iACj",
+	"stl__container__animated-box": "main-section_stl__container__animated-box__3o6t7",
+	"clipPathAnimation": "main-section_clipPathAnimation__3PNmE",
+	"stl__heading--hide-br-mobile": "main-section_stl__heading--hide-br-mobile__2079l"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/navigation/navigation.module.scss":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/components/navigation/navigation.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".navigation_stl__3pAQL {\n  font-family: \"Arvo\", serif;\n  position: fixed;\n  display: inline-grid;\n  grid-auto-flow: column;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 40px;\n}\n.navigation_stl__link__wCcyD {\n  display: inline-block;\n  position: relative;\n  width: 100%;\n  height: 100%;\n  background: none;\n  color: var(--main-text-color);\n  border-top: 2px solid var(--main-text-color);\n  border-left: 2px solid var(--main-text-color);\n  border-right: none;\n  font-size: 1.2em;\n  line-height: 2;\n  text-align: center;\n  cursor: pointer;\n}\n.navigation_stl__link__animated-box__3ndGH {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  bottom: 0;\n  left: 0;\n  background-color: var(--main-text-color);\n  mix-blend-mode: difference;\n  visibility: hidden;\n}\n.navigation_stl__link__wCcyD:hover > .navigation_stl__link__animated-box__3ndGH {\n  visibility: visible;\n  -webkit-animation: navigation_downToTopAnimation__2ffje 0.4s ease;\n          animation: navigation_downToTopAnimation__2ffje 0.4s ease;\n}\n.navigation_stl__link__wCcyD:hover {\n  color: var(--main-theme-color);\n}\n.navigation_stl__link__wCcyD:first-child {\n  border-left: none;\n}\n\n@-webkit-keyframes navigation_downToTopAnimation__2ffje {\n  0% {\n    -webkit-clip-path: inset(100% 0 0 0);\n            clip-path: inset(100% 0 0 0);\n  }\n  100% {\n    -webkit-clip-path: inset(0);\n            clip-path: inset(0);\n  }\n}\n\n@keyframes navigation_downToTopAnimation__2ffje {\n  0% {\n    -webkit-clip-path: inset(100% 0 0 0);\n            clip-path: inset(100% 0 0 0);\n  }\n  100% {\n    -webkit-clip-path: inset(0);\n            clip-path: inset(0);\n  }\n}", "",{"version":3,"sources":["navigation.module.scss"],"names":[],"mappings":"AAAA;EACE,0BAAA;EACA,eAAA;EACA,oBAAA;EACA,sBAAA;EACA,SAAA;EACA,OAAA;EACA,WAAA;EACA,YAAA;AACF;AACE;EAEE,qBAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;EACA,6BAAA;EACA,4CAAA;EACA,6CAAA;EACA,kBAAA;EACA,gBAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;AAAJ;AAEI;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,SAAA;EACA,OAAA;EACA,wCAAA;EACA,0BAAA;EACA,kBAAA;AAAN;AAEM;EACE,mBAAA;EACA,iEAAA;UAAA,yDAAA;AAAR;AAII;EACE,8BAAA;AAFN;AAKI;EACE,iBAAA;AAHN;;AAQA;EACE;IACE,oCAAA;YAAA,4BAAA;EALF;EAOA;IACE,2BAAA;YAAA,mBAAA;EALF;AACF;;AADA;EACE;IACE,oCAAA;YAAA,4BAAA;EALF;EAOA;IACE,2BAAA;YAAA,mBAAA;EALF;AACF","file":"navigation.module.scss","sourcesContent":[".stl {\n  font-family: 'Arvo', serif;\n  position: fixed;\n  display: inline-grid;\n  grid-auto-flow: column;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 40px;\n\n  &__link {\n    $linkSelf: &;\n    display: inline-block;\n    position: relative;\n    width: 100%;\n    height: 100%;\n    background: none;\n    color: var(--main-text-color);\n    border-top: 2px solid var(--main-text-color);\n    border-left: 2px solid var(--main-text-color);\n    border-right: none;\n    font-size: 1.2em;\n    line-height: 2;\n    text-align: center;\n    cursor: pointer;\n\n    &__animated-box {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      bottom: 0;\n      left: 0;\n      background-color: var(--main-text-color);\n      mix-blend-mode: difference;\n      visibility: hidden;\n\n      #{$linkSelf}:hover > & {\n        visibility: visible;\n        animation: downToTopAnimation 0.4s ease;\n      }\n    }\n\n    &:hover {\n      color: var(--main-theme-color);\n    }\n\n    &:first-child {\n      border-left: none;\n    }\n  }\n}\n\n@keyframes downToTopAnimation {\n  0% {\n    clip-path: inset(100% 0 0 0);\n  }\n  100% {\n    clip-path: inset(0);\n  }\n}\n"]}]);
+// Exports
+exports.locals = {
+	"stl": "navigation_stl__3pAQL",
+	"stl__link": "navigation_stl__link__wCcyD",
+	"stl__link__animated-box": "navigation_stl__link__animated-box__3ndGH",
+	"downToTopAnimation": "navigation_downToTopAnimation__2ffje"
 };
 
 /***/ }),
@@ -222,7 +248,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
 // Module
-exports.push([module.i, ".social-media_stl__3kiGL {\n  position: relative;\n  display: inline-grid;\n  width: 100%;\n  grid-auto-flow: column;\n  justify-items: stretch;\n  align-items: stretch;\n  height: 100%;\n}\n.social-media_stl__link__31ETY {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  line-height: 3;\n  border: 2px solid var(--main-text-color);\n}\n@media (min-width: 628px) {\n  .social-media_stl__link__31ETY::after {\n    content: \"\";\n    position: absolute;\n    top: 30px;\n    left: 70px;\n    width: 50px;\n    height: 2px;\n    border-bottom: 2px solid var(--main-text-color);\n  }\n}\n.social-media_stl__link__31ETY:nth-child(2)::after {\n  width: 70px;\n}\n.social-media_stl__absolute_link__2nR4M {\n  display: none;\n}\n@media (min-width: 628px) {\n  .social-media_stl__absolute_link__2nR4M {\n    position: absolute;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    font-size: 1.2em;\n    line-height: 2.8;\n    color: var(--main-theme-color);\n    background-color: var(--main-text-color);\n    border: 2px solid var(--main-text-color);\n    -webkit-animation: social-media_slideLeftIn__15Dca 0.2s ease-in-out;\n            animation: social-media_slideLeftIn__15Dca 0.2s ease-in-out;\n  }\n}\n.social-media_stl__absolute_link__2nR4M:visited {\n  color: var(--main-theme-color);\n}\n\n@-webkit-keyframes social-media_slideLeftIn__15Dca {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes social-media_slideLeftIn__15Dca {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}", "",{"version":3,"sources":["social-media.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,oBAAA;EACA,WAAA;EACA,sBAAA;EACA,sBAAA;EACA,oBAAA;EACA,YAAA;AAAF;AAEE;EACE,kBAAA;EACA,qBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;EACA,wCAAA;AAAJ;ACII;EDDE;IACE,WAAA;IACA,kBAAA;IACA,SAAA;IACA,UAAA;IACA,WAAA;IACA,WAAA;IACA,+CAAA;EAAN;AACF;AAIM;EACE,WAAA;AAFR;AAOE;EACE,aAAA;AALJ;ACbI;EDiBF;IAGI,kBAAA;IACA,qBAAA;IACA,WAAA;IACA,YAAA;IACA,kBAAA;IACA,gBAAA;IACA,gBAAA;IACA,8BAAA;IACA,wCAAA;IACA,wCAAA;IACA,mEAAA;YAAA,2DAAA;EAHJ;AACF;AAKI;EACE,8BAAA;AAHN;;AAQA;EACE;IACE,UAAA;EALF;EAOA;IACE,UAAA;EALF;AACF;;AADA;EACE;IACE,UAAA;EALF;EAOA;IACE,UAAA;EALF;AACF","file":"social-media.module.scss","sourcesContent":["@import '../../sass/base';\n\n.stl {\n  position: relative;\n  display: inline-grid;\n  width: 100%;\n  grid-auto-flow: column;\n  justify-items: stretch;\n  align-items: stretch;\n  height: 100%;\n\n  &__link {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    line-height: 3;\n    border: 2px solid var(--main-text-color);\n\n    @include for-size(between-mobile-tablet-up) {\n      &::after {\n        content: '';\n        position: absolute;\n        top: 30px;\n        left: 70px;\n        width: 50px;\n        height: 2px;\n        border-bottom: 2px solid var(--main-text-color);\n      }\n    }\n\n    &:nth-child(2) {\n      &::after {\n        width: 70px;\n      }\n    }\n  }\n\n  &__absolute_link {\n    display: none;\n    @include for-size(between-mobile-tablet-up) {\n      position: absolute;\n      display: inline-block;\n      width: 100%;\n      height: 100%;\n      text-align: center;\n      font-size: 1.2em;\n      line-height: 2.8;\n      color: var(--main-theme-color);\n      background-color: var(--main-text-color);\n      border: 2px solid var(--main-text-color);\n      animation: slideLeftIn 0.2s ease-in-out;\n    }\n\n    &:visited {\n      color: var(--main-theme-color);\n    }\n  }\n}\n\n@keyframes slideLeftIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
+exports.push([module.i, ".social-media_stl__3kiGL {\n  position: relative;\n  display: inline-grid;\n  width: 100%;\n  grid-auto-flow: column;\n  justify-items: stretch;\n  align-items: stretch;\n  height: 100%;\n}\n.social-media_stl__link__31ETY {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  line-height: 3;\n  border: 2px solid var(--main-text-color);\n}\n@media (min-width: 628px) {\n  .social-media_stl__link__31ETY::after {\n    content: \"\";\n    position: absolute;\n    top: 30px;\n    left: 70px;\n    width: 50px;\n    height: 2px;\n    border-bottom: 2px solid var(--main-text-color);\n  }\n}\n.social-media_stl__link__31ETY:nth-child(2) {\n  border-left: none;\n  border-right: none;\n}\n.social-media_stl__link__31ETY:nth-child(2)::after {\n  width: 65px;\n}\n.social-media_stl__absolute_link__2nR4M {\n  display: none;\n}\n@media (min-width: 628px) {\n  .social-media_stl__absolute_link__2nR4M {\n    position: absolute;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    font-size: 1.2em;\n    line-height: 2.8;\n    color: var(--main-theme-color);\n    background-color: var(--main-text-color);\n    border: 2px solid var(--main-text-color);\n    -webkit-animation: social-media_slideLeftIn__15Dca 0.2s ease-in-out;\n            animation: social-media_slideLeftIn__15Dca 0.2s ease-in-out;\n  }\n}\n.social-media_stl__absolute_link__2nR4M:visited {\n  color: var(--main-theme-color);\n}\n\n@-webkit-keyframes social-media_slideLeftIn__15Dca {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@keyframes social-media_slideLeftIn__15Dca {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}", "",{"version":3,"sources":["social-media.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,oBAAA;EACA,WAAA;EACA,sBAAA;EACA,sBAAA;EACA,oBAAA;EACA,YAAA;AAAF;AAEE;EACE,kBAAA;EACA,qBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;EACA,wCAAA;AAAJ;ACII;EDDE;IACE,WAAA;IACA,kBAAA;IACA,SAAA;IACA,UAAA;IACA,WAAA;IACA,WAAA;IACA,+CAAA;EAAN;AACF;AAGI;EACE,iBAAA;EACA,kBAAA;AADN;AAEM;EACE,WAAA;AAAR;AAKE;EACE,aAAA;AAHJ;ACjBI;EDmBF;IAGI,kBAAA;IACA,qBAAA;IACA,WAAA;IACA,YAAA;IACA,kBAAA;IACA,gBAAA;IACA,gBAAA;IACA,8BAAA;IACA,wCAAA;IACA,wCAAA;IACA,mEAAA;YAAA,2DAAA;EADJ;AACF;AAGI;EACE,8BAAA;AADN;;AAMA;EACE;IACE,UAAA;EAHF;EAKA;IACE,UAAA;EAHF;AACF;;AAHA;EACE;IACE,UAAA;EAHF;EAKA;IACE,UAAA;EAHF;AACF","file":"social-media.module.scss","sourcesContent":["@import '../../sass/base';\n\n.stl {\n  position: relative;\n  display: inline-grid;\n  width: 100%;\n  grid-auto-flow: column;\n  justify-items: stretch;\n  align-items: stretch;\n  height: 100%;\n\n  &__link {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    line-height: 3;\n    border: 2px solid var(--main-text-color);\n\n    @include for-size(between-mobile-tablet-up) {\n      &::after {\n        content: '';\n        position: absolute;\n        top: 30px;\n        left: 70px;\n        width: 50px;\n        height: 2px;\n        border-bottom: 2px solid var(--main-text-color);\n      }\n    }\n\n    &:nth-child(2) {\n      border-left: none;\n      border-right: none;\n      &::after {\n        width: 65px;\n      }\n    }\n  }\n\n  &__absolute_link {\n    display: none;\n    @include for-size(between-mobile-tablet-up) {\n      position: absolute;\n      display: inline-block;\n      width: 100%;\n      height: 100%;\n      text-align: center;\n      font-size: 1.2em;\n      line-height: 2.8;\n      color: var(--main-theme-color);\n      background-color: var(--main-text-color);\n      border: 2px solid var(--main-text-color);\n      animation: slideLeftIn 0.2s ease-in-out;\n    }\n\n    &:visited {\n      color: var(--main-theme-color);\n    }\n  }\n}\n\n@keyframes slideLeftIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"stl": "social-media_stl__3kiGL",
@@ -260,8 +286,11 @@ exports.locals = {
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Imports
+
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
 // Module
-exports.push([module.i, ".heading_heading__2M5K0 {\n  margin: 0;\n}\n.heading_heading--is-h1__1ZdY6 {\n  font-size: 6em;\n  line-height: 1.1;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h2__Sr7FY {\n  font-size: 2em;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h3__3mj2l {\n  font-size: 1.5em;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h4__W_Eb- {\n  font-size: 1.2em;\n  color: var(--main-text-color);\n}", "",{"version":3,"sources":["heading.module.scss"],"names":[],"mappings":"AAEA;EACE,SAAA;AADF;AAII;EAEI,cAAA;EACA,gBAAA;EACA,6BAAA;AAHR;AADI;EAMI,cAAA;EACA,6BAAA;AAFR;AALI;EASI,gBAAA;EACA,6BAAA;AADR;AATI;EAYI,gBAAA;EACA,6BAAA;AAAR","file":"heading.module.scss","sourcesContent":["$all_headings: h1, h2, h3, h4;\n\n.heading {\n  margin: 0;\n\n  @each $heading in $all_headings {\n    &--is-#{$heading} {\n      @if $heading == h1 {\n        font-size: 6em;\n        line-height: 1.1;\n        color: var(--main-text-color);\n      } @else if $heading == h2 {\n        font-size: 2em;\n        color: var(--main-text-color);\n      } @else if $heading == h3 {\n        font-size: 1.5em;\n        color: var(--main-text-color);\n      } @else if $heading == h4 {\n        font-size: 1.2em;\n        color: var(--main-text-color);\n      }\n    }\n  }\n}\n"]}]);
+exports.push([module.i, ".heading_heading__2M5K0 {\n  margin: 0;\n}\n.heading_heading--is-h1__1ZdY6 {\n  font-size: 5em;\n  line-height: 1.1;\n  color: var(--main-text-color);\n}\n@media (min-width: 480px) {\n  .heading_heading--is-h1__1ZdY6 {\n    font-size: 6em;\n    line-height: 1.1;\n  }\n}\n.heading_heading--is-h2__Sr7FY {\n  font-size: 2em;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h3__3mj2l {\n  font-size: 1.5em;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h4__W_Eb- {\n  font-size: 1.2em;\n  color: var(--main-text-color);\n}", "",{"version":3,"sources":["heading.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAIA;EACE,SAAA;AAFF;AAKI;EAEI,cAAA;EACA,gBAAA;EACA,6BAAA;AAJR;ACUI;EDVA;IAOM,cAAA;IACA,gBAAA;EAHR;AACF;AANI;EAWI,cAAA;EACA,6BAAA;AAFR;AAVI;EAcI,gBAAA;EACA,6BAAA;AADR;AAdI;EAiBI,gBAAA;EACA,6BAAA;AAAR","file":"heading.module.scss","sourcesContent":["@import '../../sass/base';\n\n$all_headings: h1, h2, h3, h4;\n\n.heading {\n  margin: 0;\n\n  @each $heading in $all_headings {\n    &--is-#{$heading} {\n      @if $heading == h1 {\n        font-size: 5em;\n        line-height: 1.1;\n        color: var(--main-text-color);\n\n        @include for-size(mobile-landscape-up) {\n          font-size: 6em;\n          line-height: 1.1;\n        }\n      } @else if $heading == h2 {\n        font-size: 2em;\n        color: var(--main-text-color);\n      } @else if $heading == h3 {\n        font-size: 1.5em;\n        color: var(--main-text-color);\n      } @else if $heading == h4 {\n        font-size: 1.2em;\n        color: var(--main-text-color);\n      }\n    }\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"heading": "heading_heading__2M5K0",
@@ -16655,12 +16684,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../hooks/useMousePointer */ "./src/hooks/useMousePointer.tsx");
 /* harmony import */ var _elements_mouse_tracker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../elements/mouse-tracker */ "./src/elements/mouse-tracker/index.tsx");
 /* harmony import */ var _theme_settings__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../theme-settings */ "./src/components/theme-settings/index.tsx");
-/* harmony import */ var _layout_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./layout.module.scss */ "./src/components/layout/layout.module.scss");
-/* harmony import */ var _layout_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_layout_module_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../navigation */ "./src/components/navigation/index.tsx");
+/* harmony import */ var _layout_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout.module.scss */ "./src/components/layout/layout.module.scss");
+/* harmony import */ var _layout_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_layout_module_scss__WEBPACK_IMPORTED_MODULE_6__);
 var _this = undefined,
     _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/layout/layout.component.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -16679,31 +16710,38 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 5
     }
   }, __jsx("main", {
     ref: setRef,
-    className: _layout_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl,
+    className: _layout_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 7
     }
   }, __jsx(_theme_settings__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 9
     }
-  }), children, __jsx(_elements_mouse_tracker__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), children, __jsx(_navigation__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }), __jsx(_elements_mouse_tracker__WEBPACK_IMPORTED_MODULE_3__["default"], {
     mousePosition: mousePosition,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 18,
       columnNumber: 9
     }
   })));
@@ -16799,27 +16837,19 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _elements_heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../elements/heading */ "./src/elements/heading/index.tsx");
-/* harmony import */ var _hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../hooks/useMousePointer */ "./src/hooks/useMousePointer.tsx");
-/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
-/* harmony import */ var _social_media__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../social-media */ "./src/components/social-media/index.tsx");
-/* harmony import */ var _main_section_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./main-section.module.scss */ "./src/components/main-section/main-section.module.scss");
-/* harmony import */ var _main_section_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_main_section_module_scss__WEBPACK_IMPORTED_MODULE_7__);
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _elements_heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../elements/heading */ "./src/elements/heading/index.tsx");
+/* harmony import */ var _hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../hooks/useMousePointer */ "./src/hooks/useMousePointer.tsx");
+/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
+/* harmony import */ var _social_media__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../social-media */ "./src/components/social-media/index.tsx");
+/* harmony import */ var _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./main-section.module.scss */ "./src/components/main-section/main-section.module.scss");
+/* harmony import */ var _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_main_section_module_scss__WEBPACK_IMPORTED_MODULE_6__);
 var _this = undefined,
     _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/main-section/main-section.component.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -16829,58 +16859,70 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 var MainSection = function MainSection() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_5__["PointerClassesContext"]),
-      pointerClasses = _useContext.classes,
-      setClasses = _useContext.setClasses;
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_4__["PointerClassesContext"]),
+      dispatchClasses = _useContext.dispatchClasses;
 
-  var _useMousePointer = Object(_hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_4__["default"])(),
+  var _useMousePointer = Object(_hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_3__["default"])(),
       mousePosition = _useMousePointer.mousePosition,
       setRef = _useMousePointer.setRef;
 
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     if (mousePosition.isOver) {
-      setClasses(_objectSpread({}, pointerClasses, {
-        'pointer__cursor--is-on-title': true
-      }));
+      dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_4__["addTitleClassAction"])());
     }
 
     return function () {
-      setClasses(_objectSpread({}, pointerClasses, {
-        'pointer__cursor--is-on-title': false
-      }));
+      dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_4__["resetClasses"])());
     };
   }, [mousePosition.isOver]);
-  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(_main_section_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.stl__heading);
+  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(_main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__heading);
   return __jsx("div", {
-    className: _main_section_module_scss__WEBPACK_IMPORTED_MODULE_7___default.a.stl,
+    className: _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 29,
       columnNumber: 5
     }
-  }, __jsx(_elements_heading__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx("div", {
     ref: setRef,
+    className: _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__container,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }
+  }, __jsx(_elements_heading__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes,
     tag: "h1",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 7
-    }
-  }, "Jonat\xE1n Isaac", __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 31,
       columnNumber: 9
     }
-  }), "Trevi\xF1o Galindo"), __jsx(_social_media__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Jonat\xE1n Isaac", ' ', __jsx("br", {
+    className: _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a['stl__heading--hide-br-mobile'],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 33,
+      columnNumber: 11
+    }
+  }), "Trevi\xF1o Galindo"), __jsx("div", {
+    className: _main_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a['stl__container__animated-box'],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 9
+    }
+  })), __jsx(_social_media__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
       columnNumber: 7
     }
   }));
@@ -16951,6 +16993,190 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/components/navigation/index.tsx":
+/*!*********************************************!*\
+  !*** ./src/components/navigation/index.tsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _navigation_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navigation.component */ "./src/components/navigation/navigation.component.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _navigation_component__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/navigation/navigation.component.tsx":
+/*!************************************************************!*\
+  !*** ./src/components/navigation/navigation.component.tsx ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
+/* harmony import */ var _hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../hooks/useMousePointer */ "./src/hooks/useMousePointer.tsx");
+/* harmony import */ var _navigation_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./navigation.module.scss */ "./src/components/navigation/navigation.module.scss");
+/* harmony import */ var _navigation_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_navigation_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+
+
+var _this = undefined,
+    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/navigation/navigation.component.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+var routes = [{
+  title: 'Home',
+  href: '/'
+}, {
+  title: 'About',
+  href: '/'
+}, {
+  title: 'Skills',
+  href: '/'
+}, {
+  title: 'Portfolio',
+  href: '/'
+}, {
+  title: 'Contact',
+  href: '/'
+}];
+
+var Navigation = function Navigation() {
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["PointerClassesContext"]),
+      dispatchClasses = _useContext.dispatchClasses;
+
+  var _useMousePointer = Object(_hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_3__["default"])(),
+      mousePosition = _useMousePointer.mousePosition,
+      setRef = _useMousePointer.setRef;
+
+  var handleOnMouseOver = function handleOnMouseOver(type) {
+    var customClass = "pointer__cursor--on-".concat(type.toLowerCase(), "-page");
+    dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["addNavClassAction"])(Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, customClass, true)));
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (!mousePosition.isOver) {
+      dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["resetClasses"])());
+    }
+
+    return function () {
+      dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["resetClasses"])());
+    };
+  }, [mousePosition.isOver]);
+  return __jsx("nav", {
+    ref: setRef,
+    className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 5
+    }
+  }, routes.map(function (route) {
+    return __jsx("a", {
+      onMouseOver: function onMouseOver() {
+        return handleOnMouseOver(route.title);
+      },
+      onFocus: function onFocus() {
+        return handleOnMouseOver(route.title);
+      },
+      href: route.href,
+      key: route.title,
+      className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl__link,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59,
+        columnNumber: 9
+      }
+    }, route.title, __jsx("span", {
+      className: _navigation_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['stl__link__animated-box'],
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67,
+        columnNumber: 11
+      }
+    }));
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Navigation);
+
+/***/ }),
+
+/***/ "./src/components/navigation/navigation.module.scss":
+/*!**********************************************************!*\
+  !*** ./src/components/navigation/navigation.module.scss ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./navigation.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/navigation/navigation.module.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./navigation.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/navigation/navigation.module.scss",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./navigation.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/navigation/navigation.module.scss");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
 /***/ "./src/components/social-media/index.tsx":
 /*!***********************************************!*\
   !*** ./src/components/social-media/index.tsx ***!
@@ -16976,25 +17202,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
-/* harmony import */ var _hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../hooks/useMousePointer */ "./src/hooks/useMousePointer.tsx");
-/* harmony import */ var _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./social-media.module.scss */ "./src/components/social-media/social-media.module.scss");
-/* harmony import */ var _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_social_media_module_scss__WEBPACK_IMPORTED_MODULE_5__);
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
+/* harmony import */ var _hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../hooks/useMousePointer */ "./src/hooks/useMousePointer.tsx");
+/* harmony import */ var _social_media_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./social-media.module.scss */ "./src/components/social-media/social-media.module.scss");
+/* harmony import */ var _social_media_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_social_media_module_scss__WEBPACK_IMPORTED_MODULE_4__);
 var _this = undefined,
     _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/social-media/social-media.component.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -17005,15 +17223,14 @@ var SocialMedia = function SocialMedia(_ref) {
   var _ref$className = _ref.className,
       className = _ref$className === void 0 ? '' : _ref$className;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
       showLink = _useState[0],
       setShowLink = _useState[1];
 
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_3__["PointerClassesContext"]),
-      pointerClasses = _useContext.classes,
-      setClasses = _useContext.setClasses;
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["PointerClassesContext"]),
+      dispatchClasses = _useContext.dispatchClasses;
 
-  var _useMousePointer = Object(_hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_4__["default"])(),
+  var _useMousePointer = Object(_hooks_useMousePointer__WEBPACK_IMPORTED_MODULE_3__["default"])(),
       mousePosition = _useMousePointer.mousePosition,
       setRef = _useMousePointer.setRef;
 
@@ -17031,29 +17248,25 @@ var SocialMedia = function SocialMedia(_ref) {
     }
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     if (mousePosition.isOver) {
-      setClasses(_objectSpread({}, pointerClasses, {
-        'pointer__cursor--is-on-link': true
-      }));
+      dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["addLinkClassAction"])());
     } else {
       setShowLink('');
     }
 
     return function () {
-      setClasses(_objectSpread({}, pointerClasses, {
-        'pointer__cursor--is-on-link': false
-      }));
+      dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["resetClasses"])());
     };
   }, [mousePosition.isOver]);
-  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(_social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl, className);
+  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(_social_media_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl, className);
   return __jsx("div", {
     ref: setRef,
     className: classes,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 47,
       columnNumber: 5
     }
   }, __jsx("a", {
@@ -17063,14 +17276,14 @@ var SocialMedia = function SocialMedia(_ref) {
     onFocus: function onFocus() {
       return handleOnMouseOver('twitter');
     },
-    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl__link,
+    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl__link,
     href: "https://twitter.com/jonnitg",
     target: "_blank",
     rel: "noopener noreferrer",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 48,
       columnNumber: 7
     }
   }, "twitter"), __jsx("a", {
@@ -17080,14 +17293,14 @@ var SocialMedia = function SocialMedia(_ref) {
     onFocus: function onFocus() {
       return handleOnMouseOver('facebook');
     },
-    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl__link,
+    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl__link,
     href: "https://www.facebook.com/jonnitg",
     target: "_blank",
     rel: "noopener noreferrer",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 58,
       columnNumber: 7
     }
   }, "facebook"), __jsx("a", {
@@ -17097,23 +17310,23 @@ var SocialMedia = function SocialMedia(_ref) {
     onFocus: function onFocus() {
       return handleOnMouseOver('github');
     },
-    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl__link,
+    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl__link,
     href: "https://github.com/jonnitg",
     target: "_blank",
     rel: "noopener noreferrer",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 68,
       columnNumber: 7
     }
   }, "github"), showLink && __jsx("a", {
-    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_5___default.a.stl__absolute_link,
+    className: _social_media_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl__absolute_link,
     href: showLink,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 79,
       columnNumber: 9
     }
   }, showLink));
@@ -17209,25 +17422,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-color */ "./node_modules/react-color/lib/index.js");
-/* harmony import */ var react_color__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_color__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
-/* harmony import */ var _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./theme-settings.module.scss */ "./src/components/theme-settings/theme-settings.module.scss");
-/* harmony import */ var _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4__);
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-color */ "./node_modules/react-color/lib/index.js");
+/* harmony import */ var react_color__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_color__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../context/pointer-classes.context */ "./src/context/pointer-classes.context.tsx");
+/* harmony import */ var _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theme-settings.module.scss */ "./src/components/theme-settings/theme-settings.module.scss");
+/* harmony import */ var _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_3__);
 var _this = undefined,
     _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/theme-settings/theme-settings.component.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -17235,17 +17440,16 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 var colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#cddc39', '#ffeb3b', '#ffc107', '#ff9800', '#ff5722', '#795548', '#607d8b'];
 
 var ThemeSettings = function ThemeSettings() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       showThemePicker = _useState[0],
       setShowThemePicker = _useState[1];
 
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       showTextPicker = _useState2[0],
       setShowTextPicker = _useState2[1];
 
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_3__["PointerClassesContext"]),
-      pointerClasses = _useContext.classes,
-      setClasses = _useContext.setClasses;
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["PointerClassesContext"]),
+      dispatchClasses = _useContext.dispatchClasses;
 
   var handleChangeComplete = function handleChangeComplete(color, type) {
     if (type === 'theme') {
@@ -17272,42 +17476,40 @@ var ThemeSettings = function ThemeSettings() {
   };
 
   var addPointerClass = function addPointerClass() {
-    setClasses(_objectSpread({}, pointerClasses, {
-      'pointer__cursor--is-on-link': true
-    }));
+    dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["addLinkClassAction"])());
   };
 
   var removePointerClass = function removePointerClass() {
-    setClasses(_objectSpread({}, pointerClasses, {
-      'pointer__cursor--is-on-link': false
-    }));
+    dispatchClasses(Object(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["resetClasses"])());
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     var _window = window,
         localStorage = _window.localStorage;
-    var currentColor = localStorage.getItem('themeColor');
+    var currentThemeColor = localStorage.getItem('themeColor');
+    var currentTextColor = localStorage.getItem('themeColor');
 
-    if (currentColor) {
-      var found = colors.find(function (color) {
-        return color === currentColor.trim();
-      }, currentColor);
-      document.documentElement.style.setProperty('--main-theme-color', found);
+    if (currentThemeColor) {
+      document.documentElement.style.setProperty('--main-theme-color', currentThemeColor || '#ffffff');
+    }
+
+    if (currentTextColor) {
+      document.documentElement.style.setProperty('--main-theme-color', currentTextColor || '#000000');
     }
   }, []);
   return __jsx("div", {
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings'],
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a['theme-settings'],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 94,
       columnNumber: 5
     }
   }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 95,
       columnNumber: 7
     }
   }, __jsx("button", {
@@ -17316,18 +17518,18 @@ var ThemeSettings = function ThemeSettings() {
     onFocus: addPointerClass,
     onMouseOut: removePointerClass,
     onBlur: removePointerClass,
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings__button'],
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a['theme-settings__button'],
     onClick: function onClick() {
       return toggleOptions('theme');
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 96,
       columnNumber: 9
     }
-  }, "Theme Color"), showThemePicker && __jsx(react_color__WEBPACK_IMPORTED_MODULE_2__["TwitterPicker"], {
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings__picker'],
+  }, "Theme Color"), showThemePicker && __jsx(react_color__WEBPACK_IMPORTED_MODULE_1__["TwitterPicker"], {
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a['theme-settings__picker'],
     colors: colors,
     width: 315,
     onChangeComplete: function onChangeComplete(color) {
@@ -17336,14 +17538,14 @@ var ThemeSettings = function ThemeSettings() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 108,
       columnNumber: 11
     }
   })), __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 117,
       columnNumber: 7
     }
   }, __jsx("button", {
@@ -17352,18 +17554,18 @@ var ThemeSettings = function ThemeSettings() {
     onFocus: addPointerClass,
     onMouseOut: removePointerClass,
     onBlur: removePointerClass,
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings__button'],
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a['theme-settings__button'],
     onClick: function onClick() {
       return toggleOptions('text');
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 118,
       columnNumber: 9
     }
-  }, "Text Color"), showTextPicker && __jsx(react_color__WEBPACK_IMPORTED_MODULE_2__["TwitterPicker"], {
-    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['theme-settings__picker'],
+  }, "Text Color"), showTextPicker && __jsx(react_color__WEBPACK_IMPORTED_MODULE_1__["TwitterPicker"], {
+    className: _theme_settings_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a['theme-settings__picker'],
     colors: colors,
     width: 315,
     onChangeComplete: function onChangeComplete(color) {
@@ -17372,7 +17574,7 @@ var ThemeSettings = function ThemeSettings() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 131,
       columnNumber: 11
     }
   })));
@@ -17447,42 +17649,117 @@ if (true) {
 /*!*************************************************!*\
   !*** ./src/context/pointer-classes.context.tsx ***!
   \*************************************************/
-/*! exports provided: PointerClassesContext, PointerClassesProvider */
+/*! exports provided: PointerClassesContext, PointerClassesProvider, addTitleClassAction, addNavClassAction, addLinkClassAction, resetClasses */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PointerClassesContext", function() { return PointerClassesContext; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PointerClassesProvider", function() { return PointerClassesProvider; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addTitleClassAction", function() { return addTitleClassAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addNavClassAction", function() { return addNavClassAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addLinkClassAction", function() { return addLinkClassAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resetClasses", function() { return resetClasses; });
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
 var _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/context/pointer-classes.context.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+var ADD_TITLE_CLASS = 'ADD_TITLE_CLASS';
+var ADD_NAV_CLASS = 'ADD_NAV_CLASS';
+var ADD_LINK_CLASS = 'ADD_LINK_CLASS';
+var RESET_CLASSES = 'RESET_CLASSES';
 var initState = {};
-var PointerClassesContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])(null);
+
+var reducer = function reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+  var props = action.props,
+      type = action.type;
+
+  switch (type) {
+    case ADD_TITLE_CLASS:
+      return {
+        'pointer__cursor--is-on-title': true
+      };
+
+    case ADD_NAV_CLASS:
+      return _objectSpread({
+        'pointer__cursor--is-on-nav': true
+      }, props);
+
+    case ADD_LINK_CLASS:
+      return {
+        'pointer__cursor--is-on-link': true
+      };
+
+    case RESET_CLASSES:
+      return initState;
+
+    default:
+      return state;
+  }
+};
+
+var PointerClassesContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])(null);
 
 function PointerClassesProvider(_ref) {
   var children = _ref.children;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(initState),
-      classes = _useState[0],
-      setClasses = _useState[1];
+  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])(reducer, initState),
+      pointerClasses = _useReducer[0],
+      dispatchClasses = _useReducer[1]; // const [classes, setClasses] = useState(initState);
+
 
   return __jsx(PointerClassesContext.Provider, {
     value: {
-      classes: classes,
-      setClasses: setClasses
+      pointerClasses: pointerClasses,
+      dispatchClasses: dispatchClasses
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 34,
       columnNumber: 5
     }
   }, children);
 }
+
+var addTitleClassAction = function addTitleClassAction() {
+  return {
+    type: ADD_TITLE_CLASS,
+    props: {}
+  };
+};
+
+var addNavClassAction = function addNavClassAction(extraClass) {
+  return {
+    type: ADD_NAV_CLASS,
+    props: _objectSpread({}, extraClass)
+  };
+};
+
+var addLinkClassAction = function addLinkClassAction() {
+  return {
+    type: ADD_LINK_CLASS,
+    props: {}
+  };
+};
+
+var resetClasses = function resetClasses() {
+  return {
+    type: RESET_CLASSES,
+    props: {}
+  };
+};
 
 
 
@@ -17655,7 +17932,7 @@ var MouseTracker = function MouseTracker(_ref) {
   } : _ref$mousePosition;
 
   var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_pointer_classes_context__WEBPACK_IMPORTED_MODULE_2__["PointerClassesContext"]),
-      classes = _useContext.classes;
+      pointerClasses = _useContext.pointerClasses;
 
   var mouseRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["createRef"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
@@ -17670,25 +17947,28 @@ var MouseTracker = function MouseTracker(_ref) {
       }
     }
   }, [mousePosition.x, mousePosition.y]);
-  var pointerClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])('pointer__cursor', classes);
-  return __jsx("div", {
-    className: "pointer",
+  var cursorClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])('pointer__cursor', pointerClasses);
+  var pointerContainerClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])('pointer', {
+    'pointer--no-blend': 'pointer__cursor--is-on-nav' in pointerClasses
+  });
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: pointerContainerClasses,
     ref: mouseRef,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 5
+      lineNumber: 32,
+      columnNumber: 7
     }
   }, __jsx("div", {
-    className: pointerClasses,
+    className: cursorClasses,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 7
+      lineNumber: 33,
+      columnNumber: 9
     }
-  }));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MouseTracker);
@@ -17821,7 +18101,7 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Findex.tsx ***!
   \*******************************************************************************************************************************************************************/
@@ -17844,5 +18124,5 @@ module.exports = dll_b9380c54b6aeb86e51e7;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
