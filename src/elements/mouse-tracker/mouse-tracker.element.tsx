@@ -9,7 +9,7 @@ type MouseTrackerProps = {
 const MouseTracker = ({
   mousePosition = { x: null, y: null, isOver: false },
 }: MouseTrackerProps) => {
-  const { classes } = useContext(PointerClassesContext);
+  const { pointerClasses } = useContext(PointerClassesContext);
   const mouseRef = createRef<HTMLDivElement>();
 
   useEffect(() => {
@@ -22,15 +22,15 @@ const MouseTracker = ({
     }
   }, [mousePosition.x, mousePosition.y]);
 
-  const pointerClasses = clsx('pointer__cursor', classes);
+  const cursorClasses = clsx('pointer__cursor', pointerClasses);
 
   const pointerContainerClasses = clsx('pointer', {
-    'pointer--no-blend': 'pointer__cursor--is-on-nav' in classes,
+    'pointer--no-blend': 'pointer__cursor--is-on-nav' in pointerClasses,
   });
   return (
     <>
       <div className={pointerContainerClasses} ref={mouseRef}>
-        <div className={pointerClasses} />
+        <div className={cursorClasses} />
       </div>
     </>
   );

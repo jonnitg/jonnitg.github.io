@@ -1,6 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import clsx from 'clsx';
-import { PointerClassesContext } from '@context/pointer-classes.context';
+import {
+  PointerClassesContext,
+  addLinkClassAction,
+  resetClasses,
+} from '@context/pointer-classes.context';
 import useMousePointer from '@hooks/useMousePointer';
 import styles from './social-media.module.scss';
 
@@ -10,9 +14,7 @@ type Props = {
 
 const SocialMedia = ({ className = '' }: Props) => {
   const [showLink, setShowLink] = useState('');
-  const { classes: pointerClasses, setClasses } = useContext(
-    PointerClassesContext
-  );
+  const { dispatchClasses } = useContext(PointerClassesContext);
 
   const { mousePosition, setRef } = useMousePointer();
 
@@ -30,12 +32,12 @@ const SocialMedia = ({ className = '' }: Props) => {
 
   useEffect(() => {
     if (mousePosition.isOver) {
-      setClasses({ ...pointerClasses, 'pointer__cursor--is-on-link': true });
+      dispatchClasses(addLinkClassAction());
     } else {
       setShowLink('');
     }
     return () => {
-      setClasses({ ...pointerClasses, 'pointer__cursor--is-on-link': false });
+      dispatchClasses(resetClasses());
     };
   }, [mousePosition.isOver]);
 

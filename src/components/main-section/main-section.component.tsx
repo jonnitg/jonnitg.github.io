@@ -2,22 +2,24 @@ import React, { useContext, useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Heading from '@elements/heading';
 import useMousePointer from '@hooks/useMousePointer';
-import { PointerClassesContext } from '@context/pointer-classes.context';
+import {
+  PointerClassesContext,
+  addTitleClassAction,
+  resetClasses,
+} from '@context/pointer-classes.context';
 import SocialMedia from '@components/social-media';
 import styles from './main-section.module.scss';
 
 const MainSection = () => {
-  const { classes: pointerClasses, setClasses } = useContext(
-    PointerClassesContext
-  );
+  const { dispatchClasses } = useContext(PointerClassesContext);
   const { mousePosition, setRef } = useMousePointer();
 
   useEffect(() => {
     if (mousePosition.isOver) {
-      setClasses({ ...pointerClasses, 'pointer__cursor--is-on-title': true });
+      dispatchClasses(addTitleClassAction());
     }
     return () => {
-      setClasses({ ...pointerClasses, 'pointer__cursor--is-on-title': false });
+      dispatchClasses(resetClasses());
     };
   }, [mousePosition.isOver]);
 

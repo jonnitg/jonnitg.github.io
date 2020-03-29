@@ -1,6 +1,10 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Link from 'next/link';
-import { PointerClassesContext } from '@context/pointer-classes.context';
+import {
+  PointerClassesContext,
+  addNavClassAction,
+  resetClasses,
+} from '@context/pointer-classes.context';
 import useMousePointer from '@hooks/useMousePointer';
 import styles from './navigation.module.scss';
 
@@ -28,35 +32,24 @@ const routes = [
 ];
 
 const Navigation = () => {
-  const [typeClass, setTypeClass] = useState('');
-  const { classes: pointerClasses, setClasses: setPointerClasses } = useContext(
-    PointerClassesContext
-  );
+  const { dispatchClasses } = useContext(PointerClassesContext);
   const { mousePosition, setRef } = useMousePointer();
 
   const handleOnMouseOver = (type) => {
-    setPointerClasses({
-      ...pointerClasses,
-      'pointer__cursor--is-on-nav': true,
-      [`pointer__cursor--type-${type.toLowerCase()}`]: true,
-    });
-    setTypeClass(`pointer__cursor--type-${type.toLowerCase()}`);
+    const customClass = `pointer__cursor--type-${type.toLowerCase()}`;
+    dispatchClasses(
+      addNavClassAction({
+        [customClass]: true,
+      })
+    );
   };
 
   useEffect(() => {
     if (!mousePosition.isOver) {
-      setPointerClasses({
-        ...pointerClasses,
-        'pointer__cursor--is-on-nav': false,
-        [typeClass]: false,
-      });
+      dispatchClasses(resetClasses());
     }
     return () => {
-      setPointerClasses({
-        ...pointerClasses,
-        'pointer__cursor--is-on-nav': false,
-        [typeClass]: false,
-      });
+      dispatchClasses(resetClasses());
     };
   }, [mousePosition.isOver]);
 
