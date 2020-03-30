@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');
 
+$breakpoint-mobile-portrait: 320px;
 $breakpoint-mobile-landscape: 480px;
 $breakpoint-between-mobile-tablet: 628px;
 $breakpoint-tablet-portrait: 768px;
@@ -11,8 +12,12 @@ $breakpoint-desktop: 1200px;
     @media (max-width: $breakpoint-tablet-portrait) {
       @content;
     }
+  } @else if $size == phone-portrait-only {
+    @media (max-width: $breakpoint-mobile-portrait + 1px) {
+      @content;
+    }
   } @else if $size == landscape-mode-only {
-    @media screen and (min-width: 320px) and (max-width: $breakpoint-tablet-portrait - 1px) and (orientation: landscape) {
+    @media screen and (min-width: 320px) and (min-height: 300px) and (max-width: 823px) and (max-height: 415px) and (orientation: landscape) {
       @content;
     }
   } @else if $size == tablet-phone-only {
