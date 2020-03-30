@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/skills.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/contact.js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
@@ -165,6 +165,96 @@ function _defineProperty(obj, key, value) {
   }
 
   return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutProperties; });
+/* harmony import */ var _objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = Object(_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(source, excluded);
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
 }
 
 /***/ }),
@@ -655,6 +745,32 @@ function toVal(mix) {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/contact-section/contact-section.module.scss":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/components/contact-section/contact-section.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Imports
+
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
+// Module
+exports.push([module.i, ".contact-section_stl__1g6QT {\n  display: grid;\n  width: 100%;\n  height: 100%;\n  justify-items: center;\n  align-items: center;\n}\n.contact-section_stl__container__3SUda {\n  width: 320px;\n  height: 450px;\n}\n@media (min-width: 480px) {\n  .contact-section_stl__container__3SUda {\n    width: 450px;\n  }\n}\n.contact-section_stl__form__3X-qJ {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  margin-top: 0.4em;\n  overflow: hidden;\n  box-sizing: border-box;\n}\n.contact-section_stl__form__subcontainer__3iHXJ {\n  display: inline-flex;\n  flex-wrap: wrap;\n  width: 100%;\n  overflow: hidden;\n}\n@media (min-width: 480px) {\n  .contact-section_stl__form__subcontainer__3iHXJ {\n    flex-wrap: nowrap;\n  }\n}\n.contact-section_stl__form__input__3gUq3 {\n  width: 100%;\n  margin-bottom: 0.5em;\n}\n@media (min-width: 480px) {\n  .contact-section_stl__form__input__3gUq3 {\n    margin-bottom: 1em;\n  }\n  .contact-section_stl__form__input__3gUq3:nth-child(2) {\n    margin-left: 16px;\n  }\n}\n.contact-section_stl__form__input__container__3enmm {\n  margin-bottom: 0.5em;\n}\n@media (min-width: 480px) {\n  .contact-section_stl__form__input__container__3enmm {\n    margin-bottom: 0.8em;\n  }\n}\n.contact-section_stl__form__message__2gTYC {\n  display: inline-flex;\n  height: 100%;\n  align-items: center;\n}", "",{"version":3,"sources":["contact-section.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,WAAA;EACA,YAAA;EACA,qBAAA;EACA,mBAAA;AAAF;AAEE;EACE,YAAA;EACA,aAAA;AAAJ;ACgBI;EDlBF;IAKI,YAAA;EACJ;AACF;AAEE;EACE,aAAA;EACA,sBAAA;EACA,WAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;AAAJ;AAEI;EACE,oBAAA;EACA,eAAA;EACA,WAAA;EACA,gBAAA;AAAN;ACHI;EDDA;IAOI,iBAAA;EACN;AACF;AAEI;EACE,WAAA;EACA,oBAAA;AAAN;ACZI;EDUA;IAKI,kBAAA;EACN;EACM;IACE,iBAAA;EACR;AACF;AAEM;EACE,oBAAA;AAAR;ACvBI;EDsBE;IAII,oBAAA;EACR;AACF;AAGI;EACE,oBAAA;EACA,YAAA;EACA,mBAAA;AADN","file":"contact-section.module.scss","sourcesContent":["@import '../../sass/base';\n\n.stl {\n  display: grid;\n  width: 100%;\n  height: 100%;\n  justify-items: center;\n  align-items: center;\n\n  &__container {\n    width: 320px;\n    height: 450px;\n\n    @include for-size(mobile-landscape-up) {\n      width: 450px;\n    }\n  }\n\n  &__form {\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n    margin-top: 0.4em;\n    overflow: hidden;\n    box-sizing: border-box;\n\n    &__subcontainer {\n      display: inline-flex;\n      flex-wrap: wrap;\n      width: 100%;\n      overflow: hidden;\n\n      @include for-size(mobile-landscape-up) {\n        flex-wrap: nowrap;\n      }\n    }\n\n    &__input {\n      width: 100%;\n      margin-bottom: 0.5em;\n\n      @include for-size(mobile-landscape-up) {\n        margin-bottom: 1em;\n\n        &:nth-child(2) {\n          margin-left: 16px;\n        }\n      }\n\n      &__container {\n        margin-bottom: 0.5em;\n\n        @include for-size(mobile-landscape-up) {\n          margin-bottom: 0.8em;\n        }\n      }\n    }\n\n    &__message {\n      display: inline-flex;\n      height: 100%;\n      align-items: center;\n    }\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-portrait: 320px;\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == phone-portrait-only {\n    @media (max-width: $breakpoint-mobile-portrait + 1px) {\n      @content;\n    }\n  } @else if $size == landscape-mode-only {\n    @media screen and (min-width: 320px) and (min-height: 300px) and (max-width: 823px) and (max-height: 415px) and (orientation: landscape) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
+// Exports
+exports.locals = {
+	"stl": "contact-section_stl__1g6QT",
+	"stl__container": "contact-section_stl__container__3SUda",
+	"stl__form": "contact-section_stl__form__3X-qJ",
+	"stl__form__subcontainer": "contact-section_stl__form__subcontainer__3iHXJ",
+	"stl__form__input": "contact-section_stl__form__input__3gUq3",
+	"stl__form__input__container": "contact-section_stl__form__input__container__3enmm",
+	"stl__form__message": "contact-section_stl__form__message__2gTYC"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/layout/layout.module.scss":
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/components/layout/layout.module.scss ***!
@@ -712,6 +828,72 @@ exports.locals = {
 	"theme-settings": "theme-settings_theme-settings__3vgw0",
 	"theme-settings__button": "theme-settings_theme-settings__button__1cOn7",
 	"theme-settings__picker": "theme-settings_theme-settings__picker__2QkOC"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/button/button.module.scss":
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/elements/button/button.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".button_stl__1Ix9F {\n  position: relative;\n  padding: 8px;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  background: none;\n  border: 2px solid var(--main-text-color);\n  font-size: 0.875em;\n  cursor: pointer;\n  outline: none;\n}\n.button_stl__1Ix9F:active {\n  -webkit-animation: button_showUpAnimation__nTLuZ 0.5s linear;\n          animation: button_showUpAnimation__nTLuZ 0.5s linear;\n}\n\n@-webkit-keyframes button_showUpAnimation__nTLuZ {\n  0% {\n    background-color: var(--main-text-color);\n    color: var(--main-theme-color);\n    visibility: hidden;\n  }\n  100% {\n    background-color: var(--main-text-color);\n    color: var(--main-theme-color);\n    visibility: visible;\n  }\n}\n\n@keyframes button_showUpAnimation__nTLuZ {\n  0% {\n    background-color: var(--main-text-color);\n    color: var(--main-theme-color);\n    visibility: hidden;\n  }\n  100% {\n    background-color: var(--main-text-color);\n    color: var(--main-theme-color);\n    visibility: visible;\n  }\n}", "",{"version":3,"sources":["button.module.scss"],"names":[],"mappings":"AAAA;EACE,kBAAA;EACA,YAAA;EACA,wBAAA;KAAA,qBAAA;UAAA,gBAAA;EACA,gBAAA;EACA,wCAAA;EACA,kBAAA;EACA,eAAA;EACA,aAAA;AACF;AACE;EACE,4DAAA;UAAA,oDAAA;AACJ;;AAGA;EACE;IACE,wCAAA;IACA,8BAAA;IACA,kBAAA;EAAF;EAEA;IACE,wCAAA;IACA,8BAAA;IACA,mBAAA;EAAF;AACF;;AAVA;EACE;IACE,wCAAA;IACA,8BAAA;IACA,kBAAA;EAAF;EAEA;IACE,wCAAA;IACA,8BAAA;IACA,mBAAA;EAAF;AACF","file":"button.module.scss","sourcesContent":[".stl {\n  position: relative;\n  padding: 8px;\n  appearance: none;\n  background: none;\n  border: 2px solid var(--main-text-color);\n  font-size: 0.875em;\n  cursor: pointer;\n  outline: none;\n\n  &:active {\n    animation: showUpAnimation 0.5s linear;\n  }\n}\n\n@keyframes showUpAnimation {\n  0% {\n    background-color: var(--main-text-color);\n    color: var(--main-theme-color);\n    visibility: hidden;\n  }\n  100% {\n    background-color: var(--main-text-color);\n    color: var(--main-theme-color);\n    visibility: visible;\n  }\n}\n"]}]);
+// Exports
+exports.locals = {
+	"stl": "button_stl__1Ix9F",
+	"showUpAnimation": "button_showUpAnimation__nTLuZ"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/heading/heading.module.scss":
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/elements/heading/heading.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Imports
+
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
+// Module
+exports.push([module.i, ".heading_heading__2M5K0 {\n  margin: 0;\n}\n.heading_heading--is-h1__1ZdY6 {\n  font-size: 5em;\n  line-height: 1.1;\n  color: var(--main-text-color);\n}\n@media (min-width: 480px) {\n  .heading_heading--is-h1__1ZdY6 {\n    font-size: 6em;\n    line-height: 1.1;\n  }\n}\n.heading_heading--is-h2__Sr7FY {\n  font-size: 2em;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h3__3mj2l {\n  font-size: 1.5em;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h4__W_Eb- {\n  font-size: 1.2em;\n  color: var(--main-text-color);\n}", "",{"version":3,"sources":["heading.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAIA;EACE,SAAA;AAFF;AAKI;EAEI,cAAA;EACA,gBAAA;EACA,6BAAA;AAJR;ACmBI;EDnBA;IAOM,cAAA;IACA,gBAAA;EAHR;AACF;AANI;EAWI,cAAA;EACA,6BAAA;AAFR;AAVI;EAcI,gBAAA;EACA,6BAAA;AADR;AAdI;EAiBI,gBAAA;EACA,6BAAA;AAAR","file":"heading.module.scss","sourcesContent":["@import '../../sass/base';\n\n$all_headings: h1, h2, h3, h4;\n\n.heading {\n  margin: 0;\n\n  @each $heading in $all_headings {\n    &--is-#{$heading} {\n      @if $heading == h1 {\n        font-size: 5em;\n        line-height: 1.1;\n        color: var(--main-text-color);\n\n        @include for-size(mobile-landscape-up) {\n          font-size: 6em;\n          line-height: 1.1;\n        }\n      } @else if $heading == h2 {\n        font-size: 2em;\n        color: var(--main-text-color);\n      } @else if $heading == h3 {\n        font-size: 1.5em;\n        color: var(--main-text-color);\n      } @else if $heading == h4 {\n        font-size: 1.2em;\n        color: var(--main-text-color);\n      }\n    }\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-portrait: 320px;\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == phone-portrait-only {\n    @media (max-width: $breakpoint-mobile-portrait + 1px) {\n      @content;\n    }\n  } @else if $size == landscape-mode-only {\n    @media screen and (min-width: 320px) and (min-height: 300px) and (max-width: 823px) and (max-height: 415px) and (orientation: landscape) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
+// Exports
+exports.locals = {
+	"heading": "heading_heading__2M5K0",
+	"heading--is-h1": "heading_heading--is-h1__1ZdY6",
+	"heading--is-h2": "heading_heading--is-h2__Sr7FY",
+	"heading--is-h3": "heading_heading--is-h3__3mj2l",
+	"heading--is-h4": "heading_heading--is-h4__W_Eb-"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/input/input.module.scss":
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/elements/input/input.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Imports
+
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
+// Module
+exports.push([module.i, ".input_stl__1ecln {\n  position: relative;\n  width: 100%;\n  height: 40px;\n  margin-top: 14px;\n  margin-bottom: 18px;\n  padding-top: 4px;\n  padding-left: 4px;\n  padding-bottom: 4px;\n  border: none;\n  background-image: none;\n  background-color: transparent;\n  box-shadow: none;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n       appearance: none;\n  outline: none;\n  font-size: 16px;\n  box-sizing: border-box;\n  border-bottom: 1px solid var(--main-text-color);\n}\n@media (min-width: 480px) {\n  .input_stl__1ecln {\n    border-bottom: 2px solid var(--main-text-color);\n  }\n}\n.input_stl__container__3ct2o {\n  position: relative;\n  font-family: \"Arvo\", serif;\n  border-left: 1px solid var(--main-text-color);\n}\n@media (min-width: 480px) {\n  .input_stl__container__3ct2o {\n    border-left: 2px solid var(--main-text-color);\n  }\n}\n.input_stl__label__3b3Ws {\n  position: absolute;\n  top: 2px;\n  left: 0;\n  padding-left: 6px;\n  padding-bottom: 4px;\n  padding-right: 6px;\n  line-height: 50%;\n  font-size: 0.75em;\n  border-bottom: 1px solid var(--main-text-color);\n}\n@media (min-width: 480px) {\n  .input_stl__label__3b3Ws {\n    border-bottom: 2px solid var(--main-text-color);\n    font-size: 0.875em;\n  }\n}\n.input_stl__helper__3YMcf {\n  position: absolute;\n  padding-left: 4px;\n  padding-bottom: 2px;\n  bottom: 0;\n  left: 0;\n  font-size: 0.75em;\n}\n@media (min-width: 480px) {\n  .input_stl__helper__3YMcf {\n    font-size: 0.875em;\n  }\n}\n.input_stl__helper__3YMcf::before {\n  content: \"*\";\n  margin-right: 2px;\n}\n.input_stl--is-textarea__MyEHN {\n  min-height: 50px;\n  resize: none;\n}\n@media (min-width: 480px) {\n  .input_stl--is-textarea__MyEHN {\n    min-height: 80px;\n  }\n}", "",{"version":3,"sources":["input.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;EACA,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;EACA,YAAA;EACA,sBAAA;EACA,6BAAA;EAGA,gBAAA;EACA,wBAAA;EACA,qBAAA;OAAA,gBAAA;EACA,aAAA;EACA,eAAA;EACA,sBAAA;EACA,+CAAA;AAAF;ACKI;EDzBJ;IAuBI,+CAAA;EACF;AACF;AACE;EACE,kBAAA;EACA,0BAAA;EACA,6CAAA;AACJ;ACLI;EDCF;IAMI,6CAAA;EAEJ;AACF;AACE;EACE,kBAAA;EACA,QAAA;EACA,OAAA;EACA,iBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;EACA,iBAAA;EACA,+CAAA;AACJ;ACrBI;EDWF;IAYI,+CAAA;IACA,kBAAA;EAEJ;AACF;AACE;EACE,kBAAA;EACA,iBAAA;EACA,mBAAA;EACA,SAAA;EACA,OAAA;EACA,iBAAA;AACJ;ACnCI;ED4BF;IASI,kBAAA;EAEJ;AACF;AAAI;EACE,YAAA;EACA,iBAAA;AAEN;AAEE;EACE,gBAAA;EACA,YAAA;AAAJ;AChDI;ED8CF;IAKI,gBAAA;EACJ;AACF","file":"input.module.scss","sourcesContent":["@import '../../sass/base';\n\n.stl {\n  position: relative;\n  width: 100%;\n  height: 40px;\n  margin-top: 14px;\n  margin-bottom: 18px;\n  padding-top: 4px;\n  padding-left: 4px;\n  padding-bottom: 4px;\n  border: none;\n  background-image: none;\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  -moz-box-shadow: none;\n  box-shadow: none;\n  -webkit-appearance: none;\n  appearance: none;\n  outline: none;\n  font-size: 16px;\n  box-sizing: border-box;\n  border-bottom: 1px solid var(--main-text-color);\n\n  @include for-size(mobile-landscape-up) {\n    border-bottom: 2px solid var(--main-text-color);\n  }\n\n  &__container {\n    position: relative;\n    font-family: 'Arvo', serif;\n    border-left: 1px solid var(--main-text-color);\n\n    @include for-size(mobile-landscape-up) {\n      border-left: 2px solid var(--main-text-color);\n    }\n  }\n\n  &__label {\n    position: absolute;\n    top: 2px;\n    left: 0;\n    padding-left: 6px;\n    padding-bottom: 4px;\n    padding-right: 6px;\n    line-height: 50%;\n    font-size: 0.75em;\n    border-bottom: 1px solid var(--main-text-color);\n\n    @include for-size(mobile-landscape-up) {\n      border-bottom: 2px solid var(--main-text-color);\n      font-size: 0.875em;\n    }\n  }\n\n  &__helper {\n    position: absolute;\n    padding-left: 4px;\n    padding-bottom: 2px;\n    bottom: 0;\n    left: 0;\n    font-size: 0.75em;\n\n    @include for-size(mobile-landscape-up) {\n      font-size: 0.875em;\n    }\n\n    &::before {\n      content: '*';\n      margin-right: 2px;\n    }\n  }\n\n  &--is-textarea {\n    min-height: 50px;\n    resize: none;\n\n    @include for-size(mobile-landscape-up) {\n      min-height: 80px;\n    }\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-portrait: 320px;\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == phone-portrait-only {\n    @media (max-width: $breakpoint-mobile-portrait + 1px) {\n      @content;\n    }\n  } @else if $size == landscape-mode-only {\n    @media screen and (min-width: 320px) and (min-height: 300px) and (max-width: 823px) and (max-height: 415px) and (orientation: landscape) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
+// Exports
+exports.locals = {
+	"stl": "input_stl__1ecln",
+	"stl__container": "input_stl__container__3ct2o",
+	"stl__label": "input_stl__label__3b3Ws",
+	"stl__helper": "input_stl__helper__3YMcf",
+	"stl--is-textarea": "input_stl--is-textarea__MyEHN"
 };
 
 /***/ }),
@@ -814,6 +996,185 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "./node_modules/emailjs-com/source/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/emailjs-com/source/index.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var EmailJSResponseStatus_1 = __webpack_require__(/*! ./models/EmailJSResponseStatus */ "./node_modules/emailjs-com/source/models/EmailJSResponseStatus.js");
+exports.EmailJSResponseStatus = EmailJSResponseStatus_1.EmailJSResponseStatus;
+var UI_1 = __webpack_require__(/*! ./services/ui/UI */ "./node_modules/emailjs-com/source/services/ui/UI.js");
+var _userID = null;
+var _origin = 'https://api.emailjs.com';
+function sendPost(url, data, headers) {
+    if (headers === void 0) { headers = {}; }
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener('load', function (event) {
+            var responseStatus = new EmailJSResponseStatus_1.EmailJSResponseStatus(event.target);
+            if (responseStatus.status === 200 || responseStatus.text === 'OK') {
+                resolve(responseStatus);
+            }
+            else {
+                reject(responseStatus);
+            }
+        });
+        xhr.addEventListener('error', function (event) {
+            reject(new EmailJSResponseStatus_1.EmailJSResponseStatus(event.target));
+        });
+        xhr.open('POST', url, true);
+        for (var key in headers) {
+            xhr.setRequestHeader(key, headers[key]);
+        }
+        xhr.send(data);
+    });
+}
+function appendGoogleCaptcha(templatePrams) {
+    var element = document.getElementById('g-recaptcha-response');
+    if (element && element.value) {
+        templatePrams['g-recaptcha-response'] = element.value;
+    }
+    element = null;
+    return templatePrams;
+}
+/**
+ * Initiation
+ * @param {string} userID - set the EmailJS user ID
+ * @param {string} origin - set the EmailJS origin
+ */
+function init(userID, origin) {
+    _userID = userID;
+    _origin = origin || 'https://api.emailjs.com';
+}
+exports.init = init;
+/**
+ * Send a template to the specific EmailJS service
+ * @param {string} serviceID - the EmailJS service ID
+ * @param {string} templateID - the EmailJS template ID
+ * @param {Object} templatePrams - the template params, what will be set to the EmailJS template
+ * @param {string} userID - the EmailJS user ID
+ * @returns {Promise<EmailJSResponseStatus>}
+ */
+function send(serviceID, templateID, templatePrams, userID) {
+    var params = {
+        lib_version: '2.4.1',
+        user_id: userID || _userID,
+        service_id: serviceID,
+        template_id: templateID,
+        template_params: appendGoogleCaptcha(templatePrams)
+    };
+    return sendPost(_origin + '/api/v1.0/email/send', JSON.stringify(params), {
+        'Content-type': 'application/json'
+    });
+}
+exports.send = send;
+/**
+ * Send a form the specific EmailJS service
+ * @param {string} serviceID - the EmailJS service ID
+ * @param {string} templateID - the EmailJS template ID
+ * @param {string | HTMLFormElement} form - the form element or selector
+ * @param {string} userID - the EmailJS user ID
+ * @returns {Promise<EmailJSResponseStatus>}
+ */
+function sendForm(serviceID, templateID, form, userID) {
+    if (typeof form === 'string') {
+        form = document.querySelector(form);
+    }
+    if (!form || form.nodeName !== 'FORM') {
+        throw 'Expected the HTML form element or the style selector of form';
+    }
+    UI_1.UI.progressState(form);
+    var formData = new FormData(form);
+    formData.append('lib_version', '2.4.1');
+    formData.append('service_id', serviceID);
+    formData.append('template_id', templateID);
+    formData.append('user_id', userID || _userID);
+    return sendPost(_origin + '/api/v1.0/email/send-form', formData)
+        .then(function (response) {
+        UI_1.UI.successState(form);
+        return response;
+    }, function (error) {
+        UI_1.UI.errorState(form);
+        return Promise.reject(error);
+    });
+}
+exports.sendForm = sendForm;
+exports.default = {
+    init: init,
+    send: send,
+    sendForm: sendForm
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/emailjs-com/source/models/EmailJSResponseStatus.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/emailjs-com/source/models/EmailJSResponseStatus.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var EmailJSResponseStatus = /** @class */ (function () {
+    function EmailJSResponseStatus(httpResponse) {
+        this.status = httpResponse.status;
+        this.text = httpResponse.responseText;
+    }
+    return EmailJSResponseStatus;
+}());
+exports.EmailJSResponseStatus = EmailJSResponseStatus;
+
+
+/***/ }),
+
+/***/ "./node_modules/emailjs-com/source/services/ui/UI.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/emailjs-com/source/services/ui/UI.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var UI = /** @class */ (function () {
+    function UI() {
+    }
+    UI.clearAll = function (form) {
+        form.classList.remove(this.PROGRESS);
+        form.classList.remove(this.DONE);
+        form.classList.remove(this.ERROR);
+    };
+    UI.progressState = function (form) {
+        this.clearAll(form);
+        form.classList.add(this.PROGRESS);
+    };
+    UI.successState = function (form) {
+        form.classList.remove(this.PROGRESS);
+        form.classList.add(this.DONE);
+    };
+    UI.errorState = function (form) {
+        form.classList.remove(this.PROGRESS);
+        form.classList.add(this.ERROR);
+    };
+    UI.PROGRESS = 'emailjs-sending';
+    UI.DONE = 'emailjs-success';
+    UI.ERROR = 'emailjs-error';
+    return UI;
+}());
+exports.UI = UI;
+
 
 /***/ }),
 
@@ -8151,21 +8512,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx!./":
-/*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx ***!
-  \**********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fcontact.tsx!./":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fcontact.tsx ***!
+  \************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/skills", function() {
-      var mod = __webpack_require__(/*! ./src/pages/skills.tsx */ "./src/pages/skills.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/contact", function() {
+      var mod = __webpack_require__(/*! ./src/pages/contact.tsx */ "./src/pages/contact.tsx")
       if(true) {
-        module.hot.accept(/*! ./src/pages/skills.tsx */ "./src/pages/skills.tsx", function() {
-          if(!next.router.components["/skills"]) return
-          var updatedPage = __webpack_require__(/*! ./src/pages/skills.tsx */ "./src/pages/skills.tsx")
-          next.router.update("/skills", updatedPage)
+        module.hot.accept(/*! ./src/pages/contact.tsx */ "./src/pages/contact.tsx", function() {
+          if(!next.router.components["/contact"]) return
+          var updatedPage = __webpack_require__(/*! ./src/pages/contact.tsx */ "./src/pages/contact.tsx")
+          next.router.update("/contact", updatedPage)
         })
       }
       return mod
@@ -20379,6 +20740,285 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./src/components/contact-section/contact-section.component.tsx":
+/*!**********************************************************************!*\
+  !*** ./src/components/contact-section/contact-section.component.tsx ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var emailjs_com__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! emailjs-com */ "./node_modules/emailjs-com/source/index.js");
+/* harmony import */ var emailjs_com__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(emailjs_com__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _elements_heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../elements/heading */ "./src/elements/heading/index.tsx");
+/* harmony import */ var _elements_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../elements/input */ "./src/elements/input/index.tsx");
+/* harmony import */ var _elements_button_button_element__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../elements/button/button.element */ "./src/elements/button/button.element.tsx");
+/* harmony import */ var _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact-section.module.scss */ "./src/components/contact-section/contact-section.module.scss");
+/* harmony import */ var _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6__);
+
+
+var _this = undefined,
+    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/contact-section/contact-section.component.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+
+
+var ContactSection = function ContactSection() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
+      message = _useState[0],
+      setMessage = _useState[1];
+
+  var formRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null);
+
+  var handleSubmit = function handleSubmit(event) {
+    var serviceId, templateId;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function handleSubmit$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            event.preventDefault();
+            serviceId = 'default_service';
+            templateId = 'portfolio_email';
+            _context.prev = 3;
+            _context.next = 6;
+            return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(emailjs_com__WEBPACK_IMPORTED_MODULE_2___default.a.sendForm(serviceId, templateId, event.target, "user_fOtmp3V2I5ZwYbq0hlAfr"));
+
+          case 6:
+            setMessage("Thanks For the email. I'll read it as soon as possible.");
+            _context.next = 12;
+            break;
+
+          case 9:
+            _context.prev = 9;
+            _context.t0 = _context["catch"](3);
+            setMessage('Oh no. There was a problem with the email.');
+
+          case 12:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, null, null, [[3, 9]], Promise);
+  };
+
+  return __jsx("div", {
+    className: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__container,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 7
+    }
+  }, message ? __jsx(_elements_heading__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form__message,
+    tag: "h3",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 11
+    }
+  }, message) : __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_elements_heading__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    tag: "h2",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 13
+    }
+  }, "Contact"), __jsx("form", {
+    ref: formRef,
+    className: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form,
+    onSubmit: handleSubmit,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    className: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form__subcontainer,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 15
+    }
+  }, __jsx(_elements_input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: "name",
+    containerClassName: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form__input,
+    label: "Name",
+    helperText: "required",
+    required: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 17
+    }
+  }), __jsx(_elements_input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: "email",
+    containerClassName: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form__input,
+    label: "Email",
+    helperText: "required",
+    required: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 17
+    }
+  })), __jsx("div", {
+    className: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form__input__container,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 15
+    }
+  }, __jsx(_elements_input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: "subject",
+    containerClassName: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form__input,
+    label: "Subject",
+    helperText: "required",
+    required: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 17
+    }
+  })), __jsx("div", {
+    className: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form__input__container,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 15
+    }
+  }, __jsx(_elements_input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: "message",
+    containerClassName: _contact_section_module_scss__WEBPACK_IMPORTED_MODULE_6___default.a.stl__form__input,
+    label: "Message",
+    helperText: "required",
+    isTextarea: true,
+    required: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 17
+    }
+  })), __jsx(_elements_button_button_element__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    submit: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 15
+    }
+  }, "Send")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ContactSection);
+
+/***/ }),
+
+/***/ "./src/components/contact-section/contact-section.module.scss":
+/*!********************************************************************!*\
+  !*** ./src/components/contact-section/contact-section.module.scss ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./contact-section.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/contact-section/contact-section.module.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./contact-section.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/contact-section/contact-section.module.scss",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./contact-section.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/contact-section/contact-section.module.scss");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./src/components/contact-section/index.tsx":
+/*!**************************************************!*\
+  !*** ./src/components/contact-section/index.tsx ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _contact_section_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact-section.component */ "./src/components/contact-section/contact-section.component.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _contact_section_component__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/components/layout/index.tsx":
 /*!*****************************************!*\
   !*** ./src/components/layout/index.tsx ***!
@@ -21110,6 +21750,434 @@ var resetClasses = function resetClasses() {
 
 /***/ }),
 
+/***/ "./src/elements/button/button.element.tsx":
+/*!************************************************!*\
+  !*** ./src/elements/button/button.element.tsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _button_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button.module.scss */ "./src/elements/button/button.module.scss");
+/* harmony import */ var _button_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+var _this = undefined,
+    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/elements/button/button.element.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+var Button = function Button(_ref) {
+  var children = _ref.children,
+      _ref$submit = _ref.submit,
+      submit = _ref$submit === void 0 ? false : _ref$submit,
+      _ref$className = _ref.className,
+      className = _ref$className === void 0 ? '' : _ref$className;
+  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(_button_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.stl, className);
+
+  if (submit) {
+    return __jsx("button", {
+      className: classes,
+      type: "submit",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 7
+      }
+    }, children);
+  }
+
+  return __jsx("button", {
+    className: classes,
+    type: "button",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 5
+    }
+  }, children);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "./src/elements/button/button.module.scss":
+/*!************************************************!*\
+  !*** ./src/elements/button/button.module.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./button.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/button/button.module.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./button.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/button/button.module.scss",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./button.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/button/button.module.scss");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./src/elements/heading/heading.element.tsx":
+/*!**************************************************!*\
+  !*** ./src/elements/heading/heading.element.tsx ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _heading_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./heading.module.scss */ "./src/elements/heading/heading.module.scss");
+/* harmony import */ var _heading_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_heading_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/elements/heading/heading.element.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0__["createElement"];
+
+
+
+
+function Heading(_ref) {
+  var _ref$tag = _ref.tag,
+      Tag = _ref$tag === void 0 ? 'h4' : _ref$tag,
+      _ref$className = _ref.className,
+      className = _ref$className === void 0 ? '' : _ref$className,
+      children = _ref.children;
+  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(_heading_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.heading, className, _heading_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a["heading--is-".concat(Tag)]);
+  return __jsx(Tag, {
+    className: classes,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 10
+    }
+  }, children);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Heading);
+
+/***/ }),
+
+/***/ "./src/elements/heading/heading.module.scss":
+/*!**************************************************!*\
+  !*** ./src/elements/heading/heading.module.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./heading.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/heading/heading.module.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./heading.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/heading/heading.module.scss",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./heading.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/heading/heading.module.scss");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./src/elements/heading/index.tsx":
+/*!****************************************!*\
+  !*** ./src/elements/heading/index.tsx ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _heading_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./heading.element */ "./src/elements/heading/heading.element.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _heading_element__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/elements/input/index.tsx":
+/*!**************************************!*\
+  !*** ./src/elements/input/index.tsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _input_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./input.element */ "./src/elements/input/input.element.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _input_element__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/elements/input/input.element.tsx":
+/*!**********************************************!*\
+  !*** ./src/elements/input/input.element.tsx ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _input_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./input.module.scss */ "./src/elements/input/input.module.scss");
+/* harmony import */ var _input_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_input_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+var _this = undefined,
+    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/elements/input/input.element.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+/* eslint-disable react/jsx-props-no-spreading */
+
+
+
+
+var Input = function Input(_ref) {
+  var _ref$id = _ref.id,
+      id = _ref$id === void 0 ? '' : _ref$id,
+      _ref$type = _ref.type,
+      type = _ref$type === void 0 ? 'text' : _ref$type,
+      _ref$name = _ref.name,
+      name = _ref$name === void 0 ? null : _ref$name,
+      _ref$label = _ref.label,
+      label = _ref$label === void 0 ? null : _ref$label,
+      _ref$helperText = _ref.helperText,
+      helperText = _ref$helperText === void 0 ? null : _ref$helperText,
+      _ref$isTextarea = _ref.isTextarea,
+      isTextarea = _ref$isTextarea === void 0 ? false : _ref$isTextarea,
+      _ref$className = _ref.className,
+      className = _ref$className === void 0 ? '' : _ref$className,
+      _ref$containerClassNa = _ref.containerClassName,
+      containerClassName = _ref$containerClassNa === void 0 ? '' : _ref$containerClassNa,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["id", "type", "name", "label", "helperText", "isTextarea", "className", "containerClassName"]);
+
+  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(_input_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl, isTextarea && _input_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a['stl--is-textarea'], className);
+  var containerClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(_input_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl__container, containerClassName);
+  return __jsx("div", {
+    className: containerClasses,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 5
+    }
+  }, __jsx("label", {
+    htmlFor: "input_".concat(id),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }
+  }, label && __jsx("span", {
+    className: _input_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl__label,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 19
+    }
+  }, label), isTextarea ? __jsx("textarea", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: classes,
+    id: "textarea_".concat(id),
+    name: name || id
+  }, props, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 11
+    }
+  })) : __jsx("input", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: classes,
+    id: "input_".concat(id),
+    type: type,
+    name: name || id
+  }, props, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 11
+    }
+  })), helperText && __jsx("span", {
+    className: _input_module_scss__WEBPACK_IMPORTED_MODULE_4___default.a.stl__helper,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 24
+    }
+  }, helperText)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Input);
+
+/***/ }),
+
+/***/ "./src/elements/input/input.module.scss":
+/*!**********************************************!*\
+  !*** ./src/elements/input/input.module.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./input.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/input/input.module.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./input.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/input/input.module.scss",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./input.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/input/input.module.scss");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
 /***/ "./src/elements/mouse-tracker/index.tsx":
 /*!**********************************************!*\
   !*** ./src/elements/mouse-tracker/index.tsx ***!
@@ -21282,10 +22350,10 @@ var useMousePointer = function useMousePointer() {
 
 /***/ }),
 
-/***/ "./src/pages/skills.tsx":
-/*!******************************!*\
-  !*** ./src/pages/skills.tsx ***!
-  \******************************/
+/***/ "./src/pages/contact.tsx":
+/*!*******************************!*\
+  !*** ./src/pages/contact.tsx ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -21296,66 +22364,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout/index.tsx");
+/* harmony import */ var _components_contact_section__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/contact-section */ "./src/components/contact-section/index.tsx");
 var _this = undefined,
-    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/pages/skills.tsx";
+    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/pages/contact.tsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Skills = function Skills() {
+
+var Contact = function Contact() {
   return __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 6,
       columnNumber: 3
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 7,
       columnNumber: 5
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 7
     }
-  }, "Skills | Web Developer | Jonat\xE1n Isaac Trevi\xF1o Galindo")), __jsx("div", {
-    className: "on-develop",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 5
-    }
-  }, __jsx("h1", {
+  }, "Contact | Web Developer | Jonat\xE1n Isaac Trevi\xF1o Galindo")), __jsx(_components_contact_section__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
-      columnNumber: 7
+      columnNumber: 5
     }
-  }, "On Develop...")));
+  }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Skills);
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
 
-/***/ 3:
-/*!**************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx ***!
-  \**************************************************************************************************************************************************************************/
+/***/ 2:
+/*!****************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fcontact.tsx ***!
+  \****************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fcontact.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fcontact.tsx!./");
 
 
 /***/ }),
@@ -21371,5 +22433,5 @@ module.exports = dll_b9380c54b6aeb86e51e7;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=skills.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=contact.js.map
