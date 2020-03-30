@@ -1,0 +1,65 @@
+@import '../../sass/base';
+
+.stl {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+
+  &__container {
+    width: 320px;
+    height: 450px;
+
+    @include for-size(mobile-landscape-up) {
+      width: 450px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.4em;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    &__subcontainer {
+      display: inline-flex;
+      flex-wrap: wrap;
+      width: 100%;
+      overflow: hidden;
+
+      @include for-size(mobile-landscape-up) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      margin-bottom: 0.5em;
+
+      @include for-size(mobile-landscape-up) {
+        margin-bottom: 1em;
+
+        &:nth-child(2) {
+          margin-left: 16px;
+        }
+      }
+
+      &__container {
+        margin-bottom: 0.5em;
+
+        @include for-size(mobile-landscape-up) {
+          margin-bottom: 0.8em;
+        }
+      }
+    }
+
+    &__message {
+      display: inline-flex;
+      height: 100%;
+      align-items: center;
+    }
+  }
+}

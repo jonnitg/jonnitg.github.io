@@ -1,14 +1,13 @@
 import Head from 'next/head';
 import Layout from '@components/layout';
+import ContactSection from '@components/contact-section';
 
 const Contact = () => (
   <Layout>
     <Head>
       <title>Contact | Web Developer | Jonatán Isaac Treviño Galindo</title>
     </Head>
-    <div className="on-develop">
-      <h1>On Develop...</h1>
-    </div>
+    <ContactSection />
   </Layout>
 );
 
