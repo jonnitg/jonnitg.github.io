@@ -1,9 +1,22 @@
+@import '../../sass/base';
+
 .stl {
   width: 100vw;
   min-width: 320px;
   height: 100vh;
   min-height: 480px;
   animation: fadeIn 2s ease-in-out;
+
+  @include for-size(landscape-mode-only) {
+    display: none;
+  }
+
+  @include for-size(landscape-mode-only) {
+    background-color: red;
+    width: 100vh;
+    height: 100vw;
+    z-index: 1000;
+  }
 }
 
 @keyframes fadeIn {

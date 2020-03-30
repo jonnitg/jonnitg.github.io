@@ -1,15 +1,37 @@
+@import '../../sass/base';
+
 .stl {
   display: grid;
-  grid-template-rows: 250px 250px;
-  grid-template-columns: 400px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: minmax(400px, 600px);
+  grid-gap: 1em;
   width: 100%;
   height: 100%;
   align-content: center;
   justify-content: center;
 
-  &__about-text-container {
+  @include for-size(tablet-portrait-up) {
+    grid-template-rows: repeat(2, 300px);
   }
 
-  &__hobies-text-container {
+  &__container {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: border-box;
+
+    @include for-size(mobile-landscape-up) {
+      width: 400px;
+    }
+  }
+  &__about-text {
+    justify-self: start;
+  }
+
+  &__hobbies-text {
+    justify-self: end;
+    width: 400px;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
