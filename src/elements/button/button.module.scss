@@ -1,0 +1,27 @@
+.stl {
+  position: relative;
+  padding: 8px;
+  appearance: none;
+  background: none;
+  border: 2px solid var(--main-text-color);
+  font-size: 0.875em;
+  cursor: pointer;
+  outline: none;
+
+  &:active {
+    animation: showUpAnimation 0.5s linear;
+  }
+}
+
+@keyframes showUpAnimation {
+  0% {
+    background-color: var(--main-text-color);
+    color: var(--main-theme-color);
+    visibility: hidden;
+  }
+  100% {
+    background-color: var(--main-text-color);
+    color: var(--main-theme-color);
+    visibility: visible;
+  }
+}
