@@ -4,6 +4,9 @@ import MainSection from '@components/main-section';
 
 const Home = () => (
   <Layout>
+    <Head>
+      <title>Home | Web Developer | Jonatán Isaac Treviño Galindo</title>
+    </Head>
     <MainSection />
   </Layout>
 );

@@ -19,9 +19,9 @@ const AboutSection = () => {
       <div className={aboutTextClasses}>
         <Heading tag="h2">About me</Heading>
         <p className={styles.stl__text}>
-          A person passionate about the development of web technologies, and who
-          uses technologies to create a new experience and who is able to
-          demonstrate everything he knows how to do.
+          I&apos;m a person passionate about the development of web
+          technologies, and who uses technologies to create a new experience and
+          who is able to demonstrate everything he knows how to do.
         </p>
         <p className={styles.stl__text}>
           Well organized person, self-taught, problem solver, and with high
