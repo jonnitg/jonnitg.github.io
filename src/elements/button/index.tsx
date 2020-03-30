@@ -1,1 +1,1 @@
-export { default } from './button.element.tsx';
+export { default } from './button.element';
