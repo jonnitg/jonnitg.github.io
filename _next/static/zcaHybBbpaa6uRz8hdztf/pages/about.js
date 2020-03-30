@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"2l/u":function(n,u,t){"use strict";t.r(u);var o=t("q1tI"),e=t.n(o),w=t("Ac47"),a=e.a.createElement;u.default=function(){return a(w.a,null,"about me")}},hIud:function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/about",function(){return t("2l/u")}])}},[["hIud",0,1,3]]]);
