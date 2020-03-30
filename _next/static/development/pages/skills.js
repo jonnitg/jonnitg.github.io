@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/about.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/skills.js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
@@ -655,31 +655,6 @@ function toVal(mix) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/about-section/about-section.module.scss":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/components/about-section/about-section.module.scss ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
-// Imports
-
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
-// Module
-exports.push([module.i, ".about-section_stl__1mMBY {\n  display: grid;\n  grid-gap: 1em;\n  align-content: center;\n  justify-content: center;\n  width: 100%;\n  height: 100%;\n}\n@media (min-width: 628px) {\n  .about-section_stl__1mMBY {\n    grid-template-columns: minmax(400px, 600px);\n    grid-template-rows: auto;\n    margin-top: 0;\n  }\n}\n.about-section_stl__container__YXvR4 {\n  width: 100%;\n  padding-left: 1em;\n  padding-right: 1em;\n  box-sizing: border-box;\n}\n@media (min-width: 480px) {\n  .about-section_stl__container__YXvR4 {\n    width: 400px;\n  }\n}\n.about-section_stl__about-section__1eqbp {\n  justify-self: start;\n}\n.about-section_stl__hobbies-section__17l_O {\n  justify-self: end;\n  width: auto;\n  padding-left: 1em;\n  padding-right: 1em;\n  margin-bottom: 4em;\n}\n@media (max-width: 768px) {\n  .about-section_stl__hobbies-section__17l_O {\n    margin-bottom: 0;\n  }\n}\n.about-section_stl__text__1RAm3 {\n  font-family: \"Arvo\", serif;\n}\n@media (max-width: 768px) {\n  .about-section_stl__text__1RAm3 {\n    font-size: 16px;\n    margin-top: 0;\n  }\n}\n@media (max-width: 321px) {\n  .about-section_stl__text__1RAm3 {\n    font-size: 14px;\n  }\n}\n.about-section_stl__list__2aXx3 {\n  font-family: \"Arvo\", serif;\n}\n@media (max-width: 321px) {\n  .about-section_stl__list__2aXx3 {\n    font-size: 14px;\n  }\n}", "",{"version":3,"sources":["about-section.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,aAAA;EACA,qBAAA;EACA,uBAAA;EACA,WAAA;EACA,YAAA;AAAF;ACuBI;ED7BJ;IASI,2CAAA;IACA,wBAAA;IACA,aAAA;EACF;AACF;AACE;EACE,WAAA;EACA,iBAAA;EACA,kBAAA;EACA,sBAAA;AACJ;ACMI;EDXF;IAOI,YAAA;EAEJ;AACF;AAAE;EACE,mBAAA;AAEJ;AACE;EACE,iBAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;AACJ;ACzBI;EDmBF;IAQI,gBAAA;EAEJ;AACF;AACE;EACE,0BAAA;AACJ;ACjCI;ED+BF;IAII,eAAA;IACA,aAAA;EAEJ;AACF;ACnCI;ED2BF;IASI,eAAA;EAGJ;AACF;AAAE;EACE,0BAAA;AAEJ;AC3CI;EDwCF;IAII,eAAA;EAGJ;AACF","file":"about-section.module.scss","sourcesContent":["@import '../../sass/base';\n\n.stl {\n  display: grid;\n  grid-gap: 1em;\n  align-content: center;\n  justify-content: center;\n  width: 100%;\n  height: 100%;\n\n  @include for-size(between-mobile-tablet-up) {\n    grid-template-columns: minmax(400px, 600px);\n    grid-template-rows: auto;\n    margin-top: 0;\n  }\n\n  &__container {\n    width: 100%;\n    padding-left: 1em;\n    padding-right: 1em;\n    box-sizing: border-box;\n\n    @include for-size(mobile-landscape-up) {\n      width: 400px;\n    }\n  }\n  &__about-section {\n    justify-self: start;\n  }\n\n  &__hobbies-section {\n    justify-self: end;\n    width: auto;\n    padding-left: 1em;\n    padding-right: 1em;\n    margin-bottom: 4em;\n\n    @include for-size(phone-only) {\n      margin-bottom: 0;\n    }\n  }\n\n  &__text {\n    font-family: 'Arvo', serif;\n\n    @include for-size(phone-only) {\n      font-size: 16px;\n      margin-top: 0;\n    }\n\n    @include for-size(phone-portrait-only) {\n      font-size: 14px;\n    }\n  }\n\n  &__list {\n    font-family: 'Arvo', serif;\n\n    @include for-size(phone-portrait-only) {\n      font-size: 14px;\n    }\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-portrait: 320px;\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == phone-portrait-only {\n    @media (max-width: $breakpoint-mobile-portrait + 1px) {\n      @content;\n    }\n  } @else if $size == landscape-mode-only {\n    @media screen and (min-width: 320px) and (min-height: 300px) and (max-width: 823px) and (max-height: 415px) and (orientation: landscape) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
-// Exports
-exports.locals = {
-	"stl": "about-section_stl__1mMBY",
-	"stl__container": "about-section_stl__container__YXvR4",
-	"stl__about-section": "about-section_stl__about-section__1eqbp",
-	"stl__hobbies-section": "about-section_stl__hobbies-section__17l_O",
-	"stl__text": "about-section_stl__text__1RAm3",
-	"stl__list": "about-section_stl__list__2aXx3"
-};
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/layout/layout.module.scss":
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/components/layout/layout.module.scss ***!
@@ -737,30 +712,6 @@ exports.locals = {
 	"theme-settings": "theme-settings_theme-settings__3vgw0",
 	"theme-settings__button": "theme-settings_theme-settings__button__1cOn7",
 	"theme-settings__picker": "theme-settings_theme-settings__picker__2QkOC"
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/heading/heading.module.scss":
-/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./src/elements/heading/heading.module.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
-// Imports
-
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap);"]);
-// Module
-exports.push([module.i, ".heading_heading__2M5K0 {\n  margin: 0;\n}\n.heading_heading--is-h1__1ZdY6 {\n  font-size: 5em;\n  line-height: 1.1;\n  color: var(--main-text-color);\n}\n@media (min-width: 480px) {\n  .heading_heading--is-h1__1ZdY6 {\n    font-size: 6em;\n    line-height: 1.1;\n  }\n}\n.heading_heading--is-h2__Sr7FY {\n  font-size: 2em;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h3__3mj2l {\n  font-size: 1.5em;\n  color: var(--main-text-color);\n}\n.heading_heading--is-h4__W_Eb- {\n  font-size: 1.2em;\n  color: var(--main-text-color);\n}", "",{"version":3,"sources":["heading.module.scss","../../sass/_base.scss"],"names":[],"mappings":"AAIA;EACE,SAAA;AAFF;AAKI;EAEI,cAAA;EACA,gBAAA;EACA,6BAAA;AAJR;ACmBI;EDnBA;IAOM,cAAA;IACA,gBAAA;EAHR;AACF;AANI;EAWI,cAAA;EACA,6BAAA;AAFR;AAVI;EAcI,gBAAA;EACA,6BAAA;AADR;AAdI;EAiBI,gBAAA;EACA,6BAAA;AAAR","file":"heading.module.scss","sourcesContent":["@import '../../sass/base';\n\n$all_headings: h1, h2, h3, h4;\n\n.heading {\n  margin: 0;\n\n  @each $heading in $all_headings {\n    &--is-#{$heading} {\n      @if $heading == h1 {\n        font-size: 5em;\n        line-height: 1.1;\n        color: var(--main-text-color);\n\n        @include for-size(mobile-landscape-up) {\n          font-size: 6em;\n          line-height: 1.1;\n        }\n      } @else if $heading == h2 {\n        font-size: 2em;\n        color: var(--main-text-color);\n      } @else if $heading == h3 {\n        font-size: 1.5em;\n        color: var(--main-text-color);\n      } @else if $heading == h4 {\n        font-size: 1.2em;\n        color: var(--main-text-color);\n      }\n    }\n  }\n}\n","@import url('https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap');\n\n$breakpoint-mobile-portrait: 320px;\n$breakpoint-mobile-landscape: 480px;\n$breakpoint-between-mobile-tablet: 628px;\n$breakpoint-tablet-portrait: 768px;\n$breakpoint-tablet-landscape: 992px;\n$breakpoint-desktop: 1200px;\n\n@mixin for-size($size) {\n  @if $size == phone-only {\n    @media (max-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == phone-portrait-only {\n    @media (max-width: $breakpoint-mobile-portrait + 1px) {\n      @content;\n    }\n  } @else if $size == landscape-mode-only {\n    @media screen and (min-width: 320px) and (min-height: 300px) and (max-width: 823px) and (max-height: 415px) and (orientation: landscape) {\n      @content;\n    }\n  } @else if $size == tablet-phone-only {\n    @media (max-width: $breakpoint-desktop) {\n      @content;\n    }\n  } @else if $size == mobile-landscape-up {\n    @media (min-width: $breakpoint-mobile-landscape) {\n      @content;\n    }\n  } @else if $size == between-mobile-tablet-up {\n    @media (min-width: $breakpoint-between-mobile-tablet) {\n      @content;\n    }\n  } @else if $size == tablet-portrait-up {\n    @media (min-width: $breakpoint-tablet-portrait) {\n      @content;\n    }\n  } @else if $size == tablet-landscape-up {\n    @media (min-width: $breakpoint-tablet-landscape) {\n      @content;\n    }\n  } @else if $size == desktop-up {\n    @media (min-width: $breakpoint-desktop) {\n      @content;\n    }\n  }\n}\n"]}]);
-// Exports
-exports.locals = {
-	"heading": "heading_heading__2M5K0",
-	"heading--is-h1": "heading_heading--is-h1__1ZdY6",
-	"heading--is-h2": "heading_heading--is-h2__Sr7FY",
-	"heading--is-h3": "heading_heading--is-h3__3mj2l",
-	"heading--is-h4": "heading_heading--is-h4__W_Eb-"
 };
 
 /***/ }),
@@ -8200,21 +8151,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fabout.tsx!./":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fabout.tsx ***!
-  \********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx!./":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/about", function() {
-      var mod = __webpack_require__(/*! ./src/pages/about.tsx */ "./src/pages/about.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/skills", function() {
+      var mod = __webpack_require__(/*! ./src/pages/skills.tsx */ "./src/pages/skills.tsx")
       if(true) {
-        module.hot.accept(/*! ./src/pages/about.tsx */ "./src/pages/about.tsx", function() {
-          if(!next.router.components["/about"]) return
-          var updatedPage = __webpack_require__(/*! ./src/pages/about.tsx */ "./src/pages/about.tsx")
-          next.router.update("/about", updatedPage)
+        module.hot.accept(/*! ./src/pages/skills.tsx */ "./src/pages/skills.tsx", function() {
+          if(!next.router.components["/skills"]) return
+          var updatedPage = __webpack_require__(/*! ./src/pages/skills.tsx */ "./src/pages/skills.tsx")
+          next.router.update("/skills", updatedPage)
         })
       }
       return mod
@@ -20428,217 +20379,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./src/components/about-section/about-section.component.tsx":
-/*!******************************************************************!*\
-  !*** ./src/components/about-section/about-section.component.tsx ***!
-  \******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _elements_heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../elements/heading */ "./src/elements/heading/index.tsx");
-/* harmony import */ var _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about-section.module.scss */ "./src/components/about-section/about-section.module.scss");
-/* harmony import */ var _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_about_section_module_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _this = undefined,
-    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/about-section/about-section.component.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-var AboutSection = function AboutSection() {
-  var aboutTextClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(_about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.stl__container, _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a['stl__about-section']);
-  var hobbiesTextClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(_about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.stl__container, _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a['stl__hobbies-section']);
-  return __jsx("div", {
-    className: _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.stl,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    className: aboutTextClasses,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 7
-    }
-  }, __jsx(_elements_heading__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    tag: "h2",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 9
-    }
-  }, "About me"), __jsx("p", {
-    className: _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.stl__text,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 9
-    }
-  }, "I'm a person passionate about the development of web technologies, and who uses technologies to create a new experience and who is able to demonstrate everything he knows how to do."), __jsx("p", {
-    className: _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.stl__text,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 9
-    }
-  }, "Well organized person, self-taught, problem solver, and with high attention to detail. A family person, the one that makes them laugh."), __jsx("p", {
-    className: _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.stl__text,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 9
-    }
-  }, "Interested in the frontend environment and working on ambitious projects with a good community.")), __jsx("div", {
-    className: hobbiesTextClasses,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 7
-    }
-  }, __jsx(_elements_heading__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    tag: "h2",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 9
-    }
-  }, "Hobbies"), __jsx("ul", {
-    className: _about_section_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.stl__list,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  }, __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 11
-    }
-  }, "Musician"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 11
-    }
-  }, "PC Gamer"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 11
-    }
-  }, "Watch Anime"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
-    }
-  }, "Watch TV series"))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (AboutSection);
-
-/***/ }),
-
-/***/ "./src/components/about-section/about-section.module.scss":
-/*!****************************************************************!*\
-  !*** ./src/components/about-section/about-section.module.scss ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./about-section.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/about-section/about-section.module.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = function(element){// These elements should always exist. If they do not,
-// this code should fail.
-var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
-// Each style tag should be placed right before our
-// anchor. By inserting before and not after, we do not
-// need to track the last inserted element.
-parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
-//
-// After styles are injected, we need to remove the
-// <style> tags that set `body { display: none; }`.
-//
-// We use `requestAnimationFrame` as a way to defer
-// this operation since there may be multiple style
-// tags.
-;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-if (true) {
-  if (!content.locals) {
-    module.hot.accept(
-      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./about-section.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/about-section/about-section.module.scss",
-      function () {
-        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./about-section.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/components/about-section/about-section.module.scss");
-
-        if (typeof newContent === 'string') {
-          newContent = [[module.i, newContent, '']];
-        }
-        
-        update(newContent);
-      }
-    )
-  }
-
-  module.hot.dispose(function() { 
-    update();
-  });
-}
-
-/***/ }),
-
-/***/ "./src/components/about-section/index.tsx":
-/*!************************************************!*\
-  !*** ./src/components/about-section/index.tsx ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _about_section_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about-section.component */ "./src/components/about-section/about-section.component.tsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _about_section_component__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
-
 /***/ "./src/components/layout/index.tsx":
 /*!*****************************************!*\
   !*** ./src/components/layout/index.tsx ***!
@@ -21370,127 +21110,6 @@ var resetClasses = function resetClasses() {
 
 /***/ }),
 
-/***/ "./src/elements/heading/heading.element.tsx":
-/*!**************************************************!*\
-  !*** ./src/elements/heading/heading.element.tsx ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _heading_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./heading.module.scss */ "./src/elements/heading/heading.module.scss");
-/* harmony import */ var _heading_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_heading_module_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/elements/heading/heading.element.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0__["createElement"];
-
-
-
-
-
-function Heading(_ref, ref) {
-  var _ref$tag = _ref.tag,
-      Tag = _ref$tag === void 0 ? 'h4' : _ref$tag,
-      _ref$className = _ref.className,
-      className = _ref$className === void 0 ? '' : _ref$className,
-      children = _ref.children;
-  var classes = Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(_heading_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.heading, className, _heading_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a["heading--is-".concat(Tag)]);
-  return __jsx(Tag, {
-    ref: ref,
-    className: classes,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 5
-    }
-  }, children);
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(Heading));
-
-/***/ }),
-
-/***/ "./src/elements/heading/heading.module.scss":
-/*!**************************************************!*\
-  !*** ./src/elements/heading/heading.module.scss ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./heading.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/heading/heading.module.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = function(element){// These elements should always exist. If they do not,
-// this code should fail.
-var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
-// Each style tag should be placed right before our
-// anchor. By inserting before and not after, we do not
-// need to track the last inserted element.
-parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
-//
-// After styles are injected, we need to remove the
-// <style> tags that set `body { display: none; }`.
-//
-// We use `requestAnimationFrame` as a way to defer
-// this operation since there may be multiple style
-// tags.
-;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-if (true) {
-  if (!content.locals) {
-    module.hot.accept(
-      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./heading.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/heading/heading.module.scss",
-      function () {
-        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!../../../node_modules/resolve-url-loader??ref--5-oneOf-3-3!../../../node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./heading.module.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/elements/heading/heading.module.scss");
-
-        if (typeof newContent === 'string') {
-          newContent = [[module.i, newContent, '']];
-        }
-        
-        update(newContent);
-      }
-    )
-  }
-
-  module.hot.dispose(function() { 
-    update();
-  });
-}
-
-/***/ }),
-
-/***/ "./src/elements/heading/index.tsx":
-/*!****************************************!*\
-  !*** ./src/elements/heading/index.tsx ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _heading_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./heading.element */ "./src/elements/heading/heading.element.tsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _heading_element__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
-
 /***/ "./src/elements/mouse-tracker/index.tsx":
 /*!**********************************************!*\
   !*** ./src/elements/mouse-tracker/index.tsx ***!
@@ -21663,10 +21282,10 @@ var useMousePointer = function useMousePointer() {
 
 /***/ }),
 
-/***/ "./src/pages/about.tsx":
-/*!*****************************!*\
-  !*** ./src/pages/about.tsx ***!
-  \*****************************/
+/***/ "./src/pages/skills.tsx":
+/*!******************************!*\
+  !*** ./src/pages/skills.tsx ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -21677,60 +21296,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout/index.tsx");
-/* harmony import */ var _components_about_section__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/about-section */ "./src/components/about-section/index.tsx");
 var _this = undefined,
-    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/pages/about.tsx";
+    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/pages/skills.tsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-var Home = function Home() {
+var Skills = function Skills() {
   return __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 5,
       columnNumber: 3
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 6,
       columnNumber: 5
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 7,
       columnNumber: 7
     }
-  }, "About | Web Developer | Jonat\xE1n Isaac Trevi\xF1o Galindo")), __jsx(_components_about_section__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Skills | Web Developer | Jonat\xE1n Isaac Trevi\xF1o Galindo")), __jsx("div", {
+    className: "on-develop",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 5
+    }
+  }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
-      columnNumber: 5
+      columnNumber: 7
     }
-  }));
+  }, "On Develop...")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Home);
+/* harmony default export */ __webpack_exports__["default"] = (Skills);
 
 /***/ }),
 
-/***/ 2:
-/*!************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fabout.tsx ***!
-  \************************************************************************************************************************************************************************/
+/***/ 3:
+/*!**************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fabout.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fabout.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fskills.tsx!./");
 
 
 /***/ }),
@@ -21746,5 +21371,5 @@ module.exports = dll_b9380c54b6aeb86e51e7;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=about.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=skills.js.map
