@@ -40,7 +40,7 @@ input {
 a,
 a:active,
 a:visited {
-  color: inherit;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
