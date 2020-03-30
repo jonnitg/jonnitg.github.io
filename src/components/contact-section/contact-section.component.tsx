@@ -20,7 +20,7 @@ const ContactSection = () => {
         serviceId,
         templateId,
         event.target,
-        'user_fOtmp3V2I5ZwYbq0hlAfr'
+        process.env.userIdEmailjs
       );
       setMessage("Thanks For the email. I'll read it as soon as possible.");
     } catch (error) {

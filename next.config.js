@@ -6,4 +6,7 @@ module.exports = {
     '/portfolio': { page: '/portfolio' },
     '/contact': { page: '/contact' },
   }),
+  env: {
+    userIdEmailjs: 'user_fOtmp3V2I5ZwYbq0hlAfr',
+  },
 };
