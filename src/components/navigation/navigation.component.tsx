@@ -24,10 +24,10 @@ const routes = [
     title: 'Skills',
     href: '/skills',
   },
-  {
-    title: 'Portfolio',
-    href: '/portfolio',
-  },
+  // {
+  //   title: 'Portfolio',
+  //   href: '/portfolio',
+  // },
   {
     title: 'Contact',
     href: '/contact',
