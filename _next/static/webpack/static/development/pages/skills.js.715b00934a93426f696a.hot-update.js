@@ -1,0 +1,50 @@
+webpackHotUpdate("static/development/pages/skills.js",{
+
+/***/ "./src/components/skills-section/skills-section.component.tsx":
+/*!********************************************************************!*\
+  !*** ./src/components/skills-section/skills-section.component.tsx ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _elements_heading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../elements/heading */ "./src/elements/heading/index.tsx");
+/* harmony import */ var _skills_section_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./skills-section.module.scss */ "./src/components/skills-section/skills-section.module.scss");
+/* harmony import */ var _skills_section_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_skills_section_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+var _this = undefined,
+    _jsxFileName = "/Users/jickty/Documents/GitHub/nextjs-apps/jonnitg.github.io/src/components/skills-section/skills-section.component.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+var SkillsSection = function SkillsSection() {
+  return __jsx("div", {
+    className: _skills_section_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.stl,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 5
+    }
+  }, __jsx(_elements_heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    tag: "h1",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }, "Skills"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SkillsSection);
+
+/***/ })
+
+})
+//# sourceMappingURL=skills.js.715b00934a93426f696a.hot-update.js.map

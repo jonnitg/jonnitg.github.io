@@ -21239,10 +21239,11 @@ var routes = [{
 }, {
   title: 'Skills',
   href: '/skills'
-}, {
-  title: 'Portfolio',
-  href: '/portfolio'
-}, {
+}, // {
+//   title: 'Portfolio',
+//   href: '/portfolio',
+// },
+{
   title: 'Contact',
   href: '/contact'
 }];
@@ -22410,7 +22411,7 @@ var Contact = function Contact() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fjickty%2FDocuments%2FGitHub%2Fnextjs-apps%2Fjonnitg.github.io%2Fsrc%2Fpages%2Fcontact.tsx ***!
   \****************************************************************************************************************************************************************************/
@@ -22433,5 +22434,5 @@ module.exports = dll_b9380c54b6aeb86e51e7;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=contact.js.map
