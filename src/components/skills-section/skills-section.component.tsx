@@ -12,45 +12,39 @@ const SkillsSection = () => {
         <div className={styles.stl__text}>
           <ul>
             <li>
-              Javascript
+              Front-End
               <ul>
-                <li>ReactJs</li>
-                <li>Redux</li>
-                <li>NextJs</li>
-                <li>GatsbyJs</li>
-                <li>NodeJs</li>
-                <li>ExpressJs</li>
+                <li>HTML</li>
+                <li>CSS / SASS</li>
+                <li>Javascript ES6 / JQuery</li>
                 <li>Typescript</li>
               </ul>
             </li>
             <li>
-              CSS
+              Back-End
               <ul>
-                <li>Sass</li>
-                <li>BEM</li>
+                <li>Javascript / NodeJs</li>
+                <li>PHP / Composer</li>
+                <li>Docker</li>
               </ul>
             </li>
             <li>
-              Git
+              FrameWorks
               <ul>
-                <li>GitHub</li>
-                <li>GitLab</li>
-              </ul>
-            </li>
-            <li>Docker</li>
-            <li>
-              PHP
-              <ul>
+                <li>React / Redux / GatsbyJs / NextJs</li>
+                <li>Material UI</li>
+                <li>GraphQL</li>
                 <li>Laravel</li>
-                <li>Wordpress</li>
+                <li>AdonisJs / ExpressJs</li>
+                <li>Firebase</li>
               </ul>
             </li>
             <li>
-              Databases
+              Source Control
               <ul>
-                <li>Mysql</li>
-                <li>Postgres</li>
-                <li>Mongo</li>
+                <li>Git (Git Flow)</li>
+                <li>Github</li>
+                <li>Jira</li>
               </ul>
             </li>
           </ul>
