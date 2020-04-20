@@ -20876,7 +20876,7 @@ var SkillsSection = function SkillsSection() {
       lineNumber: 14,
       columnNumber: 13
     }
-  }, "Javascript", __jsx("ul", {
+  }, "Front-End", __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -20890,175 +20890,154 @@ var SkillsSection = function SkillsSection() {
       lineNumber: 17,
       columnNumber: 17
     }
-  }, "ReactJs"), __jsx("li", {
+  }, "HTML"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18,
       columnNumber: 17
     }
-  }, "Redux"), __jsx("li", {
+  }, "CSS / SASS"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19,
       columnNumber: 17
     }
-  }, "NextJs"), __jsx("li", {
+  }, "Javascript ES6 / JQuery"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20,
       columnNumber: 17
     }
-  }, "GatsbyJs"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 17
-    }
-  }, "NodeJs"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 17
-    }
-  }, "ExpressJs"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 17
-    }
   }, "Typescript"))), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 23,
       columnNumber: 13
     }
-  }, "CSS", __jsx("ul", {
+  }, "Back-End", __jsx("ul", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 15
+    }
+  }, __jsx("li", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 17
+    }
+  }, "Javascript / NodeJs"), __jsx("li", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 17
+    }
+  }, "PHP / Composer"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28,
-      columnNumber: 15
+      columnNumber: 17
     }
-  }, __jsx("li", {
+  }, "Docker"))), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 17
+      lineNumber: 31,
+      columnNumber: 13
     }
-  }, "Sass"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 17
-    }
-  }, "BEM"))), __jsx("li", {
+  }, "FrameWorks", __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33,
-      columnNumber: 13
+      columnNumber: 15
     }
-  }, "Git", __jsx("ul", {
+  }, __jsx("li", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 17
+    }
+  }, "React / Redux / GatsbyJs / NextJs"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35,
-      columnNumber: 15
+      columnNumber: 17
     }
-  }, __jsx("li", {
+  }, "Material UI"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36,
       columnNumber: 17
     }
-  }, "GitHub"), __jsx("li", {
+  }, "GraphQL"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37,
       columnNumber: 17
     }
-  }, "GitLab"))), __jsx("li", {
+  }, "Laravel"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 38,
+      columnNumber: 17
+    }
+  }, "AdonisJs / ExpressJs"), __jsx("li", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 17
+    }
+  }, "Firebase"))), __jsx("li", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
       columnNumber: 13
     }
-  }, "Docker"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 13
-    }
-  }, "PHP", __jsx("ul", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 15
-    }
-  }, __jsx("li", {
+  }, "Source Control", __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44,
-      columnNumber: 17
+      columnNumber: 15
     }
-  }, "Laravel"), __jsx("li", {
+  }, __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45,
       columnNumber: 17
     }
-  }, "Wordpress"))), __jsx("li", {
+  }, "Git (Git Flow)"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 13
-    }
-  }, "Databases", __jsx("ul", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 15
-    }
-  }, __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 46,
       columnNumber: 17
     }
-  }, "Mysql"), __jsx("li", {
+  }, "Github"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 47,
       columnNumber: 17
     }
-  }, "Postgres"), __jsx("li", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 17
-    }
-  }, "Mongo")))))));
+  }, "Jira")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SkillsSection);
