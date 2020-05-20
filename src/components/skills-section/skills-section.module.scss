@@ -1,15 +1,7 @@
 @import '../../sass/base';
 
 .stl {
-  display: grid;
-  position: fixed;
-  grid-gap: 1em;
-  align-content: center;
-  justify-content: center;
   width: 100%;
-  height: calc(100% - 100px);
-  margin-top: 50px;
-  margin-bottom: 50px;
 
   &__container {
     width: 100%;
