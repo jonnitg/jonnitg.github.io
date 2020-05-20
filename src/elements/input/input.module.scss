@@ -28,12 +28,7 @@
 
   &__container {
     position: relative;
-    font-family: 'Arvo', serif;
-    border-left: 1px solid var(--main-text-color);
-
-    @include for-size(mobile-landscape-up) {
-      border-left: 2px solid var(--main-text-color);
-    }
+    font-family: 'Muli', sans-serif;
   }
 
   &__label {
