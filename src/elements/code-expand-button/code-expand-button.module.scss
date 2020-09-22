@@ -6,13 +6,15 @@
   font-size: 1.2rem;
   background-color: transparent;
   transform-origin: center;
+  font-family: 'Fira Code', monospace;
 
   &:focus {
     outline: transparent;
   }
 
   &--is-expanded {
+    padding: 0.5em 0;
     transform: rotate(90deg);
-    transform-origin: 45% 55%;
+    transform-origin: 60% 55%;
   }
 }

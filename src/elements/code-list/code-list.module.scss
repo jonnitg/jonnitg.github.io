@@ -1,10 +1,11 @@
 .container {
   $self: &;
   margin-top: 0;
-  margin-left: 2em;
+  margin-left: 2rem;
   margin-bottom: 0;
   padding: 0;
   list-style-type: none;
+  font-family: 'Fira Code', monospace;
 
   &__item {
     &::before {
@@ -25,7 +26,7 @@
 
   &--vertical {
     #{$self}__item {
-      margin-left: 2em;
+      margin-left: 2rem;
     }
   }
 
@@ -33,5 +34,9 @@
     #{$self}__item {
       display: inline;
     }
+  }
+
+  &--is-shrunk {
+    display: flex;
   }
 }

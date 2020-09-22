@@ -1,4 +1,6 @@
 .container {
+  font-family: 'Fira Code', monospace;
+
   &::before {
     content: '{';
     padding-right: 0.5em;
