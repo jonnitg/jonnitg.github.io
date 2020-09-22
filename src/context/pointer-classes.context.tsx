@@ -8,13 +8,13 @@ const RESET_CLASSES = 'RESET_CLASSES';
 const initState = {};
 
 const reducer = (state = {}, action) => {
-  const { props, type } = action;
+  const { type } = action;
 
   switch (type) {
     case ADD_TITLE_CLASS:
       return { 'pointer__cursor--is-on-title': true };
     case ADD_NAV_CLASS:
-      return { 'pointer__cursor--is-on-nav': true, ...props };
+      return { 'pointer__cursor--is-on-nav': true };
     case ADD_LINK_CLASS:
       return { 'pointer__cursor--is-on-link': true };
     case RESET_CLASSES:
@@ -44,12 +44,10 @@ const addTitleClassAction = () => {
   };
 };
 
-const addNavClassAction = (extraClass) => {
+const addNavClassAction = () => {
   return {
     type: ADD_NAV_CLASS,
-    props: {
-      ...extraClass,
-    },
+    props: {},
   };
 };
 
