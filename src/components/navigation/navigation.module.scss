@@ -2,4 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
+  margin: 0.5rem;
+}
+
+.item {
+  font-size: 1.2rem;
+
+  &--is-active {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
 }

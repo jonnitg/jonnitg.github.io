@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 import {
   PointerClassesContext,
@@ -36,14 +36,16 @@ const Navigation: React.FunctionComponent = () => {
   const { dispatchClasses } = useContext(PointerClassesContext);
   const { mousePosition, setRef } = useMousePointer();
   const [hashPath, dispatch] = useHashLocation();
+  const [position, setPosition] = useState(0);
+  const [isShrunk, setIsShrunk] = useState(false);
 
   const handleOnMouseOver = (type) => {
-    const customClass = `pointer__cursor--on-${type.toLowerCase()}-page`;
-    dispatchClasses(
-      addNavClassAction({
-        [customClass]: true,
-      })
-    );
+    dispatchClasses(addNavClassAction());
+  };
+
+  const onClick = (e, indexPosition) => {
+    setPosition(indexPosition);
+    dispatch(e);
   };
 
   useEffect(() => {
@@ -59,18 +61,20 @@ const Navigation: React.FunctionComponent = () => {
     <header>
       <nav ref={setRef} className={styles.container}>
         <CodeText>
-          menu:
-          <CodeExpandButton onClick={() => null} />
+          {`menu[${position}]:`}
+          <CodeExpandButton onClick={() => setIsShrunk(!isShrunk)} />
           <CodeList
-            list={routes.map((route) => ({
+            isShrunk={isShrunk}
+            list={routes.map((route, index) => ({
               id: route.title,
+              className: hashPath === route.href && styles['item--is-active'],
               element: (
                 <a
                   key={route.title}
                   onMouseOver={() => handleOnMouseOver(route.title)}
                   onFocus={() => handleOnMouseOver(route.title)}
-                  onClick={dispatch}
-                  className={clsx(hashPath === route.href && 'link active')}
+                  onClick={(e) => onClick(e, index)}
+                  className={styles.item}
                   href={route.href}
                 >
                   {route.title}
