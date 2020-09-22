@@ -62,7 +62,10 @@ const Navigation: React.FunctionComponent = () => {
       <nav ref={setRef} className={styles.container}>
         <CodeText>
           {`menu[${position}]:`}
-          <CodeExpandButton onClick={() => setIsShrunk(!isShrunk)} />
+          <CodeExpandButton
+            isShrunk={isShrunk}
+            onClick={() => setIsShrunk(!isShrunk)}
+          />
           <CodeList
             isShrunk={isShrunk}
             list={routes.map((route, index) => ({
