@@ -6,9 +6,9 @@ import { MousePosition } from '@hooks/useMousePointer';
 type MouseTrackerProps = {
   mousePosition: MousePosition;
 };
-const MouseTracker = ({
+const MouseTracker: React.FunctionComponent<MouseTrackerProps> = ({
   mousePosition = { x: null, y: null, isOver: false },
-}: MouseTrackerProps) => {
+}) => {
   const { pointerClasses } = useContext(PointerClassesContext);
   const mouseRef = createRef<HTMLDivElement>();
 

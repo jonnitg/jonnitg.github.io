@@ -1,8 +1,7 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import { AppProps } from 'next/app';
 import '../sass/main.scss';
 
-function App({ Component, pageProps }: AppProps) {
+const App: React.FunctionComponent<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <div className="hidden-on-landscape">
@@ -18,6 +17,6 @@ function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </>
   );
-}
+};
 
 export default App;

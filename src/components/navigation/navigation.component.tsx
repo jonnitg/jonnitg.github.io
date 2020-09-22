@@ -8,24 +8,31 @@ import {
 } from '@context/pointer-classes.context';
 import useMousePointer from '@hooks/useMousePointer';
 import useHashLocation from '@hooks/useHashLocation';
+import CodeText from '@elements/code-text';
+import CodeList from '@elements/code-list';
+import CodeExpandButton from '@elements/code-expand-button';
 import styles from './navigation.module.scss';
 
 const routes = [
   {
-    title: 'About',
+    title: 'start',
+    href: '#start',
+  },
+  {
+    title: 'about',
     href: '#about',
   },
   {
-    title: 'Skills',
+    title: 'skills',
     href: '#skills',
   },
   {
-    title: 'Contact',
+    title: 'contact',
     href: '#contact',
   },
 ];
 
-const Navigation = () => {
+const Navigation: React.FunctionComponent = () => {
   const { dispatchClasses } = useContext(PointerClassesContext);
   const { mousePosition, setRef } = useMousePointer();
   const [hashPath, dispatch] = useHashLocation();
@@ -49,23 +56,29 @@ const Navigation = () => {
   }, [mousePosition.isOver]);
 
   return (
-    <header className={styles.stl__header}>
-      <nav ref={setRef} className={styles.stl}>
-        {routes.map((route) => (
-          <a
-            key={route.title}
-            onMouseOver={() => handleOnMouseOver(route.title)}
-            onFocus={() => handleOnMouseOver(route.title)}
-            onClick={dispatch}
-            className={clsx(
-              styles.stl__link,
-              hashPath === route.href && styles['stl__link--is-active']
-            )}
-            href={route.href}
-          >
-            {route.title}
-          </a>
-        ))}
+    <header>
+      <nav ref={setRef} className={styles.container}>
+        <CodeText>
+          menu:
+          <CodeExpandButton onClick={() => null} />
+          <CodeList
+            list={routes.map((route) => ({
+              id: route.title,
+              element: (
+                <a
+                  key={route.title}
+                  onMouseOver={() => handleOnMouseOver(route.title)}
+                  onFocus={() => handleOnMouseOver(route.title)}
+                  onClick={dispatch}
+                  className={clsx(hashPath === route.href && 'link active')}
+                  href={route.href}
+                >
+                  {route.title}
+                </a>
+              ),
+            }))}
+          />
+        </CodeText>
       </nav>
     </header>
   );

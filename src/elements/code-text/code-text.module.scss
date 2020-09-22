@@ -1,0 +1,13 @@
+.container {
+  &::before {
+    content: '{';
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  &::after {
+    content: '}';
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+}

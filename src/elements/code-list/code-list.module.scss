@@ -1,0 +1,37 @@
+.container {
+  $self: &;
+  margin-top: 0;
+  margin-left: 2em;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item {
+    &::before {
+      content: '"';
+    }
+    &::after {
+      content: '",';
+    }
+  }
+
+  &::before {
+    content: '[';
+  }
+
+  &::after {
+    content: ']';
+  }
+
+  &--vertical {
+    #{$self}__item {
+      margin-left: 2em;
+    }
+  }
+
+  &--horizontal {
+    #{$self}__item {
+      display: inline;
+    }
+  }
+}

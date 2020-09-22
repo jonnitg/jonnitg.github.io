@@ -1,6 +1,6 @@
-import { useEffect, useState, useMemo, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
-const useHashLocation = () => {
+const useHashLocation = (): [null | string, (e: unknown) => void] => {
   const [hashPath, setHashPath] = useState(null);
   const [event, setEvent] = useState(null);
 
@@ -22,7 +22,7 @@ const useHashLocation = () => {
     };
 
     const { hash: initialHashPath } = window.location;
-    setHashPath(initialHashPath || '#about');
+    setHashPath(initialHashPath || '#start');
 
     window.addEventListener('pushHistoryState', callback, false);
 

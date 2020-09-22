@@ -8,6 +8,7 @@ body {
   margin: 0;
   background-color: var(--main-theme-color);
   font-family: 'Muli', sans-serif;
+  cursor: none;
 }
 
 html {
@@ -35,6 +36,7 @@ button,
 input {
   font-family: 'Muli', sans-serif;
   color: var(--main-text-color);
+  cursor: none;
 }
 
 a,
@@ -42,6 +44,7 @@ a:active,
 a:visited {
   color: var(--main-text-color);
   text-decoration: none;
+  cursor: none;
 }
 
 .hidden-on-landscape {

@@ -1,0 +1,18 @@
+.btn {
+  appearance: none;
+  margin: 0;
+  padding: 0 0.5em;
+  border: 0;
+  font-size: 1.2rem;
+  background-color: transparent;
+  transform-origin: center;
+
+  &:focus {
+    outline: transparent;
+  }
+
+  &--is-expanded {
+    transform: rotate(90deg);
+    transform-origin: 45% 55%;
+  }
+}

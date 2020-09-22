@@ -3,7 +3,7 @@
  *  - https://github.com/jaredLunde/react-hook/tree/master/packages/mouse-position
  * Not all logic, only the things that I needed
  */
-import { useState, useEffect } from 'react';
+import { useState, useEffect, SetStateAction, Dispatch } from 'react';
 
 export interface MousePosition {
   x: number | null;
@@ -17,7 +17,10 @@ const initialState = {
   isOver: false,
 };
 
-const useMousePointer = () => {
+const useMousePointer = (): {
+  mousePosition: MousePosition;
+  setRef: Dispatch<SetStateAction<HTMLElement>>;
+} => {
   const [element, setElement] = useState<HTMLElement | null>(null);
   const [mousePosition, setMousePosition] = useState<MousePosition>(
     initialState

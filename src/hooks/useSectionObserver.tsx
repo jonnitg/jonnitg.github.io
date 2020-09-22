@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { RefObject, useEffect, useRef } from 'react';
 
-const useSectionObserver = (ref, options = {}) => {
+function useSectionObserver<T>(ref: RefObject<T>, options: unknown = {}): void {
   const observer = useRef(null);
 
   useEffect(() => {
@@ -27,6 +27,6 @@ const useSectionObserver = (ref, options = {}) => {
 
     return () => {};
   }, [observer]);
-};
+}
 
 export default useSectionObserver;

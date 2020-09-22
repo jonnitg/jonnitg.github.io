@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Layout from '@components/layout';
 import AboutSection from '@components/about-section';
-import SkillsSection from '@components/skills-section';
 import ContactSection from '@components/contact-section';
+import StartSection from '@components/start-section';
+import WorkSection from '@components/work-section';
 
-const Home = () => {
+const Home: React.FunctionComponent = () => {
   return (
     <Layout>
       <Head>
@@ -17,9 +18,10 @@ const Home = () => {
           height: '100%',
         }}
       >
+        {/* <StartSection />
         <AboutSection />
-        <SkillsSection />
-        <ContactSection />
+        <WorkSection />
+        <ContactSection /> */}
       </div>
     </Layout>
   );
