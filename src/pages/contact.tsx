@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '@components/layout';
-import StartSection from '@components/start-section';
+import ContactSection from '@components/contact-section';
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -8,7 +8,7 @@ const Home: React.FunctionComponent = () => {
       <Head>
         <title>Web Developer | Jonatán Isaac Treviño Galindo</title>
       </Head>
-      <StartSection />
+      <ContactSection />
     </Layout>
   );
 };

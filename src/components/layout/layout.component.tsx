@@ -10,11 +10,11 @@ const Layout: React.FunctionComponent = ({ children }) => {
 
   return (
     <PointerClassesProvider>
-      <main ref={setRef} className={styles.stl}>
-        {children}
+      <div ref={setRef} className={styles.stl}>
         <Navigation />
+        <main>{children}</main>
         <MouseTracker mousePosition={mousePosition} />
-      </main>
+      </div>
     </PointerClassesProvider>
   );
 };

@@ -1,3 +1,5 @@
+@import '../../sass/base';
+
 .container {
   $self: &;
   margin-top: 0;
@@ -37,6 +39,12 @@
   }
 
   &--is-shrunk {
-    display: flex;
+    display: inline-flex;
+    margin-left: 0;
+
+    @include for-size(tablet-portrait-up) {
+      display: flex;
+      margin-left: 2em;
+    }
   }
 }

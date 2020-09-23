@@ -12,6 +12,7 @@ interface Item {
 interface Props {
   isShrunk?: boolean;
   list: Item[];
+  className?: string;
   orientation?: 'horizontal' | 'vertical';
 }
 
@@ -19,20 +20,22 @@ const CodeList: React.FunctionComponent<Props> = ({
   isShrunk = false,
   list,
   orientation = 'vertical',
+  className = '',
 }) => {
   return (
     <ul
       className={clsx(
+        isShrunk && styles['container--is-shrunk'],
+        className,
         styles.container,
-        styles[`container--${orientation}`],
-        isShrunk && styles['container--is-shrunk']
+        styles[`container--${orientation}`]
       )}
     >
       {isShrunk ? (
-        <li>...</li>
+        <li style={{ display: 'inline-flex' }}>...</li>
       ) : (
-        list.map(({ id, text, element, className = '' }) => (
-          <li key={id} className={clsx(className, styles.container__item)}>
+        list.map(({ id, text, element, className: itemClassName = '' }) => (
+          <li key={id} className={clsx(itemClassName, styles.container__item)}>
             {element || text}
           </li>
         ))

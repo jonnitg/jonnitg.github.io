@@ -1,24 +1,21 @@
 @import '../../sass/base';
 
-.stl {
-  width: 100%;
+.content {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding: 3rem 0;
 
-  &__container {
-    width: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
-    box-sizing: border-box;
-
-    @include for-size(mobile-landscape-up) {
-      width: 400px;
-    }
+  @include for-size(mobile-landscape-up) {
+    width: 80%;
   }
 
-  &__heading {
-    text-align: center;
+  @include for-size(tablet-portrait-up) {
+    width: 60%;
   }
 
-  &__text {
-    font-family: 'Muli', sans-serif;
+  @include for-size(desktop-up) {
+    padding: 10rem 0;
+    font-size: 1.1rem;
   }
 }

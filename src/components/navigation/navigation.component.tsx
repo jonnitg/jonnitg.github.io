@@ -1,5 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, {
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import clsx from 'clsx';
 import {
   PointerClassesContext,
@@ -7,7 +15,6 @@ import {
   resetClasses,
 } from '@context/pointer-classes.context';
 import useMousePointer from '@hooks/useMousePointer';
-import useHashLocation from '@hooks/useHashLocation';
 import CodeText from '@elements/code-text';
 import CodeList from '@elements/code-list';
 import CodeExpandButton from '@elements/code-expand-button';
@@ -16,26 +23,26 @@ import styles from './navigation.module.scss';
 const routes = [
   {
     title: 'start',
-    href: '#start',
+    href: '/',
   },
   {
     title: 'about',
-    href: '#about',
+    href: '/about',
   },
   {
-    title: 'skills',
-    href: '#skills',
+    title: 'work',
+    href: '/work',
   },
   {
     title: 'contact',
-    href: '#contact',
+    href: '/contact',
   },
 ];
 
 const Navigation: React.FunctionComponent = () => {
+  const router = useRouter();
   const { dispatchClasses } = useContext(PointerClassesContext);
   const { mousePosition, setRef } = useMousePointer();
-  const [hashPath, dispatch] = useHashLocation();
   const [position, setPosition] = useState(0);
   const [isShrunk, setIsShrunk] = useState(false);
 
@@ -43,10 +50,11 @@ const Navigation: React.FunctionComponent = () => {
     dispatchClasses(addNavClassAction());
   };
 
-  const onClick = (e, indexPosition) => {
-    setPosition(indexPosition);
-    dispatch(e);
-  };
+  useLayoutEffect(() => {
+    setPosition(
+      routes.findIndex((route) => router.pathname === route.href || 0)
+    );
+  }, [router.pathname]);
 
   useEffect(() => {
     if (!mousePosition.isOver) {
@@ -67,21 +75,18 @@ const Navigation: React.FunctionComponent = () => {
             onClick={() => setIsShrunk(!isShrunk)}
           />
           <CodeList
+            className={styles.list}
             isShrunk={isShrunk}
             list={routes.map((route, index) => ({
               id: route.title,
-              className: hashPath === route.href && styles['item--is-active'],
+              className: clsx(
+                styles.item,
+                router.pathname === route.href && styles['item--is-active']
+              ),
               element: (
-                <a
-                  key={route.title}
-                  onMouseOver={() => handleOnMouseOver(route.title)}
-                  onFocus={() => handleOnMouseOver(route.title)}
-                  onClick={(e) => onClick(e, index)}
-                  className={styles.item}
-                  href={route.href}
-                >
-                  {route.title}
-                </a>
+                <Link key={route.title} href={route.href}>
+                  <a>{route.title}</a>
+                </Link>
               ),
             }))}
           />

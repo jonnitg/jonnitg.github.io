@@ -26,10 +26,10 @@ const Skills: React.FunctionComponent = () => {
   useSectionObserver(skillsRef, { root: null, threshold: [0.5] });
 
   return (
-    <section ref={skillsRef} id="skills" className="section">
+    <div className={styles.content}>
       <CodeText>about.skills</CodeText>
       <CodeList list={skillList} />
-    </section>
+    </div>
   );
 };
 

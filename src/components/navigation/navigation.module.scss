@@ -1,15 +1,53 @@
+@import '../../sass/base';
+
 .container {
   position: fixed;
   top: 0;
   left: 0;
-  margin: 0.5rem;
+  font-size: 0.8rem;
+  z-index: 100;
+
+  @include for-size(mobile-landscape-up) {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+.list {
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.2em;
+  margin-left: 0.2em;
+  margin-bottom: 0.2em;
+
+  @include for-size(mobile-landscape-up) {
+    margin-left: 1em;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    display: block;
+    margin-left: 2em;
+    padding: 0;
+  }
 }
 
 .item {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+
+  @include for-size(phone-only) {
+    margin-left: 0 !important;
+  }
+
+  @include for-size(mobile-landscape-up) {
+    font-size: 1.2rem;
+  }
 
   &--is-active {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: bold;
+
+    @include for-size(mobile-landscape-up) {
+      font-size: 1.4rem;
+    }
   }
 }

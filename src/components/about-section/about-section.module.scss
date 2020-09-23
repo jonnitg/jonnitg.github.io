@@ -1,83 +1,64 @@
 @import '../../sass/base';
 
-.layer {
-  position: absolute;
+.section {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.image {
+  position: relative;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 
-  &__background {
-    z-index: 0;
-  }
+  &__container {
+    position: relative;
+    margin-top: 6rem;
+    max-width: 480px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
 
-  &__boxes {
-    z-index: 10;
-  }
-
-  &__photo {
-    z-index: 20;
+    @include for-size(desktop-up) {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(0, -65%);
+    }
   }
 
   &__title {
-    z-index: 30;
-  }
-}
+    font-size: 1rem;
 
-.box {
-  $self: &;
-  position: absolute;
-
-  &__one {
-    bottom: 8%;
-    left: 40%;
-  }
-
-  &__two {
-    bottom: 1%;
-    left: 50%;
-  }
-
-  &--is-big {
-    width: 40vw;
-    height: 60vh;
-  }
-
-  &--is-small {
-    width: 10vw;
-    height: 10vw;
-  }
-
-  &--is-medium {
-    width: 20vw;
-    height: 20vw;
-  }
-
-  &--with-border {
-    border: 2px solid black;
-  }
-
-  &--is-white {
-    background-color: white;
-
-    #{ $self }--with-border {
-      border: 2px solid black;
+    &__container {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 60px;
+      background-color: #ffffff;
     }
   }
 
-  &--is-black {
-    background-color: black;
-
-    #{$self}--with-border {
-      border: 2px solid white;
-    }
+  &__code-text {
+    position: absolute;
+    top: 100%;
+    right: 0;
   }
 }
 
-.photo {
-  &__container {
-  }
-}
+.content {
+  position: relative;
+  padding: 6rem 0;
 
-.title {
-  &__container {
+  @include for-size(desktop-up) {
+    width: 40%;
+    right: 15%;
+    padding: 0;
   }
 }

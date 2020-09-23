@@ -26,7 +26,7 @@ const StartSection: React.FunctionComponent = () => {
       <div className={styles.image__container}>
         <img
           className={styles.image}
-          src="https://via.placeholder.com/420x800"
+          src="https://via.placeholder.com/420x600"
           alt=""
         />
         <CodeText className={styles.image__text}>user.image</CodeText>

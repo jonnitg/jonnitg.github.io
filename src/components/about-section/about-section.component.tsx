@@ -12,16 +12,24 @@ const AboutSection: React.FunctionComponent = () => {
   useSectionObserver(aboutRef, { root: null, threshold: [0.5] });
 
   return (
-    <section ref={aboutRef} className="section">
-      <div>
-        <img src="" alt="" />
-        <CodeText>
-          current_page:<CodeHeading>about</CodeHeading>
-        </CodeText>
-        <CodeText>about.image</CodeText>
+    <section ref={aboutRef} className={clsx('section', styles.section)}>
+      <div className={styles.image__container}>
+        <img
+          className={styles.image}
+          src="https://via.placeholder.com/480x600"
+          alt=""
+        />
+        <div className={styles.image__title__container}>
+          <CodeText className={styles.image__title}>
+            current_page:<CodeHeading>about</CodeHeading>
+          </CodeText>
+        </div>
+        <CodeText className={styles['image__code-text']}>about.image</CodeText>
       </div>
-      <Description />
-      <Skills />
+      <div className={styles.content}>
+        <Description />
+        <Skills />
+      </div>
     </section>
   );
 };
