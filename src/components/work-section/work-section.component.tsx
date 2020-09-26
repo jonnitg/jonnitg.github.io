@@ -59,15 +59,20 @@ const projects = [
 const WorkSection: React.FunctionComponent = () => {
   const router = useRouter();
   const projectsRef = useRef(null);
-  const [hashPath, setHashPath] = useState(0);
+  const [currentProject, setCurrentProject] = useState(0);
+  const [openDemo, setOpenDemo] = useState(false);
 
   const handleChangeHash = (event) => {
     const { value } = event.target;
     const newHash = parseInt(value, 10);
     if (Number.isInteger(newHash)) {
-      setHashPath(newHash);
+      setCurrentProject(newHash);
       router.push(`${router.pathname}#project-${newHash}`);
     }
+  };
+
+  const handleOpenDemo = () => {
+    setOpenDemo(!openDemo);
   };
 
   useEffect(() => {
@@ -100,7 +105,7 @@ const WorkSection: React.FunctionComponent = () => {
           }
 
           if (currentChild) {
-            setHashPath(currentChild.id.replace(/.*(\d+).*/, '$1'));
+            setCurrentProject(currentChild.id.replace(/.*(\d+).*/, '$1'));
           }
         }, 50);
       };
@@ -112,16 +117,23 @@ const WorkSection: React.FunctionComponent = () => {
 
   useEffect(() => {
     if (window.location.hash === '') {
-      window.history.pushState(null, null, `#project-${hashPath}`);
+      window.history.pushState(null, null, `#project-${currentProject}`);
     } else {
-      window.history.pushState(null, null, `#project-${hashPath}`);
+      window.history.pushState(null, null, `#project-${currentProject}`);
     }
-  }, [hashPath]);
+  }, [currentProject]);
 
   return (
     <section className={clsx('section', styles.section)}>
       <CodeText className={styles.section__title}>
-        current_page:<CodeHeading>work</CodeHeading> demo: true
+        current_page: <CodeHeading>work</CodeHeading> demo:{' '}
+        <button
+          type="button"
+          className={styles.projects__button}
+          onClick={handleOpenDemo}
+        >
+          {openDemo.toString()}
+        </button>
       </CodeText>
 
       <div className={styles.section__container}>
@@ -129,7 +141,7 @@ const WorkSection: React.FunctionComponent = () => {
           project[
           <input
             className={styles.projects__input__number}
-            value={hashPath}
+            value={currentProject}
             onChange={handleChangeHash}
             type="number"
             max={projects.length - 1}
@@ -141,7 +153,18 @@ const WorkSection: React.FunctionComponent = () => {
           {projects.map((project, index) => (
             <CodeObject
               tab={1}
-              json={project}
+              json={{
+                ...project,
+                demo: (
+                  <button
+                    type="button"
+                    className={styles.projects__button}
+                    onClick={handleOpenDemo}
+                  >
+                    {project.demo}
+                  </button>
+                ),
+              }}
               id={`project-${index}`}
               key={project.title}
               className={styles.projects__item}
@@ -151,7 +174,7 @@ const WorkSection: React.FunctionComponent = () => {
         <CodeText className={styles.projects__input} noStart />
       </div>
 
-      <Demo open={false} projectId={1} />
+      <Demo open={openDemo} projectId={currentProject} />
     </section>
   );
 };

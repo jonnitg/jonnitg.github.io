@@ -35,6 +35,18 @@ const CodeObject: React.FunctionComponent<Props> = ({
 
         return React.cloneElement<{ className?: string }>(value, props);
       }
+
+      if (value.type === 'button') {
+        const element = value as React.ReactElement;
+        const props = {
+          className: clsx(
+            element.props.className,
+            styles['item__value--is-text']
+          ),
+        };
+
+        return React.cloneElement<{ className?: string }>(element, props);
+      }
       return value;
     }
 
