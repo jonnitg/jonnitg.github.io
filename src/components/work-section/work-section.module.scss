@@ -1,0 +1,89 @@
+@import '../../sass/base';
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  &__title {
+    @include for-size(desktop-up) {
+      position: fixed;
+      top: 0;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: flex-start;
+  }
+}
+
+.projects {
+  width: auto;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  scroll-snap-type: y mandatory;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__item {
+    padding-bottom: 2rem;
+    scroll-snap-align: start;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__input {
+    width: 65%;
+    // justify-self: flex-start;
+
+    &__number {
+      display: inline-block;
+      padding: 0;
+      text-align: center;
+      font-family: 'Fira Code', monospace;
+      font-size: 1rem;
+
+      border: 0;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        appearance: none;
+        margin: 0;
+      }
+
+      &[type='number'] {
+        appearance: textfield;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+// input::-webkit-outer-spin-button
+// input::-webkit-inner-spin-button {
+//   appearance: none;
+//   margin: 0;
+// }
+
+// input[type='number'] {
+//   appearance: textfield;
+// }

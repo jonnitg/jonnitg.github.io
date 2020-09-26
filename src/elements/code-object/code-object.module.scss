@@ -1,0 +1,49 @@
+.container {
+  padding-left: 2rem;
+  font-family: 'Fira Code', monospace;
+
+  &::before {
+    content: '{';
+  }
+
+  &::after {
+    content: '},';
+  }
+}
+
+.item {
+  padding-left: 2rem;
+  position: relative;
+
+  &::after {
+    content: ',';
+  }
+
+  &:last-child {
+    &::after {
+      content: '';
+    }
+  }
+
+  &__value {
+    &--is-text {
+      &::before {
+        content: '"';
+      }
+
+      &::after {
+        content: '"';
+      }
+    }
+
+    &--is-list {
+      display: inline-flex;
+      margin: 0;
+    }
+
+    &--is-image {
+      display: flex;
+      position: relative;
+    }
+  }
+}

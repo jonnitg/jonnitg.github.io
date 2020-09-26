@@ -53,7 +53,7 @@
     "react/jsx-props-no-spreading": [
       "error",
       {
-        "exceptions": ["input", "button", "Component"]
+        "exceptions": ["input", "button", "Component", "element.type"]
       }
     ]
   },

@@ -2,18 +2,16 @@ import React, { useRef } from 'react';
 import useSectionObserver from '@hooks/useSectionObserver';
 import CodeText from '@elements/code-text';
 import CodeList from '@elements/code-list';
-import styles from './about-section.module.scss';
+import styles from './demo.module.scss';
 
 interface Props {
+  open: boolean;
   projectId: number;
 }
 
-const Demo: React.FunctionComponent<Props> = ({ projectId }) => {
-  const demoRef = useRef(null);
-  useSectionObserver(demoRef, { root: null, threshold: [0.5] });
-
+const Demo: React.FunctionComponent<Props> = ({ projectId, open = false }) => {
   return (
-    <section ref={demoRef} id="demo" className="section">
+    <section className={styles.container}>
       <div>
         <img src="" alt="" />
       </div>

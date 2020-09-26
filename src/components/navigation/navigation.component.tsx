@@ -1,11 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {
-  useContext,
-  useEffect,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
@@ -50,7 +44,7 @@ const Navigation: React.FunctionComponent = () => {
     dispatchClasses(addNavClassAction());
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setPosition(
       routes.findIndex((route) => router.pathname === route.href || 0)
     );

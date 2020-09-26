@@ -12,4 +12,18 @@
     padding-right: 0.5em;
     padding-left: 0.5em;
   }
+
+  &--no-end {
+    &::after {
+      content: '';
+    }
+  }
+
+  &--no-start {
+    &::before {
+      content: '';
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
