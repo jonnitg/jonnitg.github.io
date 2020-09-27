@@ -45,5 +45,17 @@
       display: flex;
       position: relative;
     }
+
+    &--is-inline-flex {
+      display: inline-flex;
+
+      &::before {
+        padding-left: 0;
+      }
+
+      &::after {
+        padding-right: 0;
+      }
+    }
   }
 }

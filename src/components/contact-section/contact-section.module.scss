@@ -1,62 +1,39 @@
 @import '../../sass/base';
 
-.stl {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+}
 
-  &__container {
-    width: 320px;
-    height: 450px;
+.content {
+  display: grid;
+  row-gap: 2.5rem;
+  font-size: 1.4rem;
 
-    @include for-size(mobile-landscape-up) {
-      width: 450px;
-    }
+  &__text {
+    margin: 0;
+    font-size: 100%;
+    letter-spacing: 2px;
   }
 
-  &__form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 0.4em;
-    overflow: hidden;
-    box-sizing: border-box;
+  &__code-text {
+    font-size: 1rem;
+  }
 
-    &__subcontainer {
-      display: inline-flex;
-      flex-wrap: wrap;
-      width: 100%;
-      overflow: hidden;
+  &__link {
+    font-weight: bold;
+    text-decoration: underline;
 
-      @include for-size(mobile-landscape-up) {
-        flex-wrap: nowrap;
-      }
+    &::before {
+      content: '"';
     }
 
-    &__input {
-      width: 100%;
-      margin-bottom: 0.5em;
-
-      @include for-size(mobile-landscape-up) {
-        margin-bottom: 1em;
-
-        &:nth-child(2) {
-          margin-left: 16px;
-        }
-      }
-
-      &__container {
-        margin-bottom: 0.5em;
-
-        @include for-size(mobile-landscape-up) {
-          margin-bottom: 0.8em;
-        }
-      }
-    }
-
-    &__message {
-      display: inline-flex;
-      height: 100%;
-      align-items: center;
+    &::after {
+      content: '"';
     }
   }
 }

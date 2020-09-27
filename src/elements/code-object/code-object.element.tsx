@@ -37,17 +37,14 @@ const CodeObject: React.FunctionComponent<Props> = ({
       }
 
       if (value.type === 'button') {
-        const element = value as React.ReactElement;
-        const props = {
-          className: clsx(
-            element.props.className,
-            styles['item__value--is-text']
-          ),
-        };
-
-        return React.cloneElement<{ className?: string }>(element, props);
+        return React.cloneElement(value);
       }
-      return value;
+
+      const props = {
+        className: clsx(styles['item__value--is-inline-flex']),
+      };
+      console.log({ value });
+      return React.cloneElement<{ className?: string }>(value, props);
     }
 
     return <span className={styles['item__value--is-text']}>{value}</span>;

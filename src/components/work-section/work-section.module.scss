@@ -8,6 +8,15 @@
   height: 100vh;
 
   &__title {
+    padding: 0.5em 0;
+    box-sizing: border-box;
+
+    &--demo {
+      background-color: #ffffff;
+      mix-blend-mode: difference;
+      z-index: 20;
+    }
+
     @include for-size(desktop-up) {
       position: fixed;
       top: 0;
@@ -74,21 +83,6 @@
       &:focus {
         outline: none;
       }
-    }
-  }
-
-  &__button {
-    appearance: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Code', monospace;
-    font-size: 100%;
-    text-decoration: underline;
-
-    &:focus {
-      outline: none;
     }
   }
 }

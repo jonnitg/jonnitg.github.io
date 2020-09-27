@@ -12,6 +12,7 @@ import useMousePointer from '@hooks/useMousePointer';
 import CodeText from '@elements/code-text';
 import CodeList from '@elements/code-list';
 import CodeExpandButton from '@elements/code-expand-button';
+import CodeArrayInput from '@elements/code-array-input';
 import styles from './navigation.module.scss';
 
 const routes = [
@@ -44,6 +45,15 @@ const Navigation: React.FunctionComponent = () => {
     dispatchClasses(addNavClassAction());
   };
 
+  const handleChangePosition = (event) => {
+    const { value } = event.target;
+    const newPosition = parseInt(value, 10);
+    if (Number.isInteger(newPosition) && routes[newPosition] !== undefined) {
+      setPosition(newPosition);
+      router.push(routes[newPosition].href);
+    }
+  };
+
   useEffect(() => {
     setPosition(
       routes.findIndex((route) => router.pathname === route.href || 0)
@@ -63,7 +73,14 @@ const Navigation: React.FunctionComponent = () => {
     <header>
       <nav ref={setRef} className={styles.container}>
         <CodeText>
-          {`menu[${position}]:`}
+          menu[
+          <CodeArrayInput
+            value={position}
+            onChange={handleChangePosition}
+            max={routes.length - 1}
+            min={0}
+          />
+          ]:
           <CodeExpandButton
             isShrunk={isShrunk}
             onClick={() => setIsShrunk(!isShrunk)}

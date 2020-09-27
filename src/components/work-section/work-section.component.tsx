@@ -5,6 +5,8 @@ import CodeText from '@elements/code-text';
 import CodeHeading from '@elements/code-heading';
 import CodeObject from '@elements/code-object';
 import Demo from '@components/demo';
+import CodeButton from '@elements/code-button';
+import CodeArrayInput from '@elements/code-array-input';
 import styles from './work-section.module.scss';
 
 const projects = [
@@ -125,25 +127,24 @@ const WorkSection: React.FunctionComponent = () => {
 
   return (
     <section className={clsx('section', styles.section)}>
-      <CodeText className={styles.section__title}>
+      <CodeText
+        className={clsx(
+          styles.section__title,
+          openDemo && styles['section__title--demo']
+        )}
+      >
         current_page: <CodeHeading>work</CodeHeading> demo:{' '}
-        <button
-          type="button"
-          className={styles.projects__button}
-          onClick={handleOpenDemo}
-        >
+        <CodeButton withoutQuotes onClick={handleOpenDemo}>
           {openDemo.toString()}
-        </button>
+        </CodeButton>
       </CodeText>
 
       <div className={styles.section__container}>
         <CodeText className={styles.projects__input} noEnd>
           project[
-          <input
-            className={styles.projects__input__number}
+          <CodeArrayInput
             value={currentProject}
             onChange={handleChangeHash}
-            type="number"
             max={projects.length - 1}
             min={0}
           />
@@ -156,13 +157,9 @@ const WorkSection: React.FunctionComponent = () => {
               json={{
                 ...project,
                 demo: (
-                  <button
-                    type="button"
-                    className={styles.projects__button}
-                    onClick={handleOpenDemo}
-                  >
+                  <CodeButton onClick={handleOpenDemo}>
                     {project.demo}
-                  </button>
+                  </CodeButton>
                 ),
               }}
               id={`project-${index}`}
@@ -174,7 +171,11 @@ const WorkSection: React.FunctionComponent = () => {
         <CodeText className={styles.projects__input} noStart />
       </div>
 
-      <Demo open={openDemo} projectId={currentProject} />
+      <Demo
+        open={openDemo}
+        closeDemo={() => setOpenDemo(false)}
+        projectId={currentProject}
+      />
     </section>
   );
 };
