@@ -1,12 +1,23 @@
+@import '../../sass/base';
+
 .text {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 
   &::before {
     content: '"';
-    padding-left: 0.4rem;
   }
   &::after {
     content: '",';
-    padding-right: 0.4rem;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 1.6rem;
+
+    &::before {
+      padding-left: 0.4rem;
+    }
+    &::after {
+      padding-right: 0.4rem;
+    }
   }
 }

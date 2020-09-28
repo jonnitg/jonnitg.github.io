@@ -9,17 +9,35 @@
 
   &__title {
     padding: 0.5em 0;
+    margin-bottom: 3em;
     box-sizing: border-box;
 
     &--demo {
       background-color: #ffffff;
       mix-blend-mode: difference;
       z-index: 20;
+      margin-top: -4rem;
+    }
+
+    @include for-size(tablet-portrait-up) {
+      position: fixed;
+      top: 0;
+      margin-bottom: 0;
+
+      &--demo {
+        margin-top: -7rem;
+        position: relative;
+      }
     }
 
     @include for-size(desktop-up) {
       position: fixed;
       top: 0;
+      margin-bottom: 0;
+
+      &--demo {
+        margin-top: 0;
+      }
     }
   }
 
@@ -27,14 +45,22 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 90%;
     align-items: flex-start;
+
+    @include for-size(tablet-portrait-up) {
+      width: 65%;
+    }
+
+    @include for-size(desktop-up) {
+      width: 65%;
+    }
   }
 }
 
 .projects {
   width: auto;
-  height: 23rem;
+  height: 21rem;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -44,6 +70,10 @@
 
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+
+  @include for-size(desktop-up) {
+    height: 23rem;
+  }
 
   &::-webkit-scrollbar {
     display: none;

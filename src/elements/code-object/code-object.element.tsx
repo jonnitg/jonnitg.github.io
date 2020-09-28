@@ -43,7 +43,7 @@ const CodeObject: React.FunctionComponent<Props> = ({
       const props = {
         className: clsx(styles['item__value--is-inline-flex']),
       };
-      console.log({ value });
+
       return React.cloneElement<{ className?: string }>(value, props);
     }
 

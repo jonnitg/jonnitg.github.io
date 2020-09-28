@@ -1,5 +1,7 @@
+@import '../../sass/base';
+
 .container {
-  padding-left: 2rem;
+  padding-left: 1rem;
   font-family: 'Fira Code', monospace;
 
   &::before {
@@ -9,11 +11,19 @@
   &::after {
     content: '},';
   }
+
+  @include for-size(desktop-up) {
+    padding-left: 2rem;
+  }
 }
 
 .item {
-  padding-left: 2rem;
+  padding-left: 1rem;
   position: relative;
+
+  @include for-size(desktop-up) {
+    padding-left: 2rem;
+  }
 
   &::after {
     content: ',';
@@ -44,6 +54,14 @@
     &--is-image {
       display: flex;
       position: relative;
+      padding: 0;
+      margin-left: -1rem;
+      max-width: 320px;
+
+      @include for-size(desktop-up) {
+        margin-left: 0;
+        max-width: 380px;
+      }
     }
 
     &--is-inline-flex {

@@ -1,16 +1,29 @@
+@import '../../sass/base';
+
 .container {
   font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
 
   &::before {
     content: '{';
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
   }
 
   &::after {
     content: '}';
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+  }
+
+  @include for-size(desktop-up) {
+    font-size: 1rem;
+    &::before {
+      padding-left: 0.5rem;
+    }
+    &::after {
+      padding-right: 0.5rem;
+    }
   }
 
   &--no-end {

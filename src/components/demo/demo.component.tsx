@@ -28,7 +28,14 @@ const Demo: React.FunctionComponent<Props> = ({
         className={styles.container__backdrop}
       />
       <div className={styles.container__view}>
-        <img src="" alt="" />
+        <img
+          className={clsx(
+            styles.container__view__image,
+            styles[`container__view__image--is-${currentView}`]
+          )}
+          src={`/images/project-${projectId}/${currentView}.png`}
+          alt=""
+        />
         <div className={styles.container__view__buttons}>
           <CodeText>
             device:
