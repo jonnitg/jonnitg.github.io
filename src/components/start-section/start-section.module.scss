@@ -32,8 +32,12 @@
   &__text {
     position: absolute;
     bottom: 5rem;
-    left: calc(100% - 4em);
+    left: calc(100% - 3.25rem);
     transform: rotate(90deg);
+
+    @include for-size(desktop-up) {
+      left: calc(100% - 4em);
+    }
   }
 }
 
@@ -41,8 +45,14 @@
   &__container {
     position: absolute;
     top: calc(25% - 5rem);
-    right: calc(20% - 5em);
+    right: 5%;
     z-index: 1;
+
+    @include for-size(mobile-landscape-up) {
+      position: absolute;
+      top: calc(25% - 5rem);
+      right: calc(20% - 5em);
+    }
   }
 
   &__heading {
